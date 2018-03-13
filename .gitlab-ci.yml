@@ -1,7 +1,7 @@
 variables:
   DOCFX_SOURCE_BRANCH_NAME: $CI_BUILD_REF_NAME
 
-build:
+build_lib:
   stage: build
   image: mono:5.8
   script:
@@ -13,6 +13,21 @@ build:
     - docker-runner
   only:
     - /^.*-release$/
+
+build_doc:
+  stage: build
+  image: alvinsay/docfx:2.32.1
+  script:
+    - docfx doc/docfx.json
+    - mv doc/_site public
+  artifacts:
+    paths:
+      - public                       # Upload the directory
+  tags:
+    - docker-runner
+  only:
+    - /^.*-release$/
+
 
 pages:
   stage: deploy
