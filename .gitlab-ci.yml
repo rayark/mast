@@ -1,0 +1,29 @@
+variables:
+  DOCFX_SOURCE_BRANCH_NAME: $CI_BUILD_REF_NAME
+
+build:
+  stage: build
+  image: mono:5.8
+  script:
+    - ./build.sh
+  artifacts:
+    paths:
+      - Rayark.Mast.DLL
+  tags:
+    - docker-runner
+  only:
+    - /^.*-release$/
+
+pages:
+  stage: deploy
+  image: alvinsay/docfx:2.32.1
+  script:
+    - docfx doc/docfx.json
+    - mv doc/_site public
+  artifacts:
+    paths:
+      - public                       # Upload the directory
+  tags:
+    - docker-runner
+  only:
+    - develop

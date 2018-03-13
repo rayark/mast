@@ -1,0 +1,10 @@
+*.csproj
+.vs
+Library
+ProjectSettings
+*.sln
+*.zip
+Temp
+README.md
+.gitignore
+Assets/UnityTestTools

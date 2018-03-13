@@ -1,0 +1,11 @@
+*.sublime-project
+*.sublime-workspace
+*.sln
+*.csproj
+*.zip
+.vs/
+Temp/
+Library/
+ProjectSettings/
+Assets/UnityTestTools*
+obj/
