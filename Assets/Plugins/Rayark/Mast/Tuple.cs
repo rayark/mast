@@ -1,4 +1,4 @@
-﻿// This is Tuple polyfill modified from CoreCLR
+// This is Tuple polyfill modified from CoreCLR
 // https://github.com/dotnet/coreclr/blob/master/src/mscorlib/src/System/Tuple.cs
 
 using System;

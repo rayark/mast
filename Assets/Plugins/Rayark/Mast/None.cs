@@ -1,4 +1,4 @@
-﻿namespace Rayark.Mast
+namespace Rayark.Mast
 {
     /// <summary>
     /// Represents void value.
