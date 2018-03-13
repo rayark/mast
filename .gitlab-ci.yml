@@ -8,7 +8,8 @@ build_lib:
     - ./build.sh
   artifacts:
     paths:
-      - Rayark.Mast.DLL
+      - build/Assets/Rayark/Mast/Rayark.Mast.DLL
+      - build
   tags:
     - docker-runner
   only:
