@@ -1,9 +1,7 @@
 # Mast - Coroutine Extensions for Unity
 
 ## What is Mast?
-Mast is a coroutine library that extends **iterator methods** of C# languages. It is used fundamentally in various Unity3D projects in Rayark to provides a more convinient and functional ways to realize the concept of **Coroutine**.
-
-
+Mast is a coroutine library extending **iterator block** feature of C# languages to provides a more convinient and functional ways to realize the concept of **Coroutine**. It is widely used and becomes a fundemental keystone of developing game projects with Unity3D in Rayark.
 
 ## Why Mast?
 
