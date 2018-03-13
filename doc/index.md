@@ -1,18 +1,18 @@
 # Mast - A Coroutine Extension for Unity
 
 ## What is Mast?
-Mast is a coroutine library extending **iterator block** feature of C# languages to provides a more convinient and functional ways to realize the concept of **Coroutine**. It is widely used and becomes a fundemental keystone of developing game projects with Unity3D in Rayark.
+Mast is a coroutine library extending **iterator block** feature of C# languages to provides a more convinient and functional way to adopt the concept of **Coroutine**. It is widely used and becomes a fundemental keystone of developing game projects with Unity3D in Rayark.
 
 ## Why Mast?
 
-Since game programming often involves managing states of software cross a period of time (multiple frames). It is an important to have a good ways to address the side effect of various game logic. That's why **coroutine** comes into our sight for Unity3D. However, the coroutine implementation of Unity has some limitations
+Since game programming often involves managing states of the program across a period of time (multiple frames). It is important to have a good way to manage the side effect of various game logic. That's why **coroutine** comes into sight for Unity3D. However, the coroutine implementation of Unity has some limitations
 - Unity coroutine can't return value.
-- Unity coroutine lacks tools to help write codes for highly parallel tasks.
-- Unity coroutine is black box and you can't control exactly when it runs.
+- Unity coroutine lacks tools to help write codes for multiple concurrent tasks.
+- Unity coroutine is a black box and you can't control when it exactly runs.
 
 To overcome above issues, we develop Mast. It mainly consists of three parts,
-- `Executor` and `Coroutine` - provide basic infrastructure to run coroutines with stacks
-- `IMonad` - is a promise like wrapper for coroutines, which enables functional coding paraidgm of coroutines
+- `Executor` and `Coroutine` - provide basic infrastructure to execute coroutines with stacks
+- `IMonad` - is a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)-like wrapper for coroutines, which enables functional coding paradigm of coroutines
 - Utilities such as `Defer` and `Joinable` that helps write more simple code for coroutines
 
 
@@ -70,11 +70,11 @@ using Mast.Coroutine;
 IEnumerator A(){
     Debug.Log("1");
 
-    # wait for one frame
+    // wait for one frame
     yield return null;
 
     Debug.Log("Start B")
-    # run and wait for B()
+    // run and wait for B()
     yield return B();
 
     Debug.Log("4");
