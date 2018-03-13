@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Coroutine and Executor </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Coroutine and Executor ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="coroutine-and-executor">Coroutine and Executor</h1>
+
+<h2 id="iterator-block">Iterator Block</h2>
+<p>In C# languauge, <em>iterator blocks</em> are a special kind of methods that has <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield">yield</a> keyword inside them so that method will return an instance of <code>IEnumerator</code> and a section of codes between <code>yield</code> statement will be executor once the <code>MoveNext</code> method of the <code>IEnumerator</code> instance is getting invoked.</p>
+<p>Follwing is a simple example demonstrating how an iterator block getting used.</p>
+<pre><code class="lang-csharp">IEnumerator Example(){
+    Debug.Log(&quot;Step 1&quot;);
+    yield return null;
+    Debug.Log(&quot;Step 2&quot;);
+    yield return null;
+    Debug.Log(&quot;Step 3&quot;);
+}
+
+static void Main(){
+    var e = Example();
+    while(e.MoveNext()){
+        Debug.Log(&quot;=== Sleep ===&quot;);
+        System.Threading.Thread.Sleep(30);
+    }
+}
+</code></pre><p>Output,</p>
+<pre><code>Step 1
+=== Sleep ===
+Step 2
+=== Sleep ===
+Step 3
+</code></pre><p>For more detials about iterator blocks, please see <a href="http://csharpindepth.com/Articles/Chapter6/IteratorBlockImplementation.aspx">this article</a>.</p>
+<h2 id="coroutine">Coroutine</h2>
+<p>The <a class="xref" href="../api/Rayark.Mast.Coroutine.html">Coroutine</a> class represets a coroutine by emulating stacks for iterator blocks. It allows an iterator blocks invoke executor another iterator blocks by <code>yield return</code> them.</p>
+<p>The following example demonstrate how to the invocation of iterator blocks within an iterator blocks.</p>
+<p>Example,</p>
+<pre><code class="lang-csharp">using Rark.Mast;
+using Mast.Coroutine;
+
+IEnumerator A(){
+    Debug.Log(&quot;1&quot;);
+
+    # wait for one frame
+    yield return null;
+
+    Debug.Log(&quot;Start B&quot;)
+    # run and wait for B()
+    yield return B();
+
+    Debug.Log(&quot;4&quot;);
+    yield return null;
+}
+
+IEnumerator B(){
+    Debug.Log(&quot;2&quot;);
+    yield return null;
+    Debug.Log(&quot;3&quot;);
+    yield return null;
+    Debug.Log(&quot;B Return&quot;);
+}
+
+Coroutine coroutine = new Coroutine( A() );
+
+void Update(){
+    if( !coroutine.Finished ){
+        Debug.Log(&quot;---&quot;);
+        coroutine.Resume(Time.deltaTime);
+    }
+}
+</code></pre><p>Output,</p>
+<pre><code>---
+1
+---
+Start B
+2
+---
+3
+---
+B Return
+4
+</code></pre><h2 id="executor">Executor</h2>
+<p><a class="xref" href="../api/Rayark.Mast.Executor.html">Executor</a> provides a way to execute multiple coroutine concurrenly. The basic usage pattern is creating it under a Unity <code>MonoBehaviour</code> and resume it every frame, then we can add an iterator block or a instance of <a class="xref" href="../api/Rayark.Mast.Coroutine.html">Coroutine</a> to it at anytime we want to execute an asynchrous operation.</p>
+<p>This is an example of using executor within a <code>MonoBehaviour</code>.</p>
+<pre><code class="lang-csharp">using Rayark.Mast;
+using Coroutine = Rayark.Mast.Coroutine;
+
+class Player : MonoBehaviour{
+    // create an executor when constructing
+    Executor _executor = new Executor();
+
+    // update executor every frame.
+    void Update(){
+        _executor.Resume(Time.deltaTime);
+    }
+
+    public void Hurt( float damage ){
+        // add an iterator to an executor
+        _executor.Add(_ShowDamageEffect());
+    }
+
+    // an iterator block
+    IEnumerator _ShowDamageEffect(){
+        // Do effects
+    }
+}
+</code></pre><p>Instead of resuming <a class="xref" href="../api/Rayark.Mast.Executor.html">Executor</a> on frame updating, it is possible to use it like a child coroutine within a iterator blocks.</p>
+<p>The following example demonstrate how to use <a class="xref" href="../api/Rayark.Mast.Coroutine.html">Coroutine</a>
+and <a class="xref" href="../api/Rayark.Mast.Executor.html">Executor</a> to control UI flow and also show a convinient way of using executor within an <em>iterator block</em>.</p>
+<pre><code class="lang-csharp">
+IEnumerator Menu(){
+    var executor = new Executor();
+
+    // show the entering animation and updates the profile 
+    // from server concurrently
+    executor.Add( _ShowEnteringAnimation());
+    executor.Add( _UpdateProfileFromServer());
+
+    // Join() is an extension methods coverts IResumable to an iterator block
+    yield return executor.Join();
+
+    _leave = false;
+    while( !_leave )
+        yield return null;
+
+    yield return _ShowLeavingAnimation();
+}
+</code></pre><h2 id="control-entire-game-flow-with-coroutine">Control Entire Game Flow with Coroutine</h2>
+<p>One of the main problems of programming with Unity3D is organizing and maintaining codes of game flow. Because Unity3D dosen&#39;t expose main function, you have to encodes the game states within multiple <code>GameObject</code>, thus making tracking game state changes from source code very hard.</p>
+<p>With iterator blocks and coroutines, we can easily express only low level UI states but also top level game states within a single coroutine stack. The following example desmonstrate the idea of using coroutine to control the entire game flow. Note that the real world example will be much complex than this. However, it&#39;s quite intuitive to extend the following code structure to apply the idea to real-world case.</p>
+<pre><code class="lang-csharp">class Game : MonoBehaviour{
+
+    static IEnumerator Main(){
+
+        var gameData = new GameData();
+        var executor = new Executor();
+        executor.Add( UpdateGameData( gameData ) );
+        executor.Add( ShowTrailer() );
+
+        yield return executor.Join();
+
+        while(true){
+            yield return Menu(gameData);
+            yield return Gameplay(gameData);
+
+        }
+    }
+
+    static IEnumerator ShowTrailer(){
+        SceneManager.LoadScene(&quot;trailer&quot;);
+        // do something
+    }
+
+    static IEnumerator UpdateGameData( gameData ){
+        // perform REST API Request
+    }
+
+    static IEnumerator Menu(GameData gameData){
+        SceneManager.LoadScene(&quot;menu&quot;);
+        // execute menu logic here
+    }
+
+    static IEnumerator Gameplay(GameData gameData){
+        SceneManager.LoadScene(&quot;gameplay&quot;);
+        // execute gameplay logic here
+    }
+}
+</code></pre><p>It&#39;s worth to mention that there are two main benefits that brought by coroutine:</p>
+<ol>
+<li>The coroutine structure cleary presents when the new Unity scene will be loaded. In this example, you can easily tell that <code>trailer</code> scene will be loaed in the begining, then <code>menu</code> scene, then <code>gameplay</code>, and then back to <code>menu</code> scene.</li>
+<li>Singleton is no longer need to pass data between Unity scenes. You can see <code>GameData</code> instance is passed around to child iterator blocks like pass arguments to normal function. This is the most nature way of passing data in a computer program.</li>
+</ol>
+<p>Despite coroutine is a very powerful tool of modeling game states declaratively, the lacks of the ability of returning value leads some inconvinience of passing result from one coroutine to its sibling. For example, you can&#39;t just return a value from the iterator block <code>Menu</code> to decide which stage will be loaded in the iterator block <code>Gameplay</code>. That&#39;s why <em>Mast</em> does further steps by introcing <em>Moand</em>. Please read the section of <a href="monad.html">Monad</a> for more information.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

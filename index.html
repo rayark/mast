@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mast - A Coroutine Extension for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Mast - A Coroutine Extension for Unity ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mast---a-coroutine-extension-for-unity">Mast - A Coroutine Extension for Unity</h1>
+
+<h2 id="what-is-mast">What is Mast?</h2>
+<p>Mast is a coroutine library extending <strong>iterator block</strong> feature of C# languages to provides a more convinient and functional way to adopt the concept of <strong>Coroutine</strong>. It is widely used and becomes a fundemental keystone of developing game projects with Unity3D in Rayark.</p>
+<h2 id="why-mast">Why Mast?</h2>
+<p>Since game programming often involves managing states of the program across a period of time (multiple frames). It is important to have a good way to manage the side effect of various game logic. That&#39;s why <strong>coroutine</strong> comes into sight for Unity3D. However, the coroutine implementation of Unity has some limitations</p>
+<ul>
+<li>Unity coroutine can&#39;t return value.</li>
+<li>Unity coroutine lacks tools to help write codes for multiple concurrent tasks.</li>
+<li>Unity coroutine is a black box and you can&#39;t control when it exactly runs.</li>
+</ul>
+<p>To overcome above issues, we develop Mast. It mainly consists of three parts,</p>
+<ul>
+<li><code>Executor</code> and <code>Coroutine</code> - provide basic infrastructure to execute coroutines with stacks</li>
+<li><code>IMonad</code> - is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a>-like wrapper for coroutines, which enables functional coding paradigm of coroutines</li>
+<li>Utilities such as <code>Defer</code> and <code>Joinable</code> that helps write more simple code for coroutines</li>
+</ul>
+<p>For example, if your want to download and parse asyncronously a URL, the code you write with Mast will like this,</p>
+<pre><code>IEnumerator Download( string URL, IReturn&lt;string&gt; ret){
+    ...
+}
+
+T Parse&lt;T&gt;( string input ){
+    ...
+}
+
+
+IEnumerator Process(){
+
+    var m = new BlockMonad( r =&gt; Download(URL,r))
+        .Then( body =&gt; new ThreadMoand&lt;PlayerInfo&gt;( Parse&lt;PlayerInfo&gt; ));
+
+    yield return m.Do();
+
+    if( m.Error != null ){
+        //Error handling here
+    }
+    else{
+
+        PlayerInfo info = m.Result;
+        Debug.Log(info.Id);
+    }
+}
+
+void Start(){
+    _executor.Add(Process());
+}
+
+void Update(){
+    if( _executor.Finished)
+}
+
+</code></pre><h2 id="quick-start">Quick Start</h2>
+<h3 id="basic-coroutine">Basic Coroutine</h3>
+<p>Example,</p>
+<pre><code class="lang-csharp">using Rark.Mast;
+using Mast.Coroutine;
+
+IEnumerator A(){
+    Debug.Log(&quot;1&quot;);
+
+    // wait for one frame
+    yield return null;
+
+    Debug.Log(&quot;Start B&quot;)
+    // run and wait for B()
+    yield return B();
+
+    Debug.Log(&quot;4&quot;);
+    yield return null;
+}
+
+IEnumerator B(){
+    Debug.Log(&quot;2&quot;);
+    yield return null;
+    Debug.Log(&quot;3&quot;);
+    yield return null;
+    Debug.Log(&quot;B Return&quot;);
+}
+
+Coroutine coroutine = new Coroutine( A() );
+
+void Update(){
+    if( !coroutine.Finished ){
+        Debug.Log(&quot;---&quot;);
+        coroutine.Resume(Time.deltaTime);
+    }
+}
+</code></pre><p>Output,</p>
+<pre><code>---
+1
+---
+Start B
+2
+---
+3
+---
+B Return
+4
+</code></pre><h3 id="executor">Executor</h3>
+<p>Executor provides a concurrent way of running multiple coroutines.</p>
+<p>Example,</p>
+<pre><code class="lang-csharp">Executor executor = new Executor()
+
+IEnumerator A(){
+
+    Debug.Log(&quot;1&quot;);
+    yield return null;
+    Debug.Log(&quot;2&quot;);
+}
+
+IEnumerator B(){
+
+    Debug.Log(&quot;3&quot;);
+    yield return null;
+    Debug.Log(&quot;4&quot;);
+}
+
+void Start(){
+    executor.Add(A());
+    executor.Add(B());
+}
+
+void Update(){
+    if( !executor.Finished ){
+        executor.Resume(Time.deltaTime);
+    }
+}
+</code></pre><h3 id="monad">Monad</h3>
+<p>Monad provides a way for coroutine to return value or error. Multiple monads can chain together to a single monads for better error handling and concise.</p>
+<pre><code class="lang-csharp">
+IEnumerator SleepAndSqrt( int input, IReturn&lt;int&gt; ret){
+
+    // Sleep for 1 second
+    yield return Coroutine.Sleep(1.0f);
+
+    if( input &lt;= 0 ){
+        ret.Fail( new System.Exception(&quot;input must be greater than 0&quot;));
+        yield break;
+    }
+    ret.Accept(Math.Sqrt(input));
+}
+
+
+IEnumerator  A(){
+
+    // chain two coroutines that perform sleeping 1 sec and sqrt
+    var m = new BlockMoand&lt;int&gt;( r =&gt; SleepAndSqrt(16, r))
+        .Then( v =&gt; new BlockMonad&lt;int&gt;( r =&gt; SleepAndSqrt(v, r)));
+
+    // run monad
+    yield return m.Do();
+
+    // no error
+    Assert.That( m.Error == null);
+    Assert.That( m.Result == 2);
+
+    // chain two coroutines that perform sleeping 1 sec and sqrt
+    var m2 = new BlockMoand&lt;int&gt;( r =&gt; SleepAndSqrt(-16, r))
+        .Then( v =&gt; new BlockMonad&lt;int&gt;( r =&gt; SleepAndSqrt(v, r)));
+
+
+    // run monad
+    yield return m2.Do();
+
+    // oops, monad has error
+    Assert.That( m2.Error != null);
+}
+
+void Start(){
+    //Add A() to executor
+    executor.Add(A());
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

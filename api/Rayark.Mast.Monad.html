@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Monad
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Monad
+   ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Rayark.Mast.Monad">
+  
+  
+  <h1 id="Rayark_Mast_Monad" data-uid="Rayark.Mast.Monad" class="text-break">Class Monad
+  </h1>
+  <div class="markdown level0 summary"><p>Provides extension and static methods that helps the usage of <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Monad</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Rayark.Mast.html">Rayark.Mast</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Rayark_Mast_Monad_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Monad</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Rayark_Mast_Monad_NoneMonad" data-uid="Rayark.Mast.Monad.NoneMonad">NoneMonad</h4>
+  <div class="markdown level1 summary"><p>Represents a monad which returns no value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly SimpleMonad&lt;None&gt; NoneMonad</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.SimpleMonad-1.html">SimpleMonad</a>&lt;<a class="xref" href="Rayark.Mast.None.html">None</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Rayark_Mast_Monad_Catch_" data-uid="Rayark.Mast.Monad.Catch*"></a>
+  <h4 id="Rayark_Mast_Monad_Catch__1_Rayark_Mast_IMonad___0__System_Func_System_Exception_Rayark_Mast_IMonad___0___" data-uid="Rayark.Mast.Monad.Catch``1(Rayark.Mast.IMonad{``0},System.Func{System.Exception,Rayark.Mast.IMonad{``0}})">Catch&lt;T&gt;(IMonad&lt;T&gt;, Func&lt;Exception, IMonad&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Catches the error of a monad.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;T&gt; Catch&lt;T&gt;(this IMonad&lt;T&gt; monad, Func&lt;Exception, IMonad&lt;T&gt;&gt; handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;</td>
+        <td><span class="parametername">monad</span></td>
+        <td><p>The monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Exception</span>, <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>A delegate takes the error of the monad and returns a new monad that recovers error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the return value of the monad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Rayark_Mast_Monad_Map_" data-uid="Rayark.Mast.Monad.Map*"></a>
+  <h4 id="Rayark_Mast_Monad_Map__2_Rayark_Mast_IMonad___0__System_Func___0___1__" data-uid="Rayark.Mast.Monad.Map``2(Rayark.Mast.IMonad{``0},System.Func{``0,``1})">Map&lt;T, U&gt;(IMonad&lt;T&gt;, Func&lt;T, U&gt;)</h4>
+  <div class="markdown level1 summary"><p>Maps the return value of a monad to another value of any type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;U&gt; Map&lt;T, U&gt;(this IMonad&lt;T&gt; monad, Func&lt;T, U&gt; binder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;</td>
+        <td><span class="parametername">monad</span></td>
+        <td><p>The monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, U&gt;</td>
+        <td><span class="parametername">binder</span></td>
+        <td><p>A delegate taks the return value of the monad and returns a new value of type <code>U</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of return value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td><p>The type of mapped value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Rayark_Mast_Monad_Then_" data-uid="Rayark.Mast.Monad.Then*"></a>
+  <h4 id="Rayark_Mast_Monad_Then__1_Rayark_Mast_IMonad___0__System_Action___0__" data-uid="Rayark.Mast.Monad.Then``1(Rayark.Mast.IMonad{``0},System.Action{``0})">Then&lt;T&gt;(IMonad&lt;T&gt;, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Chains an action to a monad thus providing a way of producing side effects after the monad is finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;None&gt; Then&lt;T&gt;(this IMonad&lt;T&gt; monad, Action&lt;T&gt; binder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;</td>
+        <td><span class="parametername">monad</span></td>
+        <td><p>The monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">binder</span></td>
+        <td><p>An <span class="xref">System.Action&lt;T&gt;</span> that producing side effects</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;<a class="xref" href="Rayark.Mast.None.html">None</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the return value of the monad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Rayark_Mast_Monad_Then_" data-uid="Rayark.Mast.Monad.Then*"></a>
+  <h4 id="Rayark_Mast_Monad_Then__2_Rayark_Mast_IMonad___0__System_Func___0_Rayark_Mast_IMonad___1___" data-uid="Rayark.Mast.Monad.Then``2(Rayark.Mast.IMonad{``0},System.Func{``0,Rayark.Mast.IMonad{``1}})">Then&lt;T, U&gt;(IMonad&lt;T&gt;, Func&lt;T, IMonad&lt;U&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Chains two <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a> sequentially into a new monad. It is a helper function constructing <a class="xref" href="Rayark.Mast.BindMonad-3.html">BindMonad&lt;T, U, V&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;U&gt; Then&lt;T, U&gt;(this IMonad&lt;T&gt; monad, Func&lt;T, IMonad&lt;U&gt;&gt; binder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;</td>
+        <td><span class="parametername">monad</span></td>
+        <td><p>The first monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;U&gt;&gt;</td>
+        <td><span class="parametername">binder</span></td>
+        <td><p>A delegate takes the result of first monad and returns an instance of <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a> as MonoTouchAOTHelper second monad.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the return value of the first <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td><p>The type of the return value of the second <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Rayark_Mast_Monad_Then__2_Rayark_Mast_IMonad___0__System_Func___0_Rayark_Mast_IMonad___1____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the chained monad is executed, if an error is returned from the first monad, then the second won&apos;t get run. The design is similar to Maybe Monad in certain functional language, which provides a less verbose way of error handling.</p>
+</div>
+  <h5 id="Rayark_Mast_Monad_Then__2_Rayark_Mast_IMonad___0__System_Func___0_Rayark_Mast_IMonad___1____examples">Examples</h5>
+  <pre><code>            
+var m1 = new SimpleMonad&lt;string>(&quot;12345&quot;);
+var m2 = m1.Then( v => new ParseStringMonad(v));
+yield return m2.Do();</code></pre>
+
+  
+  
+  <a id="Rayark_Mast_Monad_WhenAll_" data-uid="Rayark.Mast.Monad.WhenAll*"></a>
+  <h4 id="Rayark_Mast_Monad_WhenAll__1_Rayark_Mast_IMonad___0____" data-uid="Rayark.Mast.Monad.WhenAll``1(Rayark.Mast.IMonad{``0}[])">WhenAll&lt;T&gt;(IMonad&lt;T&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a> that concurrently executes multiple <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>s with the same type of return value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;T[]&gt; WhenAll&lt;T&gt;(params IMonad&lt;T&gt;[] ms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T&gt;[]</td>
+        <td><span class="parametername">ms</span></td>
+        <td><p>The <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>s that will be executed concurrently</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of return value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Rayark_Mast_Monad_WhenAll_" data-uid="Rayark.Mast.Monad.WhenAll*"></a>
+  <h4 id="Rayark_Mast_Monad_WhenAll__2_Rayark_Mast_IMonad___0__Rayark_Mast_IMonad___1__" data-uid="Rayark.Mast.Monad.WhenAll``2(Rayark.Mast.IMonad{``0},Rayark.Mast.IMonad{``1})">WhenAll&lt;T1, T2&gt;(IMonad&lt;T1&gt;, IMonad&lt;T2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create a monad that concurrently executes two monad with different or the same type of return value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;Tuple&lt;T1, T2&gt;&gt; WhenAll&lt;T1, T2&gt;(IMonad&lt;T1&gt; m1, IMonad&lt;T2&gt; m2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T1&gt;</td>
+        <td><span class="parametername">m1</span></td>
+        <td><p>The first monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T2&gt;</td>
+        <td><span class="parametername">m2</span></td>
+        <td><p>The second monad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;<a class="xref" href="Rayark.Mast.Tuple-2.html">Tuple</a>&lt;T1, T2&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of return value of first monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of return value of second monad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Rayark_Mast_Monad_WhenAll_" data-uid="Rayark.Mast.Monad.WhenAll*"></a>
+  <h4 id="Rayark_Mast_Monad_WhenAll__3_Rayark_Mast_IMonad___0__Rayark_Mast_IMonad___1__Rayark_Mast_IMonad___2__" data-uid="Rayark.Mast.Monad.WhenAll``3(Rayark.Mast.IMonad{``0},Rayark.Mast.IMonad{``1},Rayark.Mast.IMonad{``2})">WhenAll&lt;T1, T2, T3&gt;(IMonad&lt;T1&gt;, IMonad&lt;T2&gt;, IMonad&lt;T3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create a monad that concurrently executes three monad with different or the same type of return value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMonad&lt;Tuple&lt;T1, T2, T3&gt;&gt; WhenAll&lt;T1, T2, T3&gt;(IMonad&lt;T1&gt; m1, IMonad&lt;T2&gt; m2, IMonad&lt;T3&gt; m3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T1&gt;</td>
+        <td><span class="parametername">m1</span></td>
+        <td><p>The first monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T2&gt;</td>
+        <td><span class="parametername">m2</span></td>
+        <td><p>The second monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;T3&gt;</td>
+        <td><span class="parametername">m3</span></td>
+        <td><p>The third monad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad</a>&lt;<a class="xref" href="Rayark.Mast.Tuple-3.html">Tuple</a>&lt;T1, T2, T3&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of return value of first monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of return value of second monad</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of return value of third monad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

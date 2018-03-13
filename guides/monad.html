@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Monad </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Monad ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="monad">Monad</h1>
+
+<p>Monad is an abstract data type newly added to the Mast library, and is used to encapsulate asynchronized operations. This name comes from the common design pattern in functional programming.</p>
+<p>Most people view functional programming as <strong>treating functions as data</strong>, where functions can be stored as variables or passed into other functions. However, functional languages <strong>treat everything as data</strong>, including computation and side effects. You can store many side effects in monad variables, and concatenate them into a new monad to produce a sequencial side effect, just like string concatenation.</p>
+<h2 id="why-monad">Why Monad?</h2>
+<p>Yes, we already have a coroutine library, and we can implement asynchronized operations with coroutines. However, there are some drawbacks when using coroutines:</p>
+<ol>
+<li><p>In C#, coroutines cannot have return values. You are forced to pass a &quot;return object wrapper&quot; as a parameter so that you can obtain the return value of a coroutine.</p>
+<pre><code class="lang-csharp">IEnumerator SomeCoroutine(Return&lt;int&gt; ret)
+{
+    // do something
+    // ...
+
+    ret.Accept(result);
+}
+</code></pre></li>
+<li><p>Error handling in coroutine is extremely cumbersome:</p>
+<pre><code class="lang-csharp">IEnumerator SomeCoroutine()
+{
+    var r1 = new Return&lt;int&gt;();
+    yield return Step1(r1);
+    if(!r1.Accepted){
+        // some error handling
+        yield break;
+    }
+
+    var r2 = new Return&lt;string&gt;();
+    yield return Step2(r1.Result, r2);
+    if(!r2.Accepted){
+        // some error handling
+        yield break;
+    }
+
+    // ...
+}
+</code></pre></li>
+<li>In C#, lambda functions cannot <code>yield</code>. If you wish to combine two coroutines, you are forced to declare a new function which <code>yield return</code> these two coroutines.
+<code>csharp
+void DoesNotWork(Executor exec)
+{
+    // lambdas cannot yield return
+    exec.Add(() =&gt; {
+        yield return A();
+        yield return B();
+    });
+}</code></li>
+</ol>
+<h2 id="basic-usage-of-imonad">Basic Usage of IMonad</h2>
+<p>In our Mast library, we provide the <code>IMonad</code> interface:</p>
+<pre><code class="lang-csharp">public interface IMonad&lt;T&gt;
+{
+    T Result { get; }
+    Exception Error { get; }
+    IEnumerator Do();
+}
+</code></pre><p><code>IMonad&lt;T&gt;</code> is a abstract interface which encapsulate some computation or side effect which gives <code>T</code> as its result. The <code>Do()</code> function will returns a enumerator block so that this computation can be executed as a coroutine.In case of any failure, the <code>Error</code> field will be set to the exception object.</p>
+<p>The typical usage of <code>IMonad&lt;T&gt;</code> inside a coroutine is like the following sample:</p>
+<pre><code class="lang-csharp">var req = SomeAsyncOperation();
+yield return req.Do();
+if(req.Error != null) {
+    // error handling
+} else {
+    var result = req.Result;
+}
+</code></pre><h2 id="chaining-the-process">Chaining the Process</h2>
+<p>You can chain two monads with the <code>Then()</code> function and a lambda which returns another monad.</p>
+<pre><code class="lang-csharp">var req1 = FirstOperation(); 
+var req2 = req1.Then(
+    result =&gt; {
+        return SecondOperation(result);
+    }
+);
+
+yield return req2.Do();
+</code></pre><p>The lambda function passed into <code>Then()</code> will be called only if <code>req1</code> is completed successfully, and the result will be passed as the argument. The return value, which is also a monad, is then executed. That is to say, <code>Then()</code> combines two monads and produces a new monad.</p>
+<p>This is as same as:</p>
+<pre><code class="lang-csharp">var req1 = FirstOperation();
+yield return req1.Do();
+if(req1.Error == null){
+    var req2 = SecondOperation(req1.Result);
+    yield return req2.Do();
+}
+</code></pre><p>You can combine as many monads as you want:</p>
+<pre><code class="lang-csharp">var req = FirstOperation()
+            .Then(r1 =&gt; SecondOperation(r1))
+            .Then(r2 =&gt; ThirdOperation(r2))
+            .Then(r3 =&gt; FourthOperation(r4));
+</code></pre><p>If there is any exception raised, it will be set to <code>req.Error</code>. Otherwise, <code>req.Result</code> will be the result of <code>FourthOperation(r4)</code>.</p>
+<h2 id="chaining-monads-with-linq">Chaining Monads with LINQ</h2>
+<p>You can combine monads in LINQ syntax:</p>
+<pre><code class="lang-csharp">// as same as the previous example
+var req = from r1 in FirstOperation()
+          from r2 in SecondOperation(r1)
+          from r3 in ThirdOperation(r2)
+          from r4 in FourthOperation(r3)
+          select r4;
+
+yield return req.Do();
+</code></pre><h2 id="exception-handling">Exception Handling</h2>
+<p>When chaining multiple monads, we may need to add some extra operation when error occurs. We can use the <code>Catch()</code> function handle errors. For example, we want to provide a default one when loading an asset:</p>
+<pre><code class="lang-csharp">var req = LoadAsset(assetId)
+            .Catch(e =&gt; LoadAsset(defaultAssetId));
+
+req.Do();
+</code></pre><p>This is as same as:</p>
+<pre><code class="lang-csharp">var req1 = LoadAsset(assetId);
+req1.Do();
+if(req1.Error != null){
+    var req2 = LoadAsset(defaultAssetId);
+    req2.Do();
+}
+</code></pre><p>You can combine both <code>Then()</code> and <code>Catch()</code> to produce a pipeline:</p>
+<pre><code class="lang-csharp">// Download an asset. If failed, load the cached one.
+// And then decrypt it
+var req = DownloadAsset(assetId)
+            .Catch(e =&gt; LoadCachedAsset(assetId))
+            .Then(data =&gt; DecryptAsset(data, key));
+</code></pre><h2 id="performing-multiple-task-concurrently">Performing Multiple Task Concurrently</h2>
+<p>You can also combine multiple monads and execute them concurrently. This is done by <code>ConcurrentMonad</code>:</p>
+<pre><code class="lang-csharp">IMonad&lt;string&gt; req1 = SendHttpRequest();
+IMonad&lt;int&gt; req2 = DoOperation();
+
+var cm = new ConcurrentMonad&lt;string, int&gt;(req1, req2);
+yield return cm.Do();
+
+if(cm.Error == null){
+    string result1 = cm.Result.Item1;
+    int result2 = cm.Result.Item2;
+}
+</code></pre><p>Or, you can use the shortcut function</p>
+<pre><code class="lang-csharp">var cm = Moand.WhenAll(SendHttpRequest(), DoOperation());
+yield return cm.Do();
+
+if(cm.Error == null){
+    string result1 = cm.Result.Item1;
+    int result2 = cm.Result.Item2;
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Coroutine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Coroutine
+   ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Rayark.Mast.Coroutine">
+  
+  
+  <h1 id="Rayark_Mast_Coroutine" data-uid="Rayark.Mast.Coroutine" class="text-break">Class Coroutine
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a coroutine with an emulated stack.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Coroutine</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Rayark.Mast.IResumable.html">IResumable</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Rayark.Mast.html">Rayark.Mast</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Rayark_Mast_Coroutine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Coroutine : IResumable, IDisposable</code></pre>
+  </div>
+  <h5 id="Rayark_Mast_Coroutine_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is used to provides a execution stack for a running iterator block so that
+we can <strong>yield</strong> a child iterator block, wait for it to be finished, and continue to
+executor the current iterator block.</p>
+</div>
+  <h5 id="Rayark_Mast_Coroutine_examples"><strong>Examples</strong></h5>
+  <p>This is a short example demonstrating the execution stack provided by <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a>.</p>
+<pre><code>IEnumerator GoOutside(){
+    yield return Walk( DOOR_POS );
+    yield return OpenDoor();
+    yield return Walk( DOOR_POS + forward*3.0f);
+}
+IEnumerator WalkTo(Vector3 pos){
+    // Do something
+}
+
+IEnumerator OpenDoor(){
+    ///     // Do something
+}
+
+Coroutine co = new Coroutine(GoOutside());
+
+void FrameUpdate(){
+    if( !co.Finished )
+        co.Resume(Time.deltaTime);
+}</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Rayark_Mast_Coroutine__ctor_" data-uid="Rayark.Mast.Coroutine.#ctor*"></a>
+  <h4 id="Rayark_Mast_Coroutine__ctor_System_Collections_IEnumerator_" data-uid="Rayark.Mast.Coroutine.#ctor(System.Collections.IEnumerator)">Coroutine(IEnumerator)</h4>
+  <div class="markdown level1 summary"><p>Initialize a new instance of <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a> with an <a href="http://csharpindepth.com/Articles/Chapter6/IteratorBlockImplementation.aspx">iterator block</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coroutine(IEnumerator block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="parametername">block</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Rayark_Mast_Coroutine_Empty" data-uid="Rayark.Mast.Coroutine.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>Represents an empty coroutine. It will be finished once it is get executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IEnumerator Empty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Rayark_Mast_Coroutine_Delta_" data-uid="Rayark.Mast.Coroutine.Delta*"></a>
+  <h4 id="Rayark_Mast_Coroutine_Delta" data-uid="Rayark.Mast.Coroutine.Delta">Delta</h4>
+  <div class="markdown level1 summary"><p>Represents the elapsed time passed to the parent coroutine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Delta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Rayark_Mast_Coroutine_Delta_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used to evaluate <a class="xref" href="Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Sleep_System_Single_">Sleep(Single)</a> is finished.
+You may need to pass this value down to the child <a class="xref" href="Rayark.Mast.IResumable.html">IResumable</a> if the current 
+<a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a> is not top <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a>.</p>
+<pre><code>IEnumerator ResumeInTenTimesSlower(IResumable resumable){
+    while( !resumeable.Finished ){
+        resumable.Resume( Coroutine.Delta * 0.1f );
+        yield return null;
+    }
+}</code></pre>
+</div>
+  
+  
+  <a id="Rayark_Mast_Coroutine_Finished_" data-uid="Rayark.Mast.Coroutine.Finished*"></a>
+  <h4 id="Rayark_Mast_Coroutine_Finished" data-uid="Rayark.Mast.Coroutine.Finished">Finished</h4>
+  <div class="markdown level1 summary"><p>Determine whether the current <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a> is finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Finished { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Rayark_Mast_Coroutine_Become_" data-uid="Rayark.Mast.Coroutine.Become*"></a>
+  <h4 id="Rayark_Mast_Coroutine_Become_System_Collections_IEnumerator_" data-uid="Rayark.Mast.Coroutine.Become(System.Collections.IEnumerator)">Become(IEnumerator)</h4>
+  <div class="markdown level1 summary"><p>Makes the current iterator block in the stack to be replaced by another iterator block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coroutine.IOperation Become(IEnumerator block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The next iterator block</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Rayark.Mast.Coroutine.IOperation.html">Coroutine.IOperation</a></td>
+        <td><p>An operation to <code>yield return</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Rayark_Mast_Coroutine_Become_System_Collections_IEnumerator__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is meant to optmize <strong>Tail-Call</strong> like behavior of <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a>s.
+With this method, we are able to avoid very deep coroutine stacks for recursive style coroutine structures.</p>
+</div>
+  <h5 id="Rayark_Mast_Coroutine_Become_System_Collections_IEnumerator__examples">Examples</h5>
+  <p>The following example is a recursive style finite state machince implementation with coroutine.</p>
+<pre><code>IEnumerator A(){
+    // Do something
+    yield return Coroutine.Become(B());
+}
+
+IEnumerator B(){
+    // Do something
+    yield return Coroutine.Become(A());
+}</code></pre>
+
+  
+  
+  <a id="Rayark_Mast_Coroutine_Dispose_" data-uid="Rayark.Mast.Coroutine.Dispose*"></a>
+  <h4 id="Rayark_Mast_Coroutine_Dispose" data-uid="Rayark.Mast.Coroutine.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Dispose the current <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h5 id="Rayark_Mast_Coroutine_Dispose_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Standard C# languages allows <code>using{}</code> clause to manage resouces within the life time of an iterator block.
+By dispose the current <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a>, all the associated iterator blocks will be disposed, so that
+any resources allocated with <code>using{}</code> clauses will be released.</p>
+</div>
+  
+  
+  <a id="Rayark_Mast_Coroutine_Resume_" data-uid="Rayark.Mast.Coroutine.Resume*"></a>
+  <h4 id="Rayark_Mast_Coroutine_Resume_System_Single_" data-uid="Rayark.Mast.Coroutine.Resume(System.Single)">Resume(Single)</h4>
+  <div class="markdown level1 summary"><p>Resumes the current <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume(float delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Rayark_Mast_Coroutine_Sleep_" data-uid="Rayark.Mast.Coroutine.Sleep*"></a>
+  <h4 id="Rayark_Mast_Coroutine_Sleep_System_Single_" data-uid="Rayark.Mast.Coroutine.Sleep(System.Single)">Sleep(Single)</h4>
+  <div class="markdown level1 summary"><p>A helper interator block that will makes the current <a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a> do nothing for a period time caculated via <a class="xref" href="Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Delta">Delta</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator Sleep(float remain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">remain</span></td>
+        <td><p>The sleeping period.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>A sleeping interator block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Rayark.Mast.IResumable.html">IResumable</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

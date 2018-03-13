@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Rayark.Mast
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Rayark.Mast
+   ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Rayark.Mast">
+  
+  <h1 id="Rayark_Mast" data-uid="Rayark.Mast" class="text-break">Namespace Rayark.Mast
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Rayark.Mast.BindMonad-3.html">BindMonad&lt;T, U, V&gt;</a></h4>
+      <section><p>Chains two monads sequentially into single monad. The chained monads executed sequentially, and the <code>Result</code> of first monad will be passed to binder to create second monad.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.BlockMonad-1.html">BlockMonad&lt;T&gt;</a></h4>
+      <section><p>Adapts <a href="http://csharpindepth.com/Articles/Chapter6/IteratorBlockImplementation.aspx">iterator block</a> to <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a> interface.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.CatchMonad-1.html">CatchMonad&lt;T&gt;</a></h4>
+      <section><p>Chains a monad and an error handler, which create a recovery monad according to the error. If the original monad failed with an exception, that exception will be passed to the handler and the returned value becomes the final result.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ConcurrentMonad-1.html">ConcurrentMonad&lt;T&gt;</a></h4>
+      <section><p>Executes monads with the same type of return value concurrently.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ConcurrentMonad-2.html">ConcurrentMonad&lt;T1, T2&gt;</a></h4>
+      <section><p>Executes two monads with different or the same type of return value concurrently. When any monad finished with error, the CorrurentMonad will stop immediately.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ConcurrentMonad-3.html">ConcurrentMonad&lt;T1, T2, T3&gt;</a></h4>
+      <section><p>Executes three monads with different or the same type of return value concurrently. When any monad finished with error, the CorrurentMonad will stop immediately.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a></h4>
+      <section><p>Represents a coroutine with an emulated stack.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.Defer.html">Defer</a></h4>
+      <section><p>Provides a way to automatically perform actions after leaving a scope.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.EmptyBlock.html">EmptyBlock</a></h4>
+      <section><p>Represents a empty iterator block, which yields no value.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.Executor.html">Executor</a></h4>
+      <section><p>Represents a executor which can resume multiple added <a class="xref" href="Rayark.Mast.IResumable.html">IResumable</a>s concurrently. Implments <a class="xref" href="Rayark.Mast.IExecutor.html">IExecutor</a>.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ExecutorExtensions.html">ExecutorExtensions</a></h4>
+      <section><p>Provides extensions methods to fertilize the usage of <a class="xref" href="Rayark.Mast.Executor.html">Executor</a>.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.Monad.html">Monad</a></h4>
+      <section><p>Provides extension and static methods that helps the usage of <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.MonadLinq.html">MonadLinq</a></h4>
+      <section><p>Provides LINQ specific extension methods which enables LINQ style query syntax for <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a>.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ResumableExtensions.html">ResumableExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.SimpleMonad-1.html">SimpleMonad&lt;T&gt;</a></h4>
+      <section><p>Adapts simple value to <a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a> interface</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ThreadedMonad-1.html">ThreadedMonad&lt;T&gt;</a></h4>
+      <section><p>Evaluates a function in a background thread and wait until it returns a value.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple.html">Tuple</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-1.html">Tuple&lt;T1&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-2.html">Tuple&lt;T1, T2&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-3.html">Tuple&lt;T1, T2, T3&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-4.html">Tuple&lt;T1, T2, T3, T4&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-5.html">Tuple&lt;T1, T2, T3, T4, T5&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-6.html">Tuple&lt;T1, T2, T3, T4, T5, T6&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-7.html">Tuple&lt;T1, T2, T3, T4, T5, T6, T7&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Rayark.Mast.Tuple-8.html">Tuple&lt;T1, T2, T3, T4, T5, T6, T7, TRest&gt;</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Rayark.Mast.None.html">None</a></h4>
+      <section><p>Represents void value.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Rayark.Mast.Coroutine.IOperation.html">Coroutine.IOperation</a></h4>
+      <section><p>Represents a coroutine operation, which can be <code>yield return</code>ed within a coroutine and 
+<a class="xref" href="Rayark.Mast.Coroutine.html">Coroutine</a> is reponsible for execute it.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.IExecutor.html">IExecutor</a></h4>
+      <section><p>Represents a executor which can resume multiple added <a class="xref" href="Rayark.Mast.IResumable.html">IResumable</a>s concurrently.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.IMonad-1.html">IMonad&lt;T&gt;</a></h4>
+      <section><p>Represents a monad of a task, which returns a value of type <code>T</code> or an error after the monad is finished.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.IResumable.html">IResumable</a></h4>
+      <section><p>Represents a asynchronous operation that can be resumed until it is finished.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.IReturn-1.html">IReturn&lt;T&gt;</a></h4>
+      <section><p>Provides interface for an iterator block to return a value or report an error.</p>
+</section>
+      <h4><a class="xref" href="Rayark.Mast.ITuple.html">ITuple</a></h4>
+      <section><p>This interface is required for types that want to be indexed into by dynamic patterns.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Rayark.Mast.Condition.html">Condition</a></h4>
+      <section><p>Represents a condition which returns a bool value to determine whether a condition is true.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

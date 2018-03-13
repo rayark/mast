@@ -1,0 +1,3081 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Rayark.Mast
+  name: Rayark.Mast
+  href: api/Rayark.Mast.html
+  commentId: N:Rayark.Mast
+  fullName: Rayark.Mast
+  nameWithType: Rayark.Mast
+- uid: Rayark.Mast.BindMonad`3
+  name: BindMonad<T, U, V>
+  href: api/Rayark.Mast.BindMonad-3.html
+  commentId: T:Rayark.Mast.BindMonad`3
+  name.vb: BindMonad(Of T, U, V)
+  fullName: Rayark.Mast.BindMonad<T, U, V>
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V)
+  nameWithType: BindMonad<T, U, V>
+  nameWithType.vb: BindMonad(Of T, U, V)
+- uid: Rayark.Mast.BindMonad`3.#ctor(Rayark.Mast.IMonad{`0},System.Func{`0,Rayark.Mast.IMonad{`1}},System.Func{`0,`1,`2})
+  name: BindMonad(IMonad<T>, Func<T, IMonad<U>>, Func<T, U, V>)
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3__ctor_Rayark_Mast_IMonad__0__System_Func__0_Rayark_Mast_IMonad__1___System_Func__0__1__2__
+  commentId: M:Rayark.Mast.BindMonad`3.#ctor(Rayark.Mast.IMonad{`0},System.Func{`0,Rayark.Mast.IMonad{`1}},System.Func{`0,`1,`2})
+  name.vb: BindMonad(IMonad(Of T), Func(Of T, IMonad(Of U)), Func(Of T, U, V))
+  fullName: Rayark.Mast.BindMonad<T, U, V>.BindMonad(Rayark.Mast.IMonad<T>, System.Func<T, Rayark.Mast.IMonad<U>>, System.Func<T, U, V>)
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).BindMonad(Rayark.Mast.IMonad(Of T), System.Func(Of T, Rayark.Mast.IMonad(Of U)), System.Func(Of T, U, V))
+  nameWithType: BindMonad<T, U, V>.BindMonad(IMonad<T>, Func<T, IMonad<U>>, Func<T, U, V>)
+  nameWithType.vb: BindMonad(Of T, U, V).BindMonad(IMonad(Of T), Func(Of T, IMonad(Of U)), Func(Of T, U, V))
+- uid: Rayark.Mast.BindMonad`3.#ctor*
+  name: BindMonad
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3__ctor_
+  commentId: Overload:Rayark.Mast.BindMonad`3.#ctor
+  fullName: Rayark.Mast.BindMonad<T, U, V>.BindMonad
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).BindMonad
+  nameWithType: BindMonad<T, U, V>.BindMonad
+  nameWithType.vb: BindMonad(Of T, U, V).BindMonad
+- uid: Rayark.Mast.BindMonad`3.Do
+  name: Do()
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3_Do
+  commentId: M:Rayark.Mast.BindMonad`3.Do
+  fullName: Rayark.Mast.BindMonad<T, U, V>.Do()
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).Do()
+  nameWithType: BindMonad<T, U, V>.Do()
+  nameWithType.vb: BindMonad(Of T, U, V).Do()
+- uid: Rayark.Mast.BindMonad`3.Do*
+  name: Do
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3_Do_
+  commentId: Overload:Rayark.Mast.BindMonad`3.Do
+  fullName: Rayark.Mast.BindMonad<T, U, V>.Do
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).Do
+  nameWithType: BindMonad<T, U, V>.Do
+  nameWithType.vb: BindMonad(Of T, U, V).Do
+- uid: Rayark.Mast.BindMonad`3.Error
+  name: Error
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3_Error
+  commentId: P:Rayark.Mast.BindMonad`3.Error
+  fullName: Rayark.Mast.BindMonad<T, U, V>.Error
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).Error
+  nameWithType: BindMonad<T, U, V>.Error
+  nameWithType.vb: BindMonad(Of T, U, V).Error
+- uid: Rayark.Mast.BindMonad`3.Error*
+  name: Error
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3_Error_
+  commentId: Overload:Rayark.Mast.BindMonad`3.Error
+  fullName: Rayark.Mast.BindMonad<T, U, V>.Error
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).Error
+  nameWithType: BindMonad<T, U, V>.Error
+  nameWithType.vb: BindMonad(Of T, U, V).Error
+- uid: Rayark.Mast.BindMonad`3.Result
+  name: Result
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3_Result
+  commentId: P:Rayark.Mast.BindMonad`3.Result
+  fullName: Rayark.Mast.BindMonad<T, U, V>.Result
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).Result
+  nameWithType: BindMonad<T, U, V>.Result
+  nameWithType.vb: BindMonad(Of T, U, V).Result
+- uid: Rayark.Mast.BindMonad`3.Result*
+  name: Result
+  href: api/Rayark.Mast.BindMonad-3.html#Rayark_Mast_BindMonad_3_Result_
+  commentId: Overload:Rayark.Mast.BindMonad`3.Result
+  fullName: Rayark.Mast.BindMonad<T, U, V>.Result
+  fullName.vb: Rayark.Mast.BindMonad(Of T, U, V).Result
+  nameWithType: BindMonad<T, U, V>.Result
+  nameWithType.vb: BindMonad(Of T, U, V).Result
+- uid: Rayark.Mast.BlockMonad`1
+  name: BlockMonad<T>
+  href: api/Rayark.Mast.BlockMonad-1.html
+  commentId: T:Rayark.Mast.BlockMonad`1
+  name.vb: BlockMonad(Of T)
+  fullName: Rayark.Mast.BlockMonad<T>
+  fullName.vb: Rayark.Mast.BlockMonad(Of T)
+  nameWithType: BlockMonad<T>
+  nameWithType.vb: BlockMonad(Of T)
+- uid: Rayark.Mast.BlockMonad`1.#ctor(System.Func{Rayark.Mast.IReturn{`0},System.Collections.IEnumerator})
+  name: BlockMonad(Func<IReturn<T>, IEnumerator>)
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1__ctor_System_Func_Rayark_Mast_IReturn__0__System_Collections_IEnumerator__
+  commentId: M:Rayark.Mast.BlockMonad`1.#ctor(System.Func{Rayark.Mast.IReturn{`0},System.Collections.IEnumerator})
+  name.vb: BlockMonad(Func(Of IReturn(Of T), IEnumerator))
+  fullName: Rayark.Mast.BlockMonad<T>.BlockMonad(System.Func<Rayark.Mast.IReturn<T>, System.Collections.IEnumerator>)
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).BlockMonad(System.Func(Of Rayark.Mast.IReturn(Of T), System.Collections.IEnumerator))
+  nameWithType: BlockMonad<T>.BlockMonad(Func<IReturn<T>, IEnumerator>)
+  nameWithType.vb: BlockMonad(Of T).BlockMonad(Func(Of IReturn(Of T), IEnumerator))
+- uid: Rayark.Mast.BlockMonad`1.#ctor*
+  name: BlockMonad
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1__ctor_
+  commentId: Overload:Rayark.Mast.BlockMonad`1.#ctor
+  fullName: Rayark.Mast.BlockMonad<T>.BlockMonad
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).BlockMonad
+  nameWithType: BlockMonad<T>.BlockMonad
+  nameWithType.vb: BlockMonad(Of T).BlockMonad
+- uid: Rayark.Mast.BlockMonad`1.Accept(`0)
+  name: Accept(T)
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Accept__0_
+  commentId: M:Rayark.Mast.BlockMonad`1.Accept(`0)
+  fullName: Rayark.Mast.BlockMonad<T>.Accept(T)
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Accept(T)
+  nameWithType: BlockMonad<T>.Accept(T)
+  nameWithType.vb: BlockMonad(Of T).Accept(T)
+- uid: Rayark.Mast.BlockMonad`1.Accept*
+  name: Accept
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Accept_
+  commentId: Overload:Rayark.Mast.BlockMonad`1.Accept
+  fullName: Rayark.Mast.BlockMonad<T>.Accept
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Accept
+  nameWithType: BlockMonad<T>.Accept
+  nameWithType.vb: BlockMonad(Of T).Accept
+- uid: Rayark.Mast.BlockMonad`1.Do
+  name: Do()
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Do
+  commentId: M:Rayark.Mast.BlockMonad`1.Do
+  fullName: Rayark.Mast.BlockMonad<T>.Do()
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Do()
+  nameWithType: BlockMonad<T>.Do()
+  nameWithType.vb: BlockMonad(Of T).Do()
+- uid: Rayark.Mast.BlockMonad`1.Do*
+  name: Do
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Do_
+  commentId: Overload:Rayark.Mast.BlockMonad`1.Do
+  fullName: Rayark.Mast.BlockMonad<T>.Do
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Do
+  nameWithType: BlockMonad<T>.Do
+  nameWithType.vb: BlockMonad(Of T).Do
+- uid: Rayark.Mast.BlockMonad`1.Error
+  name: Error
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Error
+  commentId: P:Rayark.Mast.BlockMonad`1.Error
+  fullName: Rayark.Mast.BlockMonad<T>.Error
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Error
+  nameWithType: BlockMonad<T>.Error
+  nameWithType.vb: BlockMonad(Of T).Error
+- uid: Rayark.Mast.BlockMonad`1.Error*
+  name: Error
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Error_
+  commentId: Overload:Rayark.Mast.BlockMonad`1.Error
+  fullName: Rayark.Mast.BlockMonad<T>.Error
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Error
+  nameWithType: BlockMonad<T>.Error
+  nameWithType.vb: BlockMonad(Of T).Error
+- uid: Rayark.Mast.BlockMonad`1.Fail(System.Exception)
+  name: Fail(Exception)
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Fail_System_Exception_
+  commentId: M:Rayark.Mast.BlockMonad`1.Fail(System.Exception)
+  fullName: Rayark.Mast.BlockMonad<T>.Fail(System.Exception)
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Fail(System.Exception)
+  nameWithType: BlockMonad<T>.Fail(Exception)
+  nameWithType.vb: BlockMonad(Of T).Fail(Exception)
+- uid: Rayark.Mast.BlockMonad`1.Fail*
+  name: Fail
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Fail_
+  commentId: Overload:Rayark.Mast.BlockMonad`1.Fail
+  fullName: Rayark.Mast.BlockMonad<T>.Fail
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Fail
+  nameWithType: BlockMonad<T>.Fail
+  nameWithType.vb: BlockMonad(Of T).Fail
+- uid: Rayark.Mast.BlockMonad`1.Result
+  name: Result
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Result
+  commentId: P:Rayark.Mast.BlockMonad`1.Result
+  fullName: Rayark.Mast.BlockMonad<T>.Result
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Result
+  nameWithType: BlockMonad<T>.Result
+  nameWithType.vb: BlockMonad(Of T).Result
+- uid: Rayark.Mast.BlockMonad`1.Result*
+  name: Result
+  href: api/Rayark.Mast.BlockMonad-1.html#Rayark_Mast_BlockMonad_1_Result_
+  commentId: Overload:Rayark.Mast.BlockMonad`1.Result
+  fullName: Rayark.Mast.BlockMonad<T>.Result
+  fullName.vb: Rayark.Mast.BlockMonad(Of T).Result
+  nameWithType: BlockMonad<T>.Result
+  nameWithType.vb: BlockMonad(Of T).Result
+- uid: Rayark.Mast.CatchMonad`1
+  name: CatchMonad<T>
+  href: api/Rayark.Mast.CatchMonad-1.html
+  commentId: T:Rayark.Mast.CatchMonad`1
+  name.vb: CatchMonad(Of T)
+  fullName: Rayark.Mast.CatchMonad<T>
+  fullName.vb: Rayark.Mast.CatchMonad(Of T)
+  nameWithType: CatchMonad<T>
+  nameWithType.vb: CatchMonad(Of T)
+- uid: Rayark.Mast.CatchMonad`1.#ctor(Rayark.Mast.IMonad{`0},System.Func{System.Exception,Rayark.Mast.IMonad{`0}})
+  name: CatchMonad(IMonad<T>, Func<Exception, IMonad<T>>)
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1__ctor_Rayark_Mast_IMonad__0__System_Func_System_Exception_Rayark_Mast_IMonad__0___
+  commentId: M:Rayark.Mast.CatchMonad`1.#ctor(Rayark.Mast.IMonad{`0},System.Func{System.Exception,Rayark.Mast.IMonad{`0}})
+  name.vb: CatchMonad(IMonad(Of T), Func(Of Exception, IMonad(Of T)))
+  fullName: Rayark.Mast.CatchMonad<T>.CatchMonad(Rayark.Mast.IMonad<T>, System.Func<System.Exception, Rayark.Mast.IMonad<T>>)
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).CatchMonad(Rayark.Mast.IMonad(Of T), System.Func(Of System.Exception, Rayark.Mast.IMonad(Of T)))
+  nameWithType: CatchMonad<T>.CatchMonad(IMonad<T>, Func<Exception, IMonad<T>>)
+  nameWithType.vb: CatchMonad(Of T).CatchMonad(IMonad(Of T), Func(Of Exception, IMonad(Of T)))
+- uid: Rayark.Mast.CatchMonad`1.#ctor*
+  name: CatchMonad
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1__ctor_
+  commentId: Overload:Rayark.Mast.CatchMonad`1.#ctor
+  fullName: Rayark.Mast.CatchMonad<T>.CatchMonad
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).CatchMonad
+  nameWithType: CatchMonad<T>.CatchMonad
+  nameWithType.vb: CatchMonad(Of T).CatchMonad
+- uid: Rayark.Mast.CatchMonad`1.Do
+  name: Do()
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1_Do
+  commentId: M:Rayark.Mast.CatchMonad`1.Do
+  fullName: Rayark.Mast.CatchMonad<T>.Do()
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).Do()
+  nameWithType: CatchMonad<T>.Do()
+  nameWithType.vb: CatchMonad(Of T).Do()
+- uid: Rayark.Mast.CatchMonad`1.Do*
+  name: Do
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1_Do_
+  commentId: Overload:Rayark.Mast.CatchMonad`1.Do
+  fullName: Rayark.Mast.CatchMonad<T>.Do
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).Do
+  nameWithType: CatchMonad<T>.Do
+  nameWithType.vb: CatchMonad(Of T).Do
+- uid: Rayark.Mast.CatchMonad`1.Error
+  name: Error
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1_Error
+  commentId: P:Rayark.Mast.CatchMonad`1.Error
+  fullName: Rayark.Mast.CatchMonad<T>.Error
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).Error
+  nameWithType: CatchMonad<T>.Error
+  nameWithType.vb: CatchMonad(Of T).Error
+- uid: Rayark.Mast.CatchMonad`1.Error*
+  name: Error
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1_Error_
+  commentId: Overload:Rayark.Mast.CatchMonad`1.Error
+  fullName: Rayark.Mast.CatchMonad<T>.Error
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).Error
+  nameWithType: CatchMonad<T>.Error
+  nameWithType.vb: CatchMonad(Of T).Error
+- uid: Rayark.Mast.CatchMonad`1.Result
+  name: Result
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1_Result
+  commentId: P:Rayark.Mast.CatchMonad`1.Result
+  fullName: Rayark.Mast.CatchMonad<T>.Result
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).Result
+  nameWithType: CatchMonad<T>.Result
+  nameWithType.vb: CatchMonad(Of T).Result
+- uid: Rayark.Mast.CatchMonad`1.Result*
+  name: Result
+  href: api/Rayark.Mast.CatchMonad-1.html#Rayark_Mast_CatchMonad_1_Result_
+  commentId: Overload:Rayark.Mast.CatchMonad`1.Result
+  fullName: Rayark.Mast.CatchMonad<T>.Result
+  fullName.vb: Rayark.Mast.CatchMonad(Of T).Result
+  nameWithType: CatchMonad<T>.Result
+  nameWithType.vb: CatchMonad(Of T).Result
+- uid: Rayark.Mast.ConcurrentMonad`1
+  name: ConcurrentMonad<T>
+  href: api/Rayark.Mast.ConcurrentMonad-1.html
+  commentId: T:Rayark.Mast.ConcurrentMonad`1
+  name.vb: ConcurrentMonad(Of T)
+  fullName: Rayark.Mast.ConcurrentMonad<T>
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T)
+  nameWithType: ConcurrentMonad<T>
+  nameWithType.vb: ConcurrentMonad(Of T)
+- uid: Rayark.Mast.ConcurrentMonad`1.#ctor(Rayark.Mast.IMonad{`0}[])
+  name: ConcurrentMonad(IMonad<T>[])
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1__ctor_Rayark_Mast_IMonad__0____
+  commentId: M:Rayark.Mast.ConcurrentMonad`1.#ctor(Rayark.Mast.IMonad{`0}[])
+  name.vb: ConcurrentMonad(IMonad(Of T)())
+  fullName: Rayark.Mast.ConcurrentMonad<T>.ConcurrentMonad(Rayark.Mast.IMonad<T>[])
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).ConcurrentMonad(Rayark.Mast.IMonad(Of T)())
+  nameWithType: ConcurrentMonad<T>.ConcurrentMonad(IMonad<T>[])
+  nameWithType.vb: ConcurrentMonad(Of T).ConcurrentMonad(IMonad(Of T)())
+- uid: Rayark.Mast.ConcurrentMonad`1.#ctor*
+  name: ConcurrentMonad
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1__ctor_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`1.#ctor
+  fullName: Rayark.Mast.ConcurrentMonad<T>.ConcurrentMonad
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).ConcurrentMonad
+  nameWithType: ConcurrentMonad<T>.ConcurrentMonad
+  nameWithType.vb: ConcurrentMonad(Of T).ConcurrentMonad
+- uid: Rayark.Mast.ConcurrentMonad`1._Do(Rayark.Mast.IMonad{`0})
+  name: _Do(IMonad<T>)
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1__Do_Rayark_Mast_IMonad__0__
+  commentId: M:Rayark.Mast.ConcurrentMonad`1._Do(Rayark.Mast.IMonad{`0})
+  name.vb: _Do(IMonad(Of T))
+  fullName: Rayark.Mast.ConcurrentMonad<T>._Do(Rayark.Mast.IMonad<T>)
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T)._Do(Rayark.Mast.IMonad(Of T))
+  nameWithType: ConcurrentMonad<T>._Do(IMonad<T>)
+  nameWithType.vb: ConcurrentMonad(Of T)._Do(IMonad(Of T))
+- uid: Rayark.Mast.ConcurrentMonad`1._Do*
+  name: _Do
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1__Do_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`1._Do
+  fullName: Rayark.Mast.ConcurrentMonad<T>._Do
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T)._Do
+  nameWithType: ConcurrentMonad<T>._Do
+  nameWithType.vb: ConcurrentMonad(Of T)._Do
+- uid: Rayark.Mast.ConcurrentMonad`1.Do
+  name: Do()
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1_Do
+  commentId: M:Rayark.Mast.ConcurrentMonad`1.Do
+  fullName: Rayark.Mast.ConcurrentMonad<T>.Do()
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).Do()
+  nameWithType: ConcurrentMonad<T>.Do()
+  nameWithType.vb: ConcurrentMonad(Of T).Do()
+- uid: Rayark.Mast.ConcurrentMonad`1.Do*
+  name: Do
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1_Do_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`1.Do
+  fullName: Rayark.Mast.ConcurrentMonad<T>.Do
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).Do
+  nameWithType: ConcurrentMonad<T>.Do
+  nameWithType.vb: ConcurrentMonad(Of T).Do
+- uid: Rayark.Mast.ConcurrentMonad`1.Error
+  name: Error
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1_Error
+  commentId: P:Rayark.Mast.ConcurrentMonad`1.Error
+  fullName: Rayark.Mast.ConcurrentMonad<T>.Error
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).Error
+  nameWithType: ConcurrentMonad<T>.Error
+  nameWithType.vb: ConcurrentMonad(Of T).Error
+- uid: Rayark.Mast.ConcurrentMonad`1.Error*
+  name: Error
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1_Error_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`1.Error
+  fullName: Rayark.Mast.ConcurrentMonad<T>.Error
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).Error
+  nameWithType: ConcurrentMonad<T>.Error
+  nameWithType.vb: ConcurrentMonad(Of T).Error
+- uid: Rayark.Mast.ConcurrentMonad`1.Result
+  name: Result
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1_Result
+  commentId: P:Rayark.Mast.ConcurrentMonad`1.Result
+  fullName: Rayark.Mast.ConcurrentMonad<T>.Result
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).Result
+  nameWithType: ConcurrentMonad<T>.Result
+  nameWithType.vb: ConcurrentMonad(Of T).Result
+- uid: Rayark.Mast.ConcurrentMonad`1.Result*
+  name: Result
+  href: api/Rayark.Mast.ConcurrentMonad-1.html#Rayark_Mast_ConcurrentMonad_1_Result_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`1.Result
+  fullName: Rayark.Mast.ConcurrentMonad<T>.Result
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T).Result
+  nameWithType: ConcurrentMonad<T>.Result
+  nameWithType.vb: ConcurrentMonad(Of T).Result
+- uid: Rayark.Mast.ConcurrentMonad`2
+  name: ConcurrentMonad<T1, T2>
+  href: api/Rayark.Mast.ConcurrentMonad-2.html
+  commentId: T:Rayark.Mast.ConcurrentMonad`2
+  name.vb: ConcurrentMonad(Of T1, T2)
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2)
+  nameWithType: ConcurrentMonad<T1, T2>
+  nameWithType.vb: ConcurrentMonad(Of T1, T2)
+- uid: Rayark.Mast.ConcurrentMonad`2.#ctor(Rayark.Mast.IMonad{`0},Rayark.Mast.IMonad{`1})
+  name: ConcurrentMonad(IMonad<T1>, IMonad<T2>)
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2__ctor_Rayark_Mast_IMonad__0__Rayark_Mast_IMonad__1__
+  commentId: M:Rayark.Mast.ConcurrentMonad`2.#ctor(Rayark.Mast.IMonad{`0},Rayark.Mast.IMonad{`1})
+  name.vb: ConcurrentMonad(IMonad(Of T1), IMonad(Of T2))
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.ConcurrentMonad(Rayark.Mast.IMonad<T1>, Rayark.Mast.IMonad<T2>)
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).ConcurrentMonad(Rayark.Mast.IMonad(Of T1), Rayark.Mast.IMonad(Of T2))
+  nameWithType: ConcurrentMonad<T1, T2>.ConcurrentMonad(IMonad<T1>, IMonad<T2>)
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).ConcurrentMonad(IMonad(Of T1), IMonad(Of T2))
+- uid: Rayark.Mast.ConcurrentMonad`2.#ctor*
+  name: ConcurrentMonad
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2__ctor_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`2.#ctor
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.ConcurrentMonad
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).ConcurrentMonad
+  nameWithType: ConcurrentMonad<T1, T2>.ConcurrentMonad
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).ConcurrentMonad
+- uid: Rayark.Mast.ConcurrentMonad`2.Do
+  name: Do()
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2_Do
+  commentId: M:Rayark.Mast.ConcurrentMonad`2.Do
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.Do()
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).Do()
+  nameWithType: ConcurrentMonad<T1, T2>.Do()
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).Do()
+- uid: Rayark.Mast.ConcurrentMonad`2.Do*
+  name: Do
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2_Do_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`2.Do
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.Do
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).Do
+  nameWithType: ConcurrentMonad<T1, T2>.Do
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).Do
+- uid: Rayark.Mast.ConcurrentMonad`2.Error
+  name: Error
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2_Error
+  commentId: P:Rayark.Mast.ConcurrentMonad`2.Error
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.Error
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).Error
+  nameWithType: ConcurrentMonad<T1, T2>.Error
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).Error
+- uid: Rayark.Mast.ConcurrentMonad`2.Error*
+  name: Error
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2_Error_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`2.Error
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.Error
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).Error
+  nameWithType: ConcurrentMonad<T1, T2>.Error
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).Error
+- uid: Rayark.Mast.ConcurrentMonad`2.Result
+  name: Result
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2_Result
+  commentId: P:Rayark.Mast.ConcurrentMonad`2.Result
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.Result
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).Result
+  nameWithType: ConcurrentMonad<T1, T2>.Result
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).Result
+- uid: Rayark.Mast.ConcurrentMonad`2.Result*
+  name: Result
+  href: api/Rayark.Mast.ConcurrentMonad-2.html#Rayark_Mast_ConcurrentMonad_2_Result_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`2.Result
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2>.Result
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2).Result
+  nameWithType: ConcurrentMonad<T1, T2>.Result
+  nameWithType.vb: ConcurrentMonad(Of T1, T2).Result
+- uid: Rayark.Mast.ConcurrentMonad`3
+  name: ConcurrentMonad<T1, T2, T3>
+  href: api/Rayark.Mast.ConcurrentMonad-3.html
+  commentId: T:Rayark.Mast.ConcurrentMonad`3
+  name.vb: ConcurrentMonad(Of T1, T2, T3)
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3)
+  nameWithType: ConcurrentMonad<T1, T2, T3>
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3)
+- uid: Rayark.Mast.ConcurrentMonad`3.#ctor(Rayark.Mast.IMonad{`0},Rayark.Mast.IMonad{`1},Rayark.Mast.IMonad{`2})
+  name: ConcurrentMonad(IMonad<T1>, IMonad<T2>, IMonad<T3>)
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3__ctor_Rayark_Mast_IMonad__0__Rayark_Mast_IMonad__1__Rayark_Mast_IMonad__2__
+  commentId: M:Rayark.Mast.ConcurrentMonad`3.#ctor(Rayark.Mast.IMonad{`0},Rayark.Mast.IMonad{`1},Rayark.Mast.IMonad{`2})
+  name.vb: ConcurrentMonad(IMonad(Of T1), IMonad(Of T2), IMonad(Of T3))
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.ConcurrentMonad(Rayark.Mast.IMonad<T1>, Rayark.Mast.IMonad<T2>, Rayark.Mast.IMonad<T3>)
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).ConcurrentMonad(Rayark.Mast.IMonad(Of T1), Rayark.Mast.IMonad(Of T2), Rayark.Mast.IMonad(Of T3))
+  nameWithType: ConcurrentMonad<T1, T2, T3>.ConcurrentMonad(IMonad<T1>, IMonad<T2>, IMonad<T3>)
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).ConcurrentMonad(IMonad(Of T1), IMonad(Of T2), IMonad(Of T3))
+- uid: Rayark.Mast.ConcurrentMonad`3.#ctor*
+  name: ConcurrentMonad
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3__ctor_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`3.#ctor
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.ConcurrentMonad
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).ConcurrentMonad
+  nameWithType: ConcurrentMonad<T1, T2, T3>.ConcurrentMonad
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).ConcurrentMonad
+- uid: Rayark.Mast.ConcurrentMonad`3.Do
+  name: Do()
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3_Do
+  commentId: M:Rayark.Mast.ConcurrentMonad`3.Do
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.Do()
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).Do()
+  nameWithType: ConcurrentMonad<T1, T2, T3>.Do()
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).Do()
+- uid: Rayark.Mast.ConcurrentMonad`3.Do*
+  name: Do
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3_Do_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`3.Do
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.Do
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).Do
+  nameWithType: ConcurrentMonad<T1, T2, T3>.Do
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).Do
+- uid: Rayark.Mast.ConcurrentMonad`3.Error
+  name: Error
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3_Error
+  commentId: P:Rayark.Mast.ConcurrentMonad`3.Error
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.Error
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).Error
+  nameWithType: ConcurrentMonad<T1, T2, T3>.Error
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).Error
+- uid: Rayark.Mast.ConcurrentMonad`3.Error*
+  name: Error
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3_Error_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`3.Error
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.Error
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).Error
+  nameWithType: ConcurrentMonad<T1, T2, T3>.Error
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).Error
+- uid: Rayark.Mast.ConcurrentMonad`3.Result
+  name: Result
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3_Result
+  commentId: P:Rayark.Mast.ConcurrentMonad`3.Result
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.Result
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).Result
+  nameWithType: ConcurrentMonad<T1, T2, T3>.Result
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).Result
+- uid: Rayark.Mast.ConcurrentMonad`3.Result*
+  name: Result
+  href: api/Rayark.Mast.ConcurrentMonad-3.html#Rayark_Mast_ConcurrentMonad_3_Result_
+  commentId: Overload:Rayark.Mast.ConcurrentMonad`3.Result
+  fullName: Rayark.Mast.ConcurrentMonad<T1, T2, T3>.Result
+  fullName.vb: Rayark.Mast.ConcurrentMonad(Of T1, T2, T3).Result
+  nameWithType: ConcurrentMonad<T1, T2, T3>.Result
+  nameWithType.vb: ConcurrentMonad(Of T1, T2, T3).Result
+- uid: Rayark.Mast.Condition
+  name: Condition
+  href: api/Rayark.Mast.Condition.html
+  commentId: T:Rayark.Mast.Condition
+  fullName: Rayark.Mast.Condition
+  nameWithType: Condition
+- uid: Rayark.Mast.Coroutine
+  name: Coroutine
+  href: api/Rayark.Mast.Coroutine.html
+  commentId: T:Rayark.Mast.Coroutine
+  fullName: Rayark.Mast.Coroutine
+  nameWithType: Coroutine
+- uid: Rayark.Mast.Coroutine.#ctor(System.Collections.IEnumerator)
+  name: Coroutine(IEnumerator)
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine__ctor_System_Collections_IEnumerator_
+  commentId: M:Rayark.Mast.Coroutine.#ctor(System.Collections.IEnumerator)
+  fullName: Rayark.Mast.Coroutine.Coroutine(System.Collections.IEnumerator)
+  nameWithType: Coroutine.Coroutine(IEnumerator)
+- uid: Rayark.Mast.Coroutine.#ctor*
+  name: Coroutine
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine__ctor_
+  commentId: Overload:Rayark.Mast.Coroutine.#ctor
+  fullName: Rayark.Mast.Coroutine.Coroutine
+  nameWithType: Coroutine.Coroutine
+- uid: Rayark.Mast.Coroutine.Become(System.Collections.IEnumerator)
+  name: Become(IEnumerator)
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Become_System_Collections_IEnumerator_
+  commentId: M:Rayark.Mast.Coroutine.Become(System.Collections.IEnumerator)
+  fullName: Rayark.Mast.Coroutine.Become(System.Collections.IEnumerator)
+  nameWithType: Coroutine.Become(IEnumerator)
+- uid: Rayark.Mast.Coroutine.Become*
+  name: Become
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Become_
+  commentId: Overload:Rayark.Mast.Coroutine.Become
+  fullName: Rayark.Mast.Coroutine.Become
+  nameWithType: Coroutine.Become
+- uid: Rayark.Mast.Coroutine.Delta
+  name: Delta
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Delta
+  commentId: P:Rayark.Mast.Coroutine.Delta
+  fullName: Rayark.Mast.Coroutine.Delta
+  nameWithType: Coroutine.Delta
+- uid: Rayark.Mast.Coroutine.Delta*
+  name: Delta
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Delta_
+  commentId: Overload:Rayark.Mast.Coroutine.Delta
+  fullName: Rayark.Mast.Coroutine.Delta
+  nameWithType: Coroutine.Delta
+- uid: Rayark.Mast.Coroutine.Dispose
+  name: Dispose()
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Dispose
+  commentId: M:Rayark.Mast.Coroutine.Dispose
+  fullName: Rayark.Mast.Coroutine.Dispose()
+  nameWithType: Coroutine.Dispose()
+- uid: Rayark.Mast.Coroutine.Dispose*
+  name: Dispose
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Dispose_
+  commentId: Overload:Rayark.Mast.Coroutine.Dispose
+  fullName: Rayark.Mast.Coroutine.Dispose
+  nameWithType: Coroutine.Dispose
+- uid: Rayark.Mast.Coroutine.Empty
+  name: Empty
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Empty
+  commentId: F:Rayark.Mast.Coroutine.Empty
+  fullName: Rayark.Mast.Coroutine.Empty
+  nameWithType: Coroutine.Empty
+- uid: Rayark.Mast.Coroutine.Finished
+  name: Finished
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Finished
+  commentId: P:Rayark.Mast.Coroutine.Finished
+  fullName: Rayark.Mast.Coroutine.Finished
+  nameWithType: Coroutine.Finished
+- uid: Rayark.Mast.Coroutine.Finished*
+  name: Finished
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Finished_
+  commentId: Overload:Rayark.Mast.Coroutine.Finished
+  fullName: Rayark.Mast.Coroutine.Finished
+  nameWithType: Coroutine.Finished
+- uid: Rayark.Mast.Coroutine.IOperation
+  name: Coroutine.IOperation
+  href: api/Rayark.Mast.Coroutine.IOperation.html
+  commentId: T:Rayark.Mast.Coroutine.IOperation
+  fullName: Rayark.Mast.Coroutine.IOperation
+  nameWithType: Coroutine.IOperation
+- uid: Rayark.Mast.Coroutine.IOperation.Execute(Rayark.Mast.Coroutine)
+  name: Execute(Coroutine)
+  href: api/Rayark.Mast.Coroutine.IOperation.html#Rayark_Mast_Coroutine_IOperation_Execute_Rayark_Mast_Coroutine_
+  commentId: M:Rayark.Mast.Coroutine.IOperation.Execute(Rayark.Mast.Coroutine)
+  fullName: Rayark.Mast.Coroutine.IOperation.Execute(Rayark.Mast.Coroutine)
+  nameWithType: Coroutine.IOperation.Execute(Coroutine)
+- uid: Rayark.Mast.Coroutine.IOperation.Execute*
+  name: Execute
+  href: api/Rayark.Mast.Coroutine.IOperation.html#Rayark_Mast_Coroutine_IOperation_Execute_
+  commentId: Overload:Rayark.Mast.Coroutine.IOperation.Execute
+  fullName: Rayark.Mast.Coroutine.IOperation.Execute
+  nameWithType: Coroutine.IOperation.Execute
+- uid: Rayark.Mast.Coroutine.Resume(System.Single)
+  name: Resume(Single)
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Resume_System_Single_
+  commentId: M:Rayark.Mast.Coroutine.Resume(System.Single)
+  fullName: Rayark.Mast.Coroutine.Resume(System.Single)
+  nameWithType: Coroutine.Resume(Single)
+- uid: Rayark.Mast.Coroutine.Resume*
+  name: Resume
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Resume_
+  commentId: Overload:Rayark.Mast.Coroutine.Resume
+  fullName: Rayark.Mast.Coroutine.Resume
+  nameWithType: Coroutine.Resume
+- uid: Rayark.Mast.Coroutine.Sleep(System.Single)
+  name: Sleep(Single)
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Sleep_System_Single_
+  commentId: M:Rayark.Mast.Coroutine.Sleep(System.Single)
+  fullName: Rayark.Mast.Coroutine.Sleep(System.Single)
+  nameWithType: Coroutine.Sleep(Single)
+- uid: Rayark.Mast.Coroutine.Sleep*
+  name: Sleep
+  href: api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Sleep_
+  commentId: Overload:Rayark.Mast.Coroutine.Sleep
+  fullName: Rayark.Mast.Coroutine.Sleep
+  nameWithType: Coroutine.Sleep
+- uid: Rayark.Mast.Defer
+  name: Defer
+  href: api/Rayark.Mast.Defer.html
+  commentId: T:Rayark.Mast.Defer
+  fullName: Rayark.Mast.Defer
+  nameWithType: Defer
+- uid: Rayark.Mast.Defer.Add(System.Action)
+  name: Add(Action)
+  href: api/Rayark.Mast.Defer.html#Rayark_Mast_Defer_Add_System_Action_
+  commentId: M:Rayark.Mast.Defer.Add(System.Action)
+  fullName: Rayark.Mast.Defer.Add(System.Action)
+  nameWithType: Defer.Add(Action)
+- uid: Rayark.Mast.Defer.Add*
+  name: Add
+  href: api/Rayark.Mast.Defer.html#Rayark_Mast_Defer_Add_
+  commentId: Overload:Rayark.Mast.Defer.Add
+  fullName: Rayark.Mast.Defer.Add
+  nameWithType: Defer.Add
+- uid: Rayark.Mast.Defer.Dispose
+  name: Dispose()
+  href: api/Rayark.Mast.Defer.html#Rayark_Mast_Defer_Dispose
+  commentId: M:Rayark.Mast.Defer.Dispose
+  fullName: Rayark.Mast.Defer.Dispose()
+  nameWithType: Defer.Dispose()
+- uid: Rayark.Mast.Defer.Dispose*
+  name: Dispose
+  href: api/Rayark.Mast.Defer.html#Rayark_Mast_Defer_Dispose_
+  commentId: Overload:Rayark.Mast.Defer.Dispose
+  fullName: Rayark.Mast.Defer.Dispose
+  nameWithType: Defer.Dispose
+- uid: Rayark.Mast.EmptyBlock
+  name: EmptyBlock
+  href: api/Rayark.Mast.EmptyBlock.html
+  commentId: T:Rayark.Mast.EmptyBlock
+  fullName: Rayark.Mast.EmptyBlock
+  nameWithType: EmptyBlock
+- uid: Rayark.Mast.EmptyBlock.Current
+  name: Current
+  href: api/Rayark.Mast.EmptyBlock.html#Rayark_Mast_EmptyBlock_Current
+  commentId: P:Rayark.Mast.EmptyBlock.Current
+  fullName: Rayark.Mast.EmptyBlock.Current
+  nameWithType: EmptyBlock.Current
+- uid: Rayark.Mast.EmptyBlock.Current*
+  name: Current
+  href: api/Rayark.Mast.EmptyBlock.html#Rayark_Mast_EmptyBlock_Current_
+  commentId: Overload:Rayark.Mast.EmptyBlock.Current
+  fullName: Rayark.Mast.EmptyBlock.Current
+  nameWithType: EmptyBlock.Current
+- uid: Rayark.Mast.EmptyBlock.MoveNext
+  name: MoveNext()
+  href: api/Rayark.Mast.EmptyBlock.html#Rayark_Mast_EmptyBlock_MoveNext
+  commentId: M:Rayark.Mast.EmptyBlock.MoveNext
+  fullName: Rayark.Mast.EmptyBlock.MoveNext()
+  nameWithType: EmptyBlock.MoveNext()
+- uid: Rayark.Mast.EmptyBlock.MoveNext*
+  name: MoveNext
+  href: api/Rayark.Mast.EmptyBlock.html#Rayark_Mast_EmptyBlock_MoveNext_
+  commentId: Overload:Rayark.Mast.EmptyBlock.MoveNext
+  fullName: Rayark.Mast.EmptyBlock.MoveNext
+  nameWithType: EmptyBlock.MoveNext
+- uid: Rayark.Mast.EmptyBlock.Reset
+  name: Reset()
+  href: api/Rayark.Mast.EmptyBlock.html#Rayark_Mast_EmptyBlock_Reset
+  commentId: M:Rayark.Mast.EmptyBlock.Reset
+  fullName: Rayark.Mast.EmptyBlock.Reset()
+  nameWithType: EmptyBlock.Reset()
+- uid: Rayark.Mast.EmptyBlock.Reset*
+  name: Reset
+  href: api/Rayark.Mast.EmptyBlock.html#Rayark_Mast_EmptyBlock_Reset_
+  commentId: Overload:Rayark.Mast.EmptyBlock.Reset
+  fullName: Rayark.Mast.EmptyBlock.Reset
+  nameWithType: EmptyBlock.Reset
+- uid: Rayark.Mast.Executor
+  name: Executor
+  href: api/Rayark.Mast.Executor.html
+  commentId: T:Rayark.Mast.Executor
+  fullName: Rayark.Mast.Executor
+  nameWithType: Executor
+- uid: Rayark.Mast.Executor.#ctor
+  name: Executor()
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor__ctor
+  commentId: M:Rayark.Mast.Executor.#ctor
+  fullName: Rayark.Mast.Executor.Executor()
+  nameWithType: Executor.Executor()
+- uid: Rayark.Mast.Executor.#ctor*
+  name: Executor
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor__ctor_
+  commentId: Overload:Rayark.Mast.Executor.#ctor
+  fullName: Rayark.Mast.Executor.Executor
+  nameWithType: Executor.Executor
+- uid: Rayark.Mast.Executor.Add(Rayark.Mast.IResumable)
+  name: Add(IResumable)
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Add_Rayark_Mast_IResumable_
+  commentId: M:Rayark.Mast.Executor.Add(Rayark.Mast.IResumable)
+  fullName: Rayark.Mast.Executor.Add(Rayark.Mast.IResumable)
+  nameWithType: Executor.Add(IResumable)
+- uid: Rayark.Mast.Executor.Add*
+  name: Add
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Add_
+  commentId: Overload:Rayark.Mast.Executor.Add
+  fullName: Rayark.Mast.Executor.Add
+  nameWithType: Executor.Add
+- uid: Rayark.Mast.Executor.Clear
+  name: Clear()
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Clear
+  commentId: M:Rayark.Mast.Executor.Clear
+  fullName: Rayark.Mast.Executor.Clear()
+  nameWithType: Executor.Clear()
+- uid: Rayark.Mast.Executor.Clear*
+  name: Clear
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Clear_
+  commentId: Overload:Rayark.Mast.Executor.Clear
+  fullName: Rayark.Mast.Executor.Clear
+  nameWithType: Executor.Clear
+- uid: Rayark.Mast.Executor.Contains(Rayark.Mast.IResumable)
+  name: Contains(IResumable)
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Contains_Rayark_Mast_IResumable_
+  commentId: M:Rayark.Mast.Executor.Contains(Rayark.Mast.IResumable)
+  fullName: Rayark.Mast.Executor.Contains(Rayark.Mast.IResumable)
+  nameWithType: Executor.Contains(IResumable)
+- uid: Rayark.Mast.Executor.Contains*
+  name: Contains
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Contains_
+  commentId: Overload:Rayark.Mast.Executor.Contains
+  fullName: Rayark.Mast.Executor.Contains
+  nameWithType: Executor.Contains
+- uid: Rayark.Mast.Executor.Count
+  name: Count
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Count
+  commentId: P:Rayark.Mast.Executor.Count
+  fullName: Rayark.Mast.Executor.Count
+  nameWithType: Executor.Count
+- uid: Rayark.Mast.Executor.Count*
+  name: Count
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Count_
+  commentId: Overload:Rayark.Mast.Executor.Count
+  fullName: Rayark.Mast.Executor.Count
+  nameWithType: Executor.Count
+- uid: Rayark.Mast.Executor.Empty
+  name: Empty
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Empty
+  commentId: P:Rayark.Mast.Executor.Empty
+  fullName: Rayark.Mast.Executor.Empty
+  nameWithType: Executor.Empty
+- uid: Rayark.Mast.Executor.Empty*
+  name: Empty
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Empty_
+  commentId: Overload:Rayark.Mast.Executor.Empty
+  fullName: Rayark.Mast.Executor.Empty
+  nameWithType: Executor.Empty
+- uid: Rayark.Mast.Executor.Finished
+  name: Finished
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Finished
+  commentId: P:Rayark.Mast.Executor.Finished
+  fullName: Rayark.Mast.Executor.Finished
+  nameWithType: Executor.Finished
+- uid: Rayark.Mast.Executor.Finished*
+  name: Finished
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Finished_
+  commentId: Overload:Rayark.Mast.Executor.Finished
+  fullName: Rayark.Mast.Executor.Finished
+  nameWithType: Executor.Finished
+- uid: Rayark.Mast.Executor.GetEnumerator
+  name: GetEnumerator()
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_GetEnumerator
+  commentId: M:Rayark.Mast.Executor.GetEnumerator
+  fullName: Rayark.Mast.Executor.GetEnumerator()
+  nameWithType: Executor.GetEnumerator()
+- uid: Rayark.Mast.Executor.GetEnumerator*
+  name: GetEnumerator
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_GetEnumerator_
+  commentId: Overload:Rayark.Mast.Executor.GetEnumerator
+  fullName: Rayark.Mast.Executor.GetEnumerator
+  nameWithType: Executor.GetEnumerator
+- uid: Rayark.Mast.Executor.Remove(Rayark.Mast.IResumable)
+  name: Remove(IResumable)
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Remove_Rayark_Mast_IResumable_
+  commentId: M:Rayark.Mast.Executor.Remove(Rayark.Mast.IResumable)
+  fullName: Rayark.Mast.Executor.Remove(Rayark.Mast.IResumable)
+  nameWithType: Executor.Remove(IResumable)
+- uid: Rayark.Mast.Executor.Remove*
+  name: Remove
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Remove_
+  commentId: Overload:Rayark.Mast.Executor.Remove
+  fullName: Rayark.Mast.Executor.Remove
+  nameWithType: Executor.Remove
+- uid: Rayark.Mast.Executor.Resume(System.Single)
+  name: Resume(Single)
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Resume_System_Single_
+  commentId: M:Rayark.Mast.Executor.Resume(System.Single)
+  fullName: Rayark.Mast.Executor.Resume(System.Single)
+  nameWithType: Executor.Resume(Single)
+- uid: Rayark.Mast.Executor.Resume*
+  name: Resume
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_Resume_
+  commentId: Overload:Rayark.Mast.Executor.Resume
+  fullName: Rayark.Mast.Executor.Resume
+  nameWithType: Executor.Resume
+- uid: Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#CopyTo(Rayark.Mast.IResumable[],System.Int32)
+  name: ICollection<IResumable>.CopyTo(IResumable[], Int32)
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_Generic_ICollection_Rayark_Mast_IResumable__CopyTo_Rayark_Mast_IResumable___System_Int32_
+  commentId: M:Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#CopyTo(Rayark.Mast.IResumable[],System.Int32)
+  name.vb: System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo(IResumable(), Int32)
+  fullName: Rayark.Mast.Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo(Rayark.Mast.IResumable[], System.Int32)
+  fullName.vb: Rayark.Mast.Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo(Rayark.Mast.IResumable(), System.Int32)
+  nameWithType: Executor.ICollection<IResumable>.CopyTo(IResumable[], Int32)
+  nameWithType.vb: Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo(IResumable(), Int32)
+- uid: Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#CopyTo*
+  name: ICollection<IResumable>.CopyTo
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_Generic_ICollection_Rayark_Mast_IResumable__CopyTo_
+  commentId: Overload:Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#CopyTo
+  name.vb: System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo
+  fullName: Rayark.Mast.Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo
+  nameWithType: Executor.ICollection<IResumable>.CopyTo
+  nameWithType.vb: Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.CopyTo
+- uid: Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#IsReadOnly
+  name: ICollection<IResumable>.IsReadOnly
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_Generic_ICollection_Rayark_Mast_IResumable__IsReadOnly
+  commentId: P:Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.IsReadOnly
+  fullName: Rayark.Mast.Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.IsReadOnly
+  nameWithType: Executor.ICollection<IResumable>.IsReadOnly
+  nameWithType.vb: Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.IsReadOnly
+- uid: Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#IsReadOnly*
+  name: ICollection<IResumable>.IsReadOnly
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_Generic_ICollection_Rayark_Mast_IResumable__IsReadOnly_
+  commentId: Overload:Rayark.Mast.Executor.System#Collections#Generic#ICollection{Rayark#Mast#IResumable}#IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.IsReadOnly
+  fullName: Rayark.Mast.Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.IsReadOnly
+  nameWithType: Executor.ICollection<IResumable>.IsReadOnly
+  nameWithType.vb: Executor.System.Collections.Generic.ICollection<Rayark.Mast.IResumable>.IsReadOnly
+- uid: Rayark.Mast.Executor.System#Collections#Generic#IEnumerable{Rayark#Mast#IResumable}#GetEnumerator
+  name: IEnumerable<IResumable>.GetEnumerator()
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_Generic_IEnumerable_Rayark_Mast_IResumable__GetEnumerator
+  commentId: M:Rayark.Mast.Executor.System#Collections#Generic#IEnumerable{Rayark#Mast#IResumable}#GetEnumerator
+  name.vb: System.Collections.Generic.IEnumerable<Rayark.Mast.IResumable>.GetEnumerator()
+  fullName: Rayark.Mast.Executor.System.Collections.Generic.IEnumerable<Rayark.Mast.IResumable>.GetEnumerator()
+  nameWithType: Executor.IEnumerable<IResumable>.GetEnumerator()
+  nameWithType.vb: Executor.System.Collections.Generic.IEnumerable<Rayark.Mast.IResumable>.GetEnumerator()
+- uid: Rayark.Mast.Executor.System#Collections#Generic#IEnumerable{Rayark#Mast#IResumable}#GetEnumerator*
+  name: IEnumerable<IResumable>.GetEnumerator
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_Generic_IEnumerable_Rayark_Mast_IResumable__GetEnumerator_
+  commentId: Overload:Rayark.Mast.Executor.System#Collections#Generic#IEnumerable{Rayark#Mast#IResumable}#GetEnumerator
+  name.vb: System.Collections.Generic.IEnumerable<Rayark.Mast.IResumable>.GetEnumerator
+  fullName: Rayark.Mast.Executor.System.Collections.Generic.IEnumerable<Rayark.Mast.IResumable>.GetEnumerator
+  nameWithType: Executor.IEnumerable<IResumable>.GetEnumerator
+  nameWithType.vb: Executor.System.Collections.Generic.IEnumerable<Rayark.Mast.IResumable>.GetEnumerator
+- uid: Rayark.Mast.Executor.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Rayark.Mast.Executor.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Rayark.Mast.Executor.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Executor.IEnumerable.GetEnumerator()
+  nameWithType.vb: Executor.System.Collections.IEnumerable.GetEnumerator()
+- uid: Rayark.Mast.Executor.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Rayark.Mast.Executor.html#Rayark_Mast_Executor_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Rayark.Mast.Executor.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Rayark.Mast.Executor.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Executor.IEnumerable.GetEnumerator
+  nameWithType.vb: Executor.System.Collections.IEnumerable.GetEnumerator
+- uid: Rayark.Mast.ExecutorExtensions
+  name: ExecutorExtensions
+  href: api/Rayark.Mast.ExecutorExtensions.html
+  commentId: T:Rayark.Mast.ExecutorExtensions
+  fullName: Rayark.Mast.ExecutorExtensions
+  nameWithType: ExecutorExtensions
+- uid: Rayark.Mast.ExecutorExtensions.Add(Rayark.Mast.IExecutor,System.Collections.IEnumerator)
+  name: Add(IExecutor, IEnumerator)
+  href: api/Rayark.Mast.ExecutorExtensions.html#Rayark_Mast_ExecutorExtensions_Add_Rayark_Mast_IExecutor_System_Collections_IEnumerator_
+  commentId: M:Rayark.Mast.ExecutorExtensions.Add(Rayark.Mast.IExecutor,System.Collections.IEnumerator)
+  fullName: Rayark.Mast.ExecutorExtensions.Add(Rayark.Mast.IExecutor, System.Collections.IEnumerator)
+  nameWithType: ExecutorExtensions.Add(IExecutor, IEnumerator)
+- uid: Rayark.Mast.ExecutorExtensions.Add*
+  name: Add
+  href: api/Rayark.Mast.ExecutorExtensions.html#Rayark_Mast_ExecutorExtensions_Add_
+  commentId: Overload:Rayark.Mast.ExecutorExtensions.Add
+  fullName: Rayark.Mast.ExecutorExtensions.Add
+  nameWithType: ExecutorExtensions.Add
+- uid: Rayark.Mast.IExecutor
+  name: IExecutor
+  href: api/Rayark.Mast.IExecutor.html
+  commentId: T:Rayark.Mast.IExecutor
+  fullName: Rayark.Mast.IExecutor
+  nameWithType: IExecutor
+- uid: Rayark.Mast.IExecutor.Add(Rayark.Mast.IResumable)
+  name: Add(IResumable)
+  href: api/Rayark.Mast.IExecutor.html#Rayark_Mast_IExecutor_Add_Rayark_Mast_IResumable_
+  commentId: M:Rayark.Mast.IExecutor.Add(Rayark.Mast.IResumable)
+  fullName: Rayark.Mast.IExecutor.Add(Rayark.Mast.IResumable)
+  nameWithType: IExecutor.Add(IResumable)
+- uid: Rayark.Mast.IExecutor.Add*
+  name: Add
+  href: api/Rayark.Mast.IExecutor.html#Rayark_Mast_IExecutor_Add_
+  commentId: Overload:Rayark.Mast.IExecutor.Add
+  fullName: Rayark.Mast.IExecutor.Add
+  nameWithType: IExecutor.Add
+- uid: Rayark.Mast.IMonad`1
+  name: IMonad<T>
+  href: api/Rayark.Mast.IMonad-1.html
+  commentId: T:Rayark.Mast.IMonad`1
+  name.vb: IMonad(Of T)
+  fullName: Rayark.Mast.IMonad<T>
+  fullName.vb: Rayark.Mast.IMonad(Of T)
+  nameWithType: IMonad<T>
+  nameWithType.vb: IMonad(Of T)
+- uid: Rayark.Mast.IMonad`1.Do
+  name: Do()
+  href: api/Rayark.Mast.IMonad-1.html#Rayark_Mast_IMonad_1_Do
+  commentId: M:Rayark.Mast.IMonad`1.Do
+  fullName: Rayark.Mast.IMonad<T>.Do()
+  fullName.vb: Rayark.Mast.IMonad(Of T).Do()
+  nameWithType: IMonad<T>.Do()
+  nameWithType.vb: IMonad(Of T).Do()
+- uid: Rayark.Mast.IMonad`1.Do*
+  name: Do
+  href: api/Rayark.Mast.IMonad-1.html#Rayark_Mast_IMonad_1_Do_
+  commentId: Overload:Rayark.Mast.IMonad`1.Do
+  fullName: Rayark.Mast.IMonad<T>.Do
+  fullName.vb: Rayark.Mast.IMonad(Of T).Do
+  nameWithType: IMonad<T>.Do
+  nameWithType.vb: IMonad(Of T).Do
+- uid: Rayark.Mast.IMonad`1.Error
+  name: Error
+  href: api/Rayark.Mast.IMonad-1.html#Rayark_Mast_IMonad_1_Error
+  commentId: P:Rayark.Mast.IMonad`1.Error
+  fullName: Rayark.Mast.IMonad<T>.Error
+  fullName.vb: Rayark.Mast.IMonad(Of T).Error
+  nameWithType: IMonad<T>.Error
+  nameWithType.vb: IMonad(Of T).Error
+- uid: Rayark.Mast.IMonad`1.Error*
+  name: Error
+  href: api/Rayark.Mast.IMonad-1.html#Rayark_Mast_IMonad_1_Error_
+  commentId: Overload:Rayark.Mast.IMonad`1.Error
+  fullName: Rayark.Mast.IMonad<T>.Error
+  fullName.vb: Rayark.Mast.IMonad(Of T).Error
+  nameWithType: IMonad<T>.Error
+  nameWithType.vb: IMonad(Of T).Error
+- uid: Rayark.Mast.IMonad`1.Result
+  name: Result
+  href: api/Rayark.Mast.IMonad-1.html#Rayark_Mast_IMonad_1_Result
+  commentId: P:Rayark.Mast.IMonad`1.Result
+  fullName: Rayark.Mast.IMonad<T>.Result
+  fullName.vb: Rayark.Mast.IMonad(Of T).Result
+  nameWithType: IMonad<T>.Result
+  nameWithType.vb: IMonad(Of T).Result
+- uid: Rayark.Mast.IMonad`1.Result*
+  name: Result
+  href: api/Rayark.Mast.IMonad-1.html#Rayark_Mast_IMonad_1_Result_
+  commentId: Overload:Rayark.Mast.IMonad`1.Result
+  fullName: Rayark.Mast.IMonad<T>.Result
+  fullName.vb: Rayark.Mast.IMonad(Of T).Result
+  nameWithType: IMonad<T>.Result
+  nameWithType.vb: IMonad(Of T).Result
+- uid: Rayark.Mast.IResumable
+  name: IResumable
+  href: api/Rayark.Mast.IResumable.html
+  commentId: T:Rayark.Mast.IResumable
+  fullName: Rayark.Mast.IResumable
+  nameWithType: IResumable
+- uid: Rayark.Mast.IResumable.Finished
+  name: Finished
+  href: api/Rayark.Mast.IResumable.html#Rayark_Mast_IResumable_Finished
+  commentId: P:Rayark.Mast.IResumable.Finished
+  fullName: Rayark.Mast.IResumable.Finished
+  nameWithType: IResumable.Finished
+- uid: Rayark.Mast.IResumable.Finished*
+  name: Finished
+  href: api/Rayark.Mast.IResumable.html#Rayark_Mast_IResumable_Finished_
+  commentId: Overload:Rayark.Mast.IResumable.Finished
+  fullName: Rayark.Mast.IResumable.Finished
+  nameWithType: IResumable.Finished
+- uid: Rayark.Mast.IResumable.Resume(System.Single)
+  name: Resume(Single)
+  href: api/Rayark.Mast.IResumable.html#Rayark_Mast_IResumable_Resume_System_Single_
+  commentId: M:Rayark.Mast.IResumable.Resume(System.Single)
+  fullName: Rayark.Mast.IResumable.Resume(System.Single)
+  nameWithType: IResumable.Resume(Single)
+- uid: Rayark.Mast.IResumable.Resume*
+  name: Resume
+  href: api/Rayark.Mast.IResumable.html#Rayark_Mast_IResumable_Resume_
+  commentId: Overload:Rayark.Mast.IResumable.Resume
+  fullName: Rayark.Mast.IResumable.Resume
+  nameWithType: IResumable.Resume
+- uid: Rayark.Mast.IReturn`1
+  name: IReturn<T>
+  href: api/Rayark.Mast.IReturn-1.html
+  commentId: T:Rayark.Mast.IReturn`1
+  name.vb: IReturn(Of T)
+  fullName: Rayark.Mast.IReturn<T>
+  fullName.vb: Rayark.Mast.IReturn(Of T)
+  nameWithType: IReturn<T>
+  nameWithType.vb: IReturn(Of T)
+- uid: Rayark.Mast.IReturn`1.Accept(`0)
+  name: Accept(T)
+  href: api/Rayark.Mast.IReturn-1.html#Rayark_Mast_IReturn_1_Accept__0_
+  commentId: M:Rayark.Mast.IReturn`1.Accept(`0)
+  fullName: Rayark.Mast.IReturn<T>.Accept(T)
+  fullName.vb: Rayark.Mast.IReturn(Of T).Accept(T)
+  nameWithType: IReturn<T>.Accept(T)
+  nameWithType.vb: IReturn(Of T).Accept(T)
+- uid: Rayark.Mast.IReturn`1.Accept*
+  name: Accept
+  href: api/Rayark.Mast.IReturn-1.html#Rayark_Mast_IReturn_1_Accept_
+  commentId: Overload:Rayark.Mast.IReturn`1.Accept
+  fullName: Rayark.Mast.IReturn<T>.Accept
+  fullName.vb: Rayark.Mast.IReturn(Of T).Accept
+  nameWithType: IReturn<T>.Accept
+  nameWithType.vb: IReturn(Of T).Accept
+- uid: Rayark.Mast.IReturn`1.Fail(System.Exception)
+  name: Fail(Exception)
+  href: api/Rayark.Mast.IReturn-1.html#Rayark_Mast_IReturn_1_Fail_System_Exception_
+  commentId: M:Rayark.Mast.IReturn`1.Fail(System.Exception)
+  fullName: Rayark.Mast.IReturn<T>.Fail(System.Exception)
+  fullName.vb: Rayark.Mast.IReturn(Of T).Fail(System.Exception)
+  nameWithType: IReturn<T>.Fail(Exception)
+  nameWithType.vb: IReturn(Of T).Fail(Exception)
+- uid: Rayark.Mast.IReturn`1.Fail*
+  name: Fail
+  href: api/Rayark.Mast.IReturn-1.html#Rayark_Mast_IReturn_1_Fail_
+  commentId: Overload:Rayark.Mast.IReturn`1.Fail
+  fullName: Rayark.Mast.IReturn<T>.Fail
+  fullName.vb: Rayark.Mast.IReturn(Of T).Fail
+  nameWithType: IReturn<T>.Fail
+  nameWithType.vb: IReturn(Of T).Fail
+- uid: Rayark.Mast.ITuple
+  name: ITuple
+  href: api/Rayark.Mast.ITuple.html
+  commentId: T:Rayark.Mast.ITuple
+  fullName: Rayark.Mast.ITuple
+  nameWithType: ITuple
+- uid: Rayark.Mast.ITuple.Item(System.Int32)
+  name: Item[Int32]
+  href: api/Rayark.Mast.ITuple.html#Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.ITuple.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: ITuple.Item[Int32]
+  nameWithType.vb: ITuple.Item(Int32)
+- uid: Rayark.Mast.ITuple.Item*
+  name: Item
+  href: api/Rayark.Mast.ITuple.html#Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.ITuple.Item
+  nameWithType: ITuple.Item
+- uid: Rayark.Mast.ITuple.Length
+  name: Length
+  href: api/Rayark.Mast.ITuple.html#Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.ITuple.Length
+  nameWithType: ITuple.Length
+- uid: Rayark.Mast.ITuple.Length*
+  name: Length
+  href: api/Rayark.Mast.ITuple.html#Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.ITuple.Length
+  nameWithType: ITuple.Length
+- uid: Rayark.Mast.Monad
+  name: Monad
+  href: api/Rayark.Mast.Monad.html
+  commentId: T:Rayark.Mast.Monad
+  fullName: Rayark.Mast.Monad
+  nameWithType: Monad
+- uid: Rayark.Mast.Monad.Catch*
+  name: Catch
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Catch_
+  commentId: Overload:Rayark.Mast.Monad.Catch
+  fullName: Rayark.Mast.Monad.Catch
+  nameWithType: Monad.Catch
+- uid: Rayark.Mast.Monad.Catch``1(Rayark.Mast.IMonad{``0},System.Func{System.Exception,Rayark.Mast.IMonad{``0}})
+  name: Catch<T>(IMonad<T>, Func<Exception, IMonad<T>>)
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Catch__1_Rayark_Mast_IMonad___0__System_Func_System_Exception_Rayark_Mast_IMonad___0___
+  commentId: M:Rayark.Mast.Monad.Catch``1(Rayark.Mast.IMonad{``0},System.Func{System.Exception,Rayark.Mast.IMonad{``0}})
+  name.vb: Catch(Of T)(IMonad(Of T), Func(Of Exception, IMonad(Of T)))
+  fullName: Rayark.Mast.Monad.Catch<T>(Rayark.Mast.IMonad<T>, System.Func<System.Exception, Rayark.Mast.IMonad<T>>)
+  fullName.vb: Rayark.Mast.Monad.Catch(Of T)(Rayark.Mast.IMonad(Of T), System.Func(Of System.Exception, Rayark.Mast.IMonad(Of T)))
+  nameWithType: Monad.Catch<T>(IMonad<T>, Func<Exception, IMonad<T>>)
+  nameWithType.vb: Monad.Catch(Of T)(IMonad(Of T), Func(Of Exception, IMonad(Of T)))
+- uid: Rayark.Mast.Monad.Map*
+  name: Map
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Map_
+  commentId: Overload:Rayark.Mast.Monad.Map
+  fullName: Rayark.Mast.Monad.Map
+  nameWithType: Monad.Map
+- uid: Rayark.Mast.Monad.Map``2(Rayark.Mast.IMonad{``0},System.Func{``0,``1})
+  name: Map<T, U>(IMonad<T>, Func<T, U>)
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Map__2_Rayark_Mast_IMonad___0__System_Func___0___1__
+  commentId: M:Rayark.Mast.Monad.Map``2(Rayark.Mast.IMonad{``0},System.Func{``0,``1})
+  name.vb: Map(Of T, U)(IMonad(Of T), Func(Of T, U))
+  fullName: Rayark.Mast.Monad.Map<T, U>(Rayark.Mast.IMonad<T>, System.Func<T, U>)
+  fullName.vb: Rayark.Mast.Monad.Map(Of T, U)(Rayark.Mast.IMonad(Of T), System.Func(Of T, U))
+  nameWithType: Monad.Map<T, U>(IMonad<T>, Func<T, U>)
+  nameWithType.vb: Monad.Map(Of T, U)(IMonad(Of T), Func(Of T, U))
+- uid: Rayark.Mast.Monad.NoneMonad
+  name: NoneMonad
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_NoneMonad
+  commentId: F:Rayark.Mast.Monad.NoneMonad
+  fullName: Rayark.Mast.Monad.NoneMonad
+  nameWithType: Monad.NoneMonad
+- uid: Rayark.Mast.Monad.Then*
+  name: Then
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Then_
+  commentId: Overload:Rayark.Mast.Monad.Then
+  fullName: Rayark.Mast.Monad.Then
+  nameWithType: Monad.Then
+- uid: Rayark.Mast.Monad.Then``1(Rayark.Mast.IMonad{``0},System.Action{``0})
+  name: Then<T>(IMonad<T>, Action<T>)
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Then__1_Rayark_Mast_IMonad___0__System_Action___0__
+  commentId: M:Rayark.Mast.Monad.Then``1(Rayark.Mast.IMonad{``0},System.Action{``0})
+  name.vb: Then(Of T)(IMonad(Of T), Action(Of T))
+  fullName: Rayark.Mast.Monad.Then<T>(Rayark.Mast.IMonad<T>, System.Action<T>)
+  fullName.vb: Rayark.Mast.Monad.Then(Of T)(Rayark.Mast.IMonad(Of T), System.Action(Of T))
+  nameWithType: Monad.Then<T>(IMonad<T>, Action<T>)
+  nameWithType.vb: Monad.Then(Of T)(IMonad(Of T), Action(Of T))
+- uid: Rayark.Mast.Monad.Then``2(Rayark.Mast.IMonad{``0},System.Func{``0,Rayark.Mast.IMonad{``1}})
+  name: Then<T, U>(IMonad<T>, Func<T, IMonad<U>>)
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_Then__2_Rayark_Mast_IMonad___0__System_Func___0_Rayark_Mast_IMonad___1___
+  commentId: M:Rayark.Mast.Monad.Then``2(Rayark.Mast.IMonad{``0},System.Func{``0,Rayark.Mast.IMonad{``1}})
+  name.vb: Then(Of T, U)(IMonad(Of T), Func(Of T, IMonad(Of U)))
+  fullName: Rayark.Mast.Monad.Then<T, U>(Rayark.Mast.IMonad<T>, System.Func<T, Rayark.Mast.IMonad<U>>)
+  fullName.vb: Rayark.Mast.Monad.Then(Of T, U)(Rayark.Mast.IMonad(Of T), System.Func(Of T, Rayark.Mast.IMonad(Of U)))
+  nameWithType: Monad.Then<T, U>(IMonad<T>, Func<T, IMonad<U>>)
+  nameWithType.vb: Monad.Then(Of T, U)(IMonad(Of T), Func(Of T, IMonad(Of U)))
+- uid: Rayark.Mast.Monad.WhenAll*
+  name: WhenAll
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_WhenAll_
+  commentId: Overload:Rayark.Mast.Monad.WhenAll
+  fullName: Rayark.Mast.Monad.WhenAll
+  nameWithType: Monad.WhenAll
+- uid: Rayark.Mast.Monad.WhenAll``1(Rayark.Mast.IMonad{``0}[])
+  name: WhenAll<T>(IMonad<T>[])
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_WhenAll__1_Rayark_Mast_IMonad___0____
+  commentId: M:Rayark.Mast.Monad.WhenAll``1(Rayark.Mast.IMonad{``0}[])
+  name.vb: WhenAll(Of T)(IMonad(Of T)())
+  fullName: Rayark.Mast.Monad.WhenAll<T>(Rayark.Mast.IMonad<T>[])
+  fullName.vb: Rayark.Mast.Monad.WhenAll(Of T)(Rayark.Mast.IMonad(Of T)())
+  nameWithType: Monad.WhenAll<T>(IMonad<T>[])
+  nameWithType.vb: Monad.WhenAll(Of T)(IMonad(Of T)())
+- uid: Rayark.Mast.Monad.WhenAll``2(Rayark.Mast.IMonad{``0},Rayark.Mast.IMonad{``1})
+  name: WhenAll<T1, T2>(IMonad<T1>, IMonad<T2>)
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_WhenAll__2_Rayark_Mast_IMonad___0__Rayark_Mast_IMonad___1__
+  commentId: M:Rayark.Mast.Monad.WhenAll``2(Rayark.Mast.IMonad{``0},Rayark.Mast.IMonad{``1})
+  name.vb: WhenAll(Of T1, T2)(IMonad(Of T1), IMonad(Of T2))
+  fullName: Rayark.Mast.Monad.WhenAll<T1, T2>(Rayark.Mast.IMonad<T1>, Rayark.Mast.IMonad<T2>)
+  fullName.vb: Rayark.Mast.Monad.WhenAll(Of T1, T2)(Rayark.Mast.IMonad(Of T1), Rayark.Mast.IMonad(Of T2))
+  nameWithType: Monad.WhenAll<T1, T2>(IMonad<T1>, IMonad<T2>)
+  nameWithType.vb: Monad.WhenAll(Of T1, T2)(IMonad(Of T1), IMonad(Of T2))
+- uid: Rayark.Mast.Monad.WhenAll``3(Rayark.Mast.IMonad{``0},Rayark.Mast.IMonad{``1},Rayark.Mast.IMonad{``2})
+  name: WhenAll<T1, T2, T3>(IMonad<T1>, IMonad<T2>, IMonad<T3>)
+  href: api/Rayark.Mast.Monad.html#Rayark_Mast_Monad_WhenAll__3_Rayark_Mast_IMonad___0__Rayark_Mast_IMonad___1__Rayark_Mast_IMonad___2__
+  commentId: M:Rayark.Mast.Monad.WhenAll``3(Rayark.Mast.IMonad{``0},Rayark.Mast.IMonad{``1},Rayark.Mast.IMonad{``2})
+  name.vb: WhenAll(Of T1, T2, T3)(IMonad(Of T1), IMonad(Of T2), IMonad(Of T3))
+  fullName: Rayark.Mast.Monad.WhenAll<T1, T2, T3>(Rayark.Mast.IMonad<T1>, Rayark.Mast.IMonad<T2>, Rayark.Mast.IMonad<T3>)
+  fullName.vb: Rayark.Mast.Monad.WhenAll(Of T1, T2, T3)(Rayark.Mast.IMonad(Of T1), Rayark.Mast.IMonad(Of T2), Rayark.Mast.IMonad(Of T3))
+  nameWithType: Monad.WhenAll<T1, T2, T3>(IMonad<T1>, IMonad<T2>, IMonad<T3>)
+  nameWithType.vb: Monad.WhenAll(Of T1, T2, T3)(IMonad(Of T1), IMonad(Of T2), IMonad(Of T3))
+- uid: Rayark.Mast.MonadLinq
+  name: MonadLinq
+  href: api/Rayark.Mast.MonadLinq.html
+  commentId: T:Rayark.Mast.MonadLinq
+  fullName: Rayark.Mast.MonadLinq
+  nameWithType: MonadLinq
+- uid: Rayark.Mast.MonadLinq.SelectMany*
+  name: SelectMany
+  href: api/Rayark.Mast.MonadLinq.html#Rayark_Mast_MonadLinq_SelectMany_
+  commentId: Overload:Rayark.Mast.MonadLinq.SelectMany
+  fullName: Rayark.Mast.MonadLinq.SelectMany
+  nameWithType: MonadLinq.SelectMany
+- uid: Rayark.Mast.MonadLinq.SelectMany``3(Rayark.Mast.IMonad{``0},System.Func{``0,Rayark.Mast.IMonad{``1}},System.Func{``0,``1,``2})
+  name: SelectMany<T, U, V>(IMonad<T>, Func<T, IMonad<U>>, Func<T, U, V>)
+  href: api/Rayark.Mast.MonadLinq.html#Rayark_Mast_MonadLinq_SelectMany__3_Rayark_Mast_IMonad___0__System_Func___0_Rayark_Mast_IMonad___1___System_Func___0___1___2__
+  commentId: M:Rayark.Mast.MonadLinq.SelectMany``3(Rayark.Mast.IMonad{``0},System.Func{``0,Rayark.Mast.IMonad{``1}},System.Func{``0,``1,``2})
+  name.vb: SelectMany(Of T, U, V)(IMonad(Of T), Func(Of T, IMonad(Of U)), Func(Of T, U, V))
+  fullName: Rayark.Mast.MonadLinq.SelectMany<T, U, V>(Rayark.Mast.IMonad<T>, System.Func<T, Rayark.Mast.IMonad<U>>, System.Func<T, U, V>)
+  fullName.vb: Rayark.Mast.MonadLinq.SelectMany(Of T, U, V)(Rayark.Mast.IMonad(Of T), System.Func(Of T, Rayark.Mast.IMonad(Of U)), System.Func(Of T, U, V))
+  nameWithType: MonadLinq.SelectMany<T, U, V>(IMonad<T>, Func<T, IMonad<U>>, Func<T, U, V>)
+  nameWithType.vb: MonadLinq.SelectMany(Of T, U, V)(IMonad(Of T), Func(Of T, IMonad(Of U)), Func(Of T, U, V))
+- uid: Rayark.Mast.None
+  name: None
+  href: api/Rayark.Mast.None.html
+  commentId: T:Rayark.Mast.None
+  fullName: Rayark.Mast.None
+  nameWithType: None
+- uid: Rayark.Mast.ResumableExtensions
+  name: ResumableExtensions
+  href: api/Rayark.Mast.ResumableExtensions.html
+  commentId: T:Rayark.Mast.ResumableExtensions
+  fullName: Rayark.Mast.ResumableExtensions
+  nameWithType: ResumableExtensions
+- uid: Rayark.Mast.ResumableExtensions.Join(Rayark.Mast.IResumable)
+  name: Join(IResumable)
+  href: api/Rayark.Mast.ResumableExtensions.html#Rayark_Mast_ResumableExtensions_Join_Rayark_Mast_IResumable_
+  commentId: M:Rayark.Mast.ResumableExtensions.Join(Rayark.Mast.IResumable)
+  fullName: Rayark.Mast.ResumableExtensions.Join(Rayark.Mast.IResumable)
+  nameWithType: ResumableExtensions.Join(IResumable)
+- uid: Rayark.Mast.ResumableExtensions.Join*
+  name: Join
+  href: api/Rayark.Mast.ResumableExtensions.html#Rayark_Mast_ResumableExtensions_Join_
+  commentId: Overload:Rayark.Mast.ResumableExtensions.Join
+  fullName: Rayark.Mast.ResumableExtensions.Join
+  nameWithType: ResumableExtensions.Join
+- uid: Rayark.Mast.ResumableExtensions.JoinWhile(Rayark.Mast.IResumable,Rayark.Mast.Condition)
+  name: JoinWhile(IResumable, Condition)
+  href: api/Rayark.Mast.ResumableExtensions.html#Rayark_Mast_ResumableExtensions_JoinWhile_Rayark_Mast_IResumable_Rayark_Mast_Condition_
+  commentId: M:Rayark.Mast.ResumableExtensions.JoinWhile(Rayark.Mast.IResumable,Rayark.Mast.Condition)
+  fullName: Rayark.Mast.ResumableExtensions.JoinWhile(Rayark.Mast.IResumable, Rayark.Mast.Condition)
+  nameWithType: ResumableExtensions.JoinWhile(IResumable, Condition)
+- uid: Rayark.Mast.ResumableExtensions.JoinWhile*
+  name: JoinWhile
+  href: api/Rayark.Mast.ResumableExtensions.html#Rayark_Mast_ResumableExtensions_JoinWhile_
+  commentId: Overload:Rayark.Mast.ResumableExtensions.JoinWhile
+  fullName: Rayark.Mast.ResumableExtensions.JoinWhile
+  nameWithType: ResumableExtensions.JoinWhile
+- uid: Rayark.Mast.ResumableExtensions.TimedJoin(Rayark.Mast.IResumable,System.Single)
+  name: TimedJoin(IResumable, Single)
+  href: api/Rayark.Mast.ResumableExtensions.html#Rayark_Mast_ResumableExtensions_TimedJoin_Rayark_Mast_IResumable_System_Single_
+  commentId: M:Rayark.Mast.ResumableExtensions.TimedJoin(Rayark.Mast.IResumable,System.Single)
+  fullName: Rayark.Mast.ResumableExtensions.TimedJoin(Rayark.Mast.IResumable, System.Single)
+  nameWithType: ResumableExtensions.TimedJoin(IResumable, Single)
+- uid: Rayark.Mast.ResumableExtensions.TimedJoin*
+  name: TimedJoin
+  href: api/Rayark.Mast.ResumableExtensions.html#Rayark_Mast_ResumableExtensions_TimedJoin_
+  commentId: Overload:Rayark.Mast.ResumableExtensions.TimedJoin
+  fullName: Rayark.Mast.ResumableExtensions.TimedJoin
+  nameWithType: ResumableExtensions.TimedJoin
+- uid: Rayark.Mast.SimpleMonad`1
+  name: SimpleMonad<T>
+  href: api/Rayark.Mast.SimpleMonad-1.html
+  commentId: T:Rayark.Mast.SimpleMonad`1
+  name.vb: SimpleMonad(Of T)
+  fullName: Rayark.Mast.SimpleMonad<T>
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T)
+  nameWithType: SimpleMonad<T>
+  nameWithType.vb: SimpleMonad(Of T)
+- uid: Rayark.Mast.SimpleMonad`1.#ctor(`0)
+  name: SimpleMonad(T)
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1__ctor__0_
+  commentId: M:Rayark.Mast.SimpleMonad`1.#ctor(`0)
+  fullName: Rayark.Mast.SimpleMonad<T>.SimpleMonad(T)
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).SimpleMonad(T)
+  nameWithType: SimpleMonad<T>.SimpleMonad(T)
+  nameWithType.vb: SimpleMonad(Of T).SimpleMonad(T)
+- uid: Rayark.Mast.SimpleMonad`1.#ctor(System.Exception)
+  name: SimpleMonad(Exception)
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1__ctor_System_Exception_
+  commentId: M:Rayark.Mast.SimpleMonad`1.#ctor(System.Exception)
+  fullName: Rayark.Mast.SimpleMonad<T>.SimpleMonad(System.Exception)
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).SimpleMonad(System.Exception)
+  nameWithType: SimpleMonad<T>.SimpleMonad(Exception)
+  nameWithType.vb: SimpleMonad(Of T).SimpleMonad(Exception)
+- uid: Rayark.Mast.SimpleMonad`1.#ctor*
+  name: SimpleMonad
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1__ctor_
+  commentId: Overload:Rayark.Mast.SimpleMonad`1.#ctor
+  fullName: Rayark.Mast.SimpleMonad<T>.SimpleMonad
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).SimpleMonad
+  nameWithType: SimpleMonad<T>.SimpleMonad
+  nameWithType.vb: SimpleMonad(Of T).SimpleMonad
+- uid: Rayark.Mast.SimpleMonad`1.Do
+  name: Do()
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1_Do
+  commentId: M:Rayark.Mast.SimpleMonad`1.Do
+  fullName: Rayark.Mast.SimpleMonad<T>.Do()
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).Do()
+  nameWithType: SimpleMonad<T>.Do()
+  nameWithType.vb: SimpleMonad(Of T).Do()
+- uid: Rayark.Mast.SimpleMonad`1.Do*
+  name: Do
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1_Do_
+  commentId: Overload:Rayark.Mast.SimpleMonad`1.Do
+  fullName: Rayark.Mast.SimpleMonad<T>.Do
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).Do
+  nameWithType: SimpleMonad<T>.Do
+  nameWithType.vb: SimpleMonad(Of T).Do
+- uid: Rayark.Mast.SimpleMonad`1.Error
+  name: Error
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1_Error
+  commentId: P:Rayark.Mast.SimpleMonad`1.Error
+  fullName: Rayark.Mast.SimpleMonad<T>.Error
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).Error
+  nameWithType: SimpleMonad<T>.Error
+  nameWithType.vb: SimpleMonad(Of T).Error
+- uid: Rayark.Mast.SimpleMonad`1.Error*
+  name: Error
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1_Error_
+  commentId: Overload:Rayark.Mast.SimpleMonad`1.Error
+  fullName: Rayark.Mast.SimpleMonad<T>.Error
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).Error
+  nameWithType: SimpleMonad<T>.Error
+  nameWithType.vb: SimpleMonad(Of T).Error
+- uid: Rayark.Mast.SimpleMonad`1.Result
+  name: Result
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1_Result
+  commentId: P:Rayark.Mast.SimpleMonad`1.Result
+  fullName: Rayark.Mast.SimpleMonad<T>.Result
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).Result
+  nameWithType: SimpleMonad<T>.Result
+  nameWithType.vb: SimpleMonad(Of T).Result
+- uid: Rayark.Mast.SimpleMonad`1.Result*
+  name: Result
+  href: api/Rayark.Mast.SimpleMonad-1.html#Rayark_Mast_SimpleMonad_1_Result_
+  commentId: Overload:Rayark.Mast.SimpleMonad`1.Result
+  fullName: Rayark.Mast.SimpleMonad<T>.Result
+  fullName.vb: Rayark.Mast.SimpleMonad(Of T).Result
+  nameWithType: SimpleMonad<T>.Result
+  nameWithType.vb: SimpleMonad(Of T).Result
+- uid: Rayark.Mast.ThreadedMonad`1
+  name: ThreadedMonad<T>
+  href: api/Rayark.Mast.ThreadedMonad-1.html
+  commentId: T:Rayark.Mast.ThreadedMonad`1
+  name.vb: ThreadedMonad(Of T)
+  fullName: Rayark.Mast.ThreadedMonad<T>
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T)
+  nameWithType: ThreadedMonad<T>
+  nameWithType.vb: ThreadedMonad(Of T)
+- uid: Rayark.Mast.ThreadedMonad`1.#ctor(System.Func{`0})
+  name: ThreadedMonad(Func<T>)
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1__ctor_System_Func__0__
+  commentId: M:Rayark.Mast.ThreadedMonad`1.#ctor(System.Func{`0})
+  name.vb: ThreadedMonad(Func(Of T))
+  fullName: Rayark.Mast.ThreadedMonad<T>.ThreadedMonad(System.Func<T>)
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).ThreadedMonad(System.Func(Of T))
+  nameWithType: ThreadedMonad<T>.ThreadedMonad(Func<T>)
+  nameWithType.vb: ThreadedMonad(Of T).ThreadedMonad(Func(Of T))
+- uid: Rayark.Mast.ThreadedMonad`1.#ctor*
+  name: ThreadedMonad
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1__ctor_
+  commentId: Overload:Rayark.Mast.ThreadedMonad`1.#ctor
+  fullName: Rayark.Mast.ThreadedMonad<T>.ThreadedMonad
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).ThreadedMonad
+  nameWithType: ThreadedMonad<T>.ThreadedMonad
+  nameWithType.vb: ThreadedMonad(Of T).ThreadedMonad
+- uid: Rayark.Mast.ThreadedMonad`1.Do
+  name: Do()
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1_Do
+  commentId: M:Rayark.Mast.ThreadedMonad`1.Do
+  fullName: Rayark.Mast.ThreadedMonad<T>.Do()
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).Do()
+  nameWithType: ThreadedMonad<T>.Do()
+  nameWithType.vb: ThreadedMonad(Of T).Do()
+- uid: Rayark.Mast.ThreadedMonad`1.Do*
+  name: Do
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1_Do_
+  commentId: Overload:Rayark.Mast.ThreadedMonad`1.Do
+  fullName: Rayark.Mast.ThreadedMonad<T>.Do
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).Do
+  nameWithType: ThreadedMonad<T>.Do
+  nameWithType.vb: ThreadedMonad(Of T).Do
+- uid: Rayark.Mast.ThreadedMonad`1.Error
+  name: Error
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1_Error
+  commentId: P:Rayark.Mast.ThreadedMonad`1.Error
+  fullName: Rayark.Mast.ThreadedMonad<T>.Error
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).Error
+  nameWithType: ThreadedMonad<T>.Error
+  nameWithType.vb: ThreadedMonad(Of T).Error
+- uid: Rayark.Mast.ThreadedMonad`1.Error*
+  name: Error
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1_Error_
+  commentId: Overload:Rayark.Mast.ThreadedMonad`1.Error
+  fullName: Rayark.Mast.ThreadedMonad<T>.Error
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).Error
+  nameWithType: ThreadedMonad<T>.Error
+  nameWithType.vb: ThreadedMonad(Of T).Error
+- uid: Rayark.Mast.ThreadedMonad`1.Result
+  name: Result
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1_Result
+  commentId: P:Rayark.Mast.ThreadedMonad`1.Result
+  fullName: Rayark.Mast.ThreadedMonad<T>.Result
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).Result
+  nameWithType: ThreadedMonad<T>.Result
+  nameWithType.vb: ThreadedMonad(Of T).Result
+- uid: Rayark.Mast.ThreadedMonad`1.Result*
+  name: Result
+  href: api/Rayark.Mast.ThreadedMonad-1.html#Rayark_Mast_ThreadedMonad_1_Result_
+  commentId: Overload:Rayark.Mast.ThreadedMonad`1.Result
+  fullName: Rayark.Mast.ThreadedMonad<T>.Result
+  fullName.vb: Rayark.Mast.ThreadedMonad(Of T).Result
+  nameWithType: ThreadedMonad<T>.Result
+  nameWithType.vb: ThreadedMonad(Of T).Result
+- uid: Rayark.Mast.Tuple
+  name: Tuple
+  href: api/Rayark.Mast.Tuple.html
+  commentId: T:Rayark.Mast.Tuple
+  fullName: Rayark.Mast.Tuple
+  nameWithType: Tuple
+- uid: Rayark.Mast.Tuple.Create*
+  name: Create
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create_
+  commentId: Overload:Rayark.Mast.Tuple.Create
+  fullName: Rayark.Mast.Tuple.Create
+  nameWithType: Tuple.Create
+- uid: Rayark.Mast.Tuple.Create``1(``0)
+  name: Create<T1>(T1)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__1___0_
+  commentId: M:Rayark.Mast.Tuple.Create``1(``0)
+  name.vb: Create(Of T1)(T1)
+  fullName: Rayark.Mast.Tuple.Create<T1>(T1)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1)(T1)
+  nameWithType: Tuple.Create<T1>(T1)
+  nameWithType.vb: Tuple.Create(Of T1)(T1)
+- uid: Rayark.Mast.Tuple.Create``2(``0,``1)
+  name: Create<T1, T2>(T1, T2)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__2___0___1_
+  commentId: M:Rayark.Mast.Tuple.Create``2(``0,``1)
+  name.vb: Create(Of T1, T2)(T1, T2)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2>(T1, T2)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2)(T1, T2)
+  nameWithType: Tuple.Create<T1, T2>(T1, T2)
+  nameWithType.vb: Tuple.Create(Of T1, T2)(T1, T2)
+- uid: Rayark.Mast.Tuple.Create``3(``0,``1,``2)
+  name: Create<T1, T2, T3>(T1, T2, T3)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__3___0___1___2_
+  commentId: M:Rayark.Mast.Tuple.Create``3(``0,``1,``2)
+  name.vb: Create(Of T1, T2, T3)(T1, T2, T3)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2, T3>(T1, T2, T3)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2, T3)(T1, T2, T3)
+  nameWithType: Tuple.Create<T1, T2, T3>(T1, T2, T3)
+  nameWithType.vb: Tuple.Create(Of T1, T2, T3)(T1, T2, T3)
+- uid: Rayark.Mast.Tuple.Create``4(``0,``1,``2,``3)
+  name: Create<T1, T2, T3, T4>(T1, T2, T3, T4)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__4___0___1___2___3_
+  commentId: M:Rayark.Mast.Tuple.Create``4(``0,``1,``2,``3)
+  name.vb: Create(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2, T3, T4>(T1, T2, T3, T4)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+  nameWithType: Tuple.Create<T1, T2, T3, T4>(T1, T2, T3, T4)
+  nameWithType.vb: Tuple.Create(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+- uid: Rayark.Mast.Tuple.Create``5(``0,``1,``2,``3,``4)
+  name: Create<T1, T2, T3, T4, T5>(T1, T2, T3, T4, T5)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__5___0___1___2___3___4_
+  commentId: M:Rayark.Mast.Tuple.Create``5(``0,``1,``2,``3,``4)
+  name.vb: Create(Of T1, T2, T3, T4, T5)(T1, T2, T3, T4, T5)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2, T3, T4, T5>(T1, T2, T3, T4, T5)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2, T3, T4, T5)(T1, T2, T3, T4, T5)
+  nameWithType: Tuple.Create<T1, T2, T3, T4, T5>(T1, T2, T3, T4, T5)
+  nameWithType.vb: Tuple.Create(Of T1, T2, T3, T4, T5)(T1, T2, T3, T4, T5)
+- uid: Rayark.Mast.Tuple.Create``6(``0,``1,``2,``3,``4,``5)
+  name: Create<T1, T2, T3, T4, T5, T6>(T1, T2, T3, T4, T5, T6)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__6___0___1___2___3___4___5_
+  commentId: M:Rayark.Mast.Tuple.Create``6(``0,``1,``2,``3,``4,``5)
+  name.vb: Create(Of T1, T2, T3, T4, T5, T6)(T1, T2, T3, T4, T5, T6)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2, T3, T4, T5, T6>(T1, T2, T3, T4, T5, T6)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2, T3, T4, T5, T6)(T1, T2, T3, T4, T5, T6)
+  nameWithType: Tuple.Create<T1, T2, T3, T4, T5, T6>(T1, T2, T3, T4, T5, T6)
+  nameWithType.vb: Tuple.Create(Of T1, T2, T3, T4, T5, T6)(T1, T2, T3, T4, T5, T6)
+- uid: Rayark.Mast.Tuple.Create``7(``0,``1,``2,``3,``4,``5,``6)
+  name: Create<T1, T2, T3, T4, T5, T6, T7>(T1, T2, T3, T4, T5, T6, T7)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__7___0___1___2___3___4___5___6_
+  commentId: M:Rayark.Mast.Tuple.Create``7(``0,``1,``2,``3,``4,``5,``6)
+  name.vb: Create(Of T1, T2, T3, T4, T5, T6, T7)(T1, T2, T3, T4, T5, T6, T7)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2, T3, T4, T5, T6, T7>(T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2, T3, T4, T5, T6, T7)(T1, T2, T3, T4, T5, T6, T7)
+  nameWithType: Tuple.Create<T1, T2, T3, T4, T5, T6, T7>(T1, T2, T3, T4, T5, T6, T7)
+  nameWithType.vb: Tuple.Create(Of T1, T2, T3, T4, T5, T6, T7)(T1, T2, T3, T4, T5, T6, T7)
+- uid: Rayark.Mast.Tuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)
+  name: Create<T1, T2, T3, T4, T5, T6, T7, T8>(T1, T2, T3, T4, T5, T6, T7, T8)
+  href: api/Rayark.Mast.Tuple.html#Rayark_Mast_Tuple_Create__8___0___1___2___3___4___5___6___7_
+  commentId: M:Rayark.Mast.Tuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)
+  name.vb: Create(Of T1, T2, T3, T4, T5, T6, T7, T8)(T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName: Rayark.Mast.Tuple.Create<T1, T2, T3, T4, T5, T6, T7, T8>(T1, T2, T3, T4, T5, T6, T7, T8)
+  fullName.vb: Rayark.Mast.Tuple.Create(Of T1, T2, T3, T4, T5, T6, T7, T8)(T1, T2, T3, T4, T5, T6, T7, T8)
+  nameWithType: Tuple.Create<T1, T2, T3, T4, T5, T6, T7, T8>(T1, T2, T3, T4, T5, T6, T7, T8)
+  nameWithType.vb: Tuple.Create(Of T1, T2, T3, T4, T5, T6, T7, T8)(T1, T2, T3, T4, T5, T6, T7, T8)
+- uid: Rayark.Mast.Tuple`1
+  name: Tuple<T1>
+  href: api/Rayark.Mast.Tuple-1.html
+  commentId: T:Rayark.Mast.Tuple`1
+  name.vb: Tuple(Of T1)
+  fullName: Rayark.Mast.Tuple<T1>
+  fullName.vb: Rayark.Mast.Tuple(Of T1)
+  nameWithType: Tuple<T1>
+  nameWithType.vb: Tuple(Of T1)
+- uid: Rayark.Mast.Tuple`1.#ctor(`0)
+  name: Tuple(T1)
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1__ctor__0_
+  commentId: M:Rayark.Mast.Tuple`1.#ctor(`0)
+  fullName: Rayark.Mast.Tuple<T1>.Tuple(T1)
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Tuple(T1)
+  nameWithType: Tuple<T1>.Tuple(T1)
+  nameWithType.vb: Tuple(Of T1).Tuple(T1)
+- uid: Rayark.Mast.Tuple`1.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`1.#ctor
+  fullName: Rayark.Mast.Tuple<T1>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Tuple
+  nameWithType: Tuple<T1>.Tuple
+  nameWithType.vb: Tuple(Of T1).Tuple
+- uid: Rayark.Mast.Tuple`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`1.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Equals(System.Object)
+  nameWithType: Tuple<T1>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1).Equals(Object)
+- uid: Rayark.Mast.Tuple`1.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`1.Equals
+  fullName: Rayark.Mast.Tuple<T1>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Equals
+  nameWithType: Tuple<T1>.Equals
+  nameWithType.vb: Tuple(Of T1).Equals
+- uid: Rayark.Mast.Tuple`1.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`1.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1).GetHashCode()
+  nameWithType: Tuple<T1>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1).GetHashCode()
+- uid: Rayark.Mast.Tuple`1.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`1.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1).GetHashCode
+  nameWithType: Tuple<T1>.GetHashCode
+  nameWithType.vb: Tuple(Of T1).GetHashCode
+- uid: Rayark.Mast.Tuple`1.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Item1
+  commentId: P:Rayark.Mast.Tuple`1.Item1
+  fullName: Rayark.Mast.Tuple<T1>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Item1
+  nameWithType: Tuple<T1>.Item1
+  nameWithType.vb: Tuple(Of T1).Item1
+- uid: Rayark.Mast.Tuple`1.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`1.Item1
+  fullName: Rayark.Mast.Tuple<T1>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Item1
+  nameWithType: Tuple<T1>.Item1
+  nameWithType.vb: Tuple(Of T1).Item1
+- uid: Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`1.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`1.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`1.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`1.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`1.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1).System.IComparable.CompareTo
+  nameWithType: Tuple<T1>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`1.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_ToString
+  commentId: M:Rayark.Mast.Tuple`1.ToString
+  fullName: Rayark.Mast.Tuple<T1>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1).ToString()
+  nameWithType: Tuple<T1>.ToString()
+  nameWithType.vb: Tuple(Of T1).ToString()
+- uid: Rayark.Mast.Tuple`1.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-1.html#Rayark_Mast_Tuple_1_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`1.ToString
+  fullName: Rayark.Mast.Tuple<T1>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1).ToString
+  nameWithType: Tuple<T1>.ToString
+  nameWithType.vb: Tuple(Of T1).ToString
+- uid: Rayark.Mast.Tuple`2
+  name: Tuple<T1, T2>
+  href: api/Rayark.Mast.Tuple-2.html
+  commentId: T:Rayark.Mast.Tuple`2
+  name.vb: Tuple(Of T1, T2)
+  fullName: Rayark.Mast.Tuple<T1, T2>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2)
+  nameWithType: Tuple<T1, T2>
+  nameWithType.vb: Tuple(Of T1, T2)
+- uid: Rayark.Mast.Tuple`2.#ctor(`0,`1)
+  name: Tuple(T1, T2)
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2__ctor__0__1_
+  commentId: M:Rayark.Mast.Tuple`2.#ctor(`0,`1)
+  fullName: Rayark.Mast.Tuple<T1, T2>.Tuple(T1, T2)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Tuple(T1, T2)
+  nameWithType: Tuple<T1, T2>.Tuple(T1, T2)
+  nameWithType.vb: Tuple(Of T1, T2).Tuple(T1, T2)
+- uid: Rayark.Mast.Tuple`2.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`2.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Tuple
+  nameWithType: Tuple<T1, T2>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2).Tuple
+- uid: Rayark.Mast.Tuple`2.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`2.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Equals(System.Object)
+  nameWithType: Tuple<T1, T2>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2).Equals(Object)
+- uid: Rayark.Mast.Tuple`2.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`2.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Equals
+  nameWithType: Tuple<T1, T2>.Equals
+  nameWithType.vb: Tuple(Of T1, T2).Equals
+- uid: Rayark.Mast.Tuple`2.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`2.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).GetHashCode()
+  nameWithType: Tuple<T1, T2>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2).GetHashCode()
+- uid: Rayark.Mast.Tuple`2.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`2.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).GetHashCode
+  nameWithType: Tuple<T1, T2>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2).GetHashCode
+- uid: Rayark.Mast.Tuple`2.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Item1
+  commentId: P:Rayark.Mast.Tuple`2.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Item1
+  nameWithType: Tuple<T1, T2>.Item1
+  nameWithType.vb: Tuple(Of T1, T2).Item1
+- uid: Rayark.Mast.Tuple`2.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`2.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Item1
+  nameWithType: Tuple<T1, T2>.Item1
+  nameWithType.vb: Tuple(Of T1, T2).Item1
+- uid: Rayark.Mast.Tuple`2.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Item2
+  commentId: P:Rayark.Mast.Tuple`2.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Item2
+  nameWithType: Tuple<T1, T2>.Item2
+  nameWithType.vb: Tuple(Of T1, T2).Item2
+- uid: Rayark.Mast.Tuple`2.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`2.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Item2
+  nameWithType: Tuple<T1, T2>.Item2
+  nameWithType.vb: Tuple(Of T1, T2).Item2
+- uid: Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`2.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`2.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`2.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`2.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`2.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`2.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_ToString
+  commentId: M:Rayark.Mast.Tuple`2.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).ToString()
+  nameWithType: Tuple<T1, T2>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2).ToString()
+- uid: Rayark.Mast.Tuple`2.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-2.html#Rayark_Mast_Tuple_2_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`2.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2).ToString
+  nameWithType: Tuple<T1, T2>.ToString
+  nameWithType.vb: Tuple(Of T1, T2).ToString
+- uid: Rayark.Mast.Tuple`3
+  name: Tuple<T1, T2, T3>
+  href: api/Rayark.Mast.Tuple-3.html
+  commentId: T:Rayark.Mast.Tuple`3
+  name.vb: Tuple(Of T1, T2, T3)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3)
+  nameWithType: Tuple<T1, T2, T3>
+  nameWithType.vb: Tuple(Of T1, T2, T3)
+- uid: Rayark.Mast.Tuple`3.#ctor(`0,`1,`2)
+  name: Tuple(T1, T2, T3)
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3__ctor__0__1__2_
+  commentId: M:Rayark.Mast.Tuple`3.#ctor(`0,`1,`2)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Tuple(T1, T2, T3)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Tuple(T1, T2, T3)
+  nameWithType: Tuple<T1, T2, T3>.Tuple(T1, T2, T3)
+  nameWithType.vb: Tuple(Of T1, T2, T3).Tuple(T1, T2, T3)
+- uid: Rayark.Mast.Tuple`3.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`3.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Tuple
+  nameWithType: Tuple<T1, T2, T3>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2, T3).Tuple
+- uid: Rayark.Mast.Tuple`3.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`3.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Equals(System.Object)
+  nameWithType: Tuple<T1, T2, T3>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3).Equals(Object)
+- uid: Rayark.Mast.Tuple`3.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`3.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Equals
+  nameWithType: Tuple<T1, T2, T3>.Equals
+  nameWithType.vb: Tuple(Of T1, T2, T3).Equals
+- uid: Rayark.Mast.Tuple`3.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`3.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).GetHashCode()
+  nameWithType: Tuple<T1, T2, T3>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2, T3).GetHashCode()
+- uid: Rayark.Mast.Tuple`3.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`3.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).GetHashCode
+  nameWithType: Tuple<T1, T2, T3>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2, T3).GetHashCode
+- uid: Rayark.Mast.Tuple`3.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Item1
+  commentId: P:Rayark.Mast.Tuple`3.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Item1
+  nameWithType: Tuple<T1, T2, T3>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3).Item1
+- uid: Rayark.Mast.Tuple`3.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`3.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Item1
+  nameWithType: Tuple<T1, T2, T3>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3).Item1
+- uid: Rayark.Mast.Tuple`3.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Item2
+  commentId: P:Rayark.Mast.Tuple`3.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Item2
+  nameWithType: Tuple<T1, T2, T3>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3).Item2
+- uid: Rayark.Mast.Tuple`3.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`3.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Item2
+  nameWithType: Tuple<T1, T2, T3>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3).Item2
+- uid: Rayark.Mast.Tuple`3.Item3
+  name: Item3
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Item3
+  commentId: P:Rayark.Mast.Tuple`3.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Item3
+  nameWithType: Tuple<T1, T2, T3>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3).Item3
+- uid: Rayark.Mast.Tuple`3.Item3*
+  name: Item3
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Item3_
+  commentId: Overload:Rayark.Mast.Tuple`3.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Item3
+  nameWithType: Tuple<T1, T2, T3>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3).Item3
+- uid: Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2, T3>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2, T3>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`3.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`3.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`3.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2, T3>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`3.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`3.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2, T3>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2, T3).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`3.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_ToString
+  commentId: M:Rayark.Mast.Tuple`3.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).ToString()
+  nameWithType: Tuple<T1, T2, T3>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2, T3).ToString()
+- uid: Rayark.Mast.Tuple`3.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-3.html#Rayark_Mast_Tuple_3_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`3.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3).ToString
+  nameWithType: Tuple<T1, T2, T3>.ToString
+  nameWithType.vb: Tuple(Of T1, T2, T3).ToString
+- uid: Rayark.Mast.Tuple`4
+  name: Tuple<T1, T2, T3, T4>
+  href: api/Rayark.Mast.Tuple-4.html
+  commentId: T:Rayark.Mast.Tuple`4
+  name.vb: Tuple(Of T1, T2, T3, T4)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4)
+  nameWithType: Tuple<T1, T2, T3, T4>
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4)
+- uid: Rayark.Mast.Tuple`4.#ctor(`0,`1,`2,`3)
+  name: Tuple(T1, T2, T3, T4)
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4__ctor__0__1__2__3_
+  commentId: M:Rayark.Mast.Tuple`4.#ctor(`0,`1,`2,`3)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Tuple(T1, T2, T3, T4)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Tuple(T1, T2, T3, T4)
+  nameWithType: Tuple<T1, T2, T3, T4>.Tuple(T1, T2, T3, T4)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Tuple(T1, T2, T3, T4)
+- uid: Rayark.Mast.Tuple`4.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`4.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Tuple
+  nameWithType: Tuple<T1, T2, T3, T4>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Tuple
+- uid: Rayark.Mast.Tuple`4.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`4.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Equals(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Equals(Object)
+- uid: Rayark.Mast.Tuple`4.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`4.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Equals
+  nameWithType: Tuple<T1, T2, T3, T4>.Equals
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Equals
+- uid: Rayark.Mast.Tuple`4.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`4.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).GetHashCode()
+  nameWithType: Tuple<T1, T2, T3, T4>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).GetHashCode()
+- uid: Rayark.Mast.Tuple`4.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`4.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).GetHashCode
+  nameWithType: Tuple<T1, T2, T3, T4>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).GetHashCode
+- uid: Rayark.Mast.Tuple`4.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item1
+  commentId: P:Rayark.Mast.Tuple`4.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item1
+  nameWithType: Tuple<T1, T2, T3, T4>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item1
+- uid: Rayark.Mast.Tuple`4.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`4.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item1
+  nameWithType: Tuple<T1, T2, T3, T4>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item1
+- uid: Rayark.Mast.Tuple`4.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item2
+  commentId: P:Rayark.Mast.Tuple`4.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item2
+  nameWithType: Tuple<T1, T2, T3, T4>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item2
+- uid: Rayark.Mast.Tuple`4.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`4.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item2
+  nameWithType: Tuple<T1, T2, T3, T4>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item2
+- uid: Rayark.Mast.Tuple`4.Item3
+  name: Item3
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item3
+  commentId: P:Rayark.Mast.Tuple`4.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item3
+  nameWithType: Tuple<T1, T2, T3, T4>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item3
+- uid: Rayark.Mast.Tuple`4.Item3*
+  name: Item3
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item3_
+  commentId: Overload:Rayark.Mast.Tuple`4.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item3
+  nameWithType: Tuple<T1, T2, T3, T4>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item3
+- uid: Rayark.Mast.Tuple`4.Item4
+  name: Item4
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item4
+  commentId: P:Rayark.Mast.Tuple`4.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item4
+  nameWithType: Tuple<T1, T2, T3, T4>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item4
+- uid: Rayark.Mast.Tuple`4.Item4*
+  name: Item4
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Item4_
+  commentId: Overload:Rayark.Mast.Tuple`4.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Item4
+  nameWithType: Tuple<T1, T2, T3, T4>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Item4
+- uid: Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2, T3, T4>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2, T3, T4>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`4.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`4.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`4.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`4.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`4.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2, T3, T4>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`4.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_ToString
+  commentId: M:Rayark.Mast.Tuple`4.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).ToString()
+  nameWithType: Tuple<T1, T2, T3, T4>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).ToString()
+- uid: Rayark.Mast.Tuple`4.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-4.html#Rayark_Mast_Tuple_4_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`4.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4).ToString
+  nameWithType: Tuple<T1, T2, T3, T4>.ToString
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4).ToString
+- uid: Rayark.Mast.Tuple`5
+  name: Tuple<T1, T2, T3, T4, T5>
+  href: api/Rayark.Mast.Tuple-5.html
+  commentId: T:Rayark.Mast.Tuple`5
+  name.vb: Tuple(Of T1, T2, T3, T4, T5)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5)
+  nameWithType: Tuple<T1, T2, T3, T4, T5>
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5)
+- uid: Rayark.Mast.Tuple`5.#ctor(`0,`1,`2,`3,`4)
+  name: Tuple(T1, T2, T3, T4, T5)
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5__ctor__0__1__2__3__4_
+  commentId: M:Rayark.Mast.Tuple`5.#ctor(`0,`1,`2,`3,`4)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Tuple(T1, T2, T3, T4, T5)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Tuple(T1, T2, T3, T4, T5)
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Tuple(T1, T2, T3, T4, T5)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Tuple(T1, T2, T3, T4, T5)
+- uid: Rayark.Mast.Tuple`5.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`5.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Tuple
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Tuple
+- uid: Rayark.Mast.Tuple`5.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`5.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Equals(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Equals(Object)
+- uid: Rayark.Mast.Tuple`5.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`5.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Equals
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Equals
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Equals
+- uid: Rayark.Mast.Tuple`5.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`5.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).GetHashCode()
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).GetHashCode()
+- uid: Rayark.Mast.Tuple`5.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`5.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).GetHashCode
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).GetHashCode
+- uid: Rayark.Mast.Tuple`5.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item1
+  commentId: P:Rayark.Mast.Tuple`5.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item1
+- uid: Rayark.Mast.Tuple`5.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`5.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item1
+- uid: Rayark.Mast.Tuple`5.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item2
+  commentId: P:Rayark.Mast.Tuple`5.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item2
+- uid: Rayark.Mast.Tuple`5.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`5.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item2
+- uid: Rayark.Mast.Tuple`5.Item3
+  name: Item3
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item3
+  commentId: P:Rayark.Mast.Tuple`5.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item3
+- uid: Rayark.Mast.Tuple`5.Item3*
+  name: Item3
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item3_
+  commentId: Overload:Rayark.Mast.Tuple`5.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item3
+- uid: Rayark.Mast.Tuple`5.Item4
+  name: Item4
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item4
+  commentId: P:Rayark.Mast.Tuple`5.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item4
+- uid: Rayark.Mast.Tuple`5.Item4*
+  name: Item4
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item4_
+  commentId: Overload:Rayark.Mast.Tuple`5.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item4
+- uid: Rayark.Mast.Tuple`5.Item5
+  name: Item5
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item5
+  commentId: P:Rayark.Mast.Tuple`5.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item5
+- uid: Rayark.Mast.Tuple`5.Item5*
+  name: Item5
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Item5_
+  commentId: Overload:Rayark.Mast.Tuple`5.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Item5
+- uid: Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`5.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`5.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`5.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`5.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`5.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`5.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_ToString
+  commentId: M:Rayark.Mast.Tuple`5.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).ToString()
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).ToString()
+- uid: Rayark.Mast.Tuple`5.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-5.html#Rayark_Mast_Tuple_5_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`5.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5).ToString
+  nameWithType: Tuple<T1, T2, T3, T4, T5>.ToString
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5).ToString
+- uid: Rayark.Mast.Tuple`6
+  name: Tuple<T1, T2, T3, T4, T5, T6>
+  href: api/Rayark.Mast.Tuple-6.html
+  commentId: T:Rayark.Mast.Tuple`6
+  name.vb: Tuple(Of T1, T2, T3, T4, T5, T6)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6)
+- uid: Rayark.Mast.Tuple`6.#ctor(`0,`1,`2,`3,`4,`5)
+  name: Tuple(T1, T2, T3, T4, T5, T6)
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6__ctor__0__1__2__3__4__5_
+  commentId: M:Rayark.Mast.Tuple`6.#ctor(`0,`1,`2,`3,`4,`5)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Tuple(T1, T2, T3, T4, T5, T6)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Tuple(T1, T2, T3, T4, T5, T6)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Tuple(T1, T2, T3, T4, T5, T6)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Tuple(T1, T2, T3, T4, T5, T6)
+- uid: Rayark.Mast.Tuple`6.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`6.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Tuple
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Tuple
+- uid: Rayark.Mast.Tuple`6.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`6.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Equals(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Equals(Object)
+- uid: Rayark.Mast.Tuple`6.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`6.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Equals
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Equals
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Equals
+- uid: Rayark.Mast.Tuple`6.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`6.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).GetHashCode()
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).GetHashCode()
+- uid: Rayark.Mast.Tuple`6.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`6.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).GetHashCode
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).GetHashCode
+- uid: Rayark.Mast.Tuple`6.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item1
+  commentId: P:Rayark.Mast.Tuple`6.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item1
+- uid: Rayark.Mast.Tuple`6.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`6.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item1
+- uid: Rayark.Mast.Tuple`6.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item2
+  commentId: P:Rayark.Mast.Tuple`6.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item2
+- uid: Rayark.Mast.Tuple`6.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`6.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item2
+- uid: Rayark.Mast.Tuple`6.Item3
+  name: Item3
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item3
+  commentId: P:Rayark.Mast.Tuple`6.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item3
+- uid: Rayark.Mast.Tuple`6.Item3*
+  name: Item3
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item3_
+  commentId: Overload:Rayark.Mast.Tuple`6.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item3
+- uid: Rayark.Mast.Tuple`6.Item4
+  name: Item4
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item4
+  commentId: P:Rayark.Mast.Tuple`6.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item4
+- uid: Rayark.Mast.Tuple`6.Item4*
+  name: Item4
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item4_
+  commentId: Overload:Rayark.Mast.Tuple`6.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item4
+- uid: Rayark.Mast.Tuple`6.Item5
+  name: Item5
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item5
+  commentId: P:Rayark.Mast.Tuple`6.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item5
+- uid: Rayark.Mast.Tuple`6.Item5*
+  name: Item5
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item5_
+  commentId: Overload:Rayark.Mast.Tuple`6.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item5
+- uid: Rayark.Mast.Tuple`6.Item6
+  name: Item6
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item6
+  commentId: P:Rayark.Mast.Tuple`6.Item6
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item6
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item6
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item6
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item6
+- uid: Rayark.Mast.Tuple`6.Item6*
+  name: Item6
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Item6_
+  commentId: Overload:Rayark.Mast.Tuple`6.Item6
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Item6
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Item6
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.Item6
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Item6
+- uid: Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`6.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`6.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`6.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`6.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`6.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`6.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_ToString
+  commentId: M:Rayark.Mast.Tuple`6.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).ToString()
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).ToString()
+- uid: Rayark.Mast.Tuple`6.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-6.html#Rayark_Mast_Tuple_6_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`6.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6).ToString
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6>.ToString
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6).ToString
+- uid: Rayark.Mast.Tuple`7
+  name: Tuple<T1, T2, T3, T4, T5, T6, T7>
+  href: api/Rayark.Mast.Tuple-7.html
+  commentId: T:Rayark.Mast.Tuple`7
+  name.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7)
+- uid: Rayark.Mast.Tuple`7.#ctor(`0,`1,`2,`3,`4,`5,`6)
+  name: Tuple(T1, T2, T3, T4, T5, T6, T7)
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7__ctor__0__1__2__3__4__5__6_
+  commentId: M:Rayark.Mast.Tuple`7.#ctor(`0,`1,`2,`3,`4,`5,`6)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Tuple(T1, T2, T3, T4, T5, T6, T7)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Tuple(T1, T2, T3, T4, T5, T6, T7)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Tuple(T1, T2, T3, T4, T5, T6, T7)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Tuple(T1, T2, T3, T4, T5, T6, T7)
+- uid: Rayark.Mast.Tuple`7.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`7.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Tuple
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Tuple
+- uid: Rayark.Mast.Tuple`7.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`7.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Equals(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Equals(Object)
+- uid: Rayark.Mast.Tuple`7.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`7.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Equals
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Equals
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Equals
+- uid: Rayark.Mast.Tuple`7.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`7.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).GetHashCode()
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).GetHashCode()
+- uid: Rayark.Mast.Tuple`7.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`7.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).GetHashCode
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).GetHashCode
+- uid: Rayark.Mast.Tuple`7.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item1
+  commentId: P:Rayark.Mast.Tuple`7.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item1
+- uid: Rayark.Mast.Tuple`7.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item1
+- uid: Rayark.Mast.Tuple`7.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item2
+  commentId: P:Rayark.Mast.Tuple`7.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item2
+- uid: Rayark.Mast.Tuple`7.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item2
+- uid: Rayark.Mast.Tuple`7.Item3
+  name: Item3
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item3
+  commentId: P:Rayark.Mast.Tuple`7.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item3
+- uid: Rayark.Mast.Tuple`7.Item3*
+  name: Item3
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item3_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item3
+- uid: Rayark.Mast.Tuple`7.Item4
+  name: Item4
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item4
+  commentId: P:Rayark.Mast.Tuple`7.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item4
+- uid: Rayark.Mast.Tuple`7.Item4*
+  name: Item4
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item4_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item4
+- uid: Rayark.Mast.Tuple`7.Item5
+  name: Item5
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item5
+  commentId: P:Rayark.Mast.Tuple`7.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item5
+- uid: Rayark.Mast.Tuple`7.Item5*
+  name: Item5
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item5_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item5
+- uid: Rayark.Mast.Tuple`7.Item6
+  name: Item6
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item6
+  commentId: P:Rayark.Mast.Tuple`7.Item6
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item6
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item6
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item6
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item6
+- uid: Rayark.Mast.Tuple`7.Item6*
+  name: Item6
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item6_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item6
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item6
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item6
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item6
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item6
+- uid: Rayark.Mast.Tuple`7.Item7
+  name: Item7
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item7
+  commentId: P:Rayark.Mast.Tuple`7.Item7
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item7
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item7
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item7
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item7
+- uid: Rayark.Mast.Tuple`7.Item7*
+  name: Item7
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Item7_
+  commentId: Overload:Rayark.Mast.Tuple`7.Item7
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Item7
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item7
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.Item7
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Item7
+- uid: Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`7.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`7.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`7.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`7.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`7.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`7.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_ToString
+  commentId: M:Rayark.Mast.Tuple`7.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).ToString()
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).ToString()
+- uid: Rayark.Mast.Tuple`7.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-7.html#Rayark_Mast_Tuple_7_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`7.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7).ToString
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7>.ToString
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7).ToString
+- uid: Rayark.Mast.Tuple`8
+  name: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>
+  href: api/Rayark.Mast.Tuple-8.html
+  commentId: T:Rayark.Mast.Tuple`8
+  name.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest)
+- uid: Rayark.Mast.Tuple`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7)
+  name: Tuple(T1, T2, T3, T4, T5, T6, T7, TRest)
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8__ctor__0__1__2__3__4__5__6__7_
+  commentId: M:Rayark.Mast.Tuple`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Tuple(T1, T2, T3, T4, T5, T6, T7, TRest)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Tuple(T1, T2, T3, T4, T5, T6, T7, TRest)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Tuple(T1, T2, T3, T4, T5, T6, T7, TRest)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Tuple(T1, T2, T3, T4, T5, T6, T7, TRest)
+- uid: Rayark.Mast.Tuple`8.#ctor*
+  name: Tuple
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8__ctor_
+  commentId: Overload:Rayark.Mast.Tuple`8.#ctor
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Tuple
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Tuple
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Tuple
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Tuple
+- uid: Rayark.Mast.Tuple`8.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Equals_System_Object_
+  commentId: M:Rayark.Mast.Tuple`8.Equals(System.Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Equals(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Equals(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Equals(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Equals(Object)
+- uid: Rayark.Mast.Tuple`8.Equals*
+  name: Equals
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Equals_
+  commentId: Overload:Rayark.Mast.Tuple`8.Equals
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Equals
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Equals
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Equals
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Equals
+- uid: Rayark.Mast.Tuple`8.GetHashCode
+  name: GetHashCode()
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_GetHashCode
+  commentId: M:Rayark.Mast.Tuple`8.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.GetHashCode()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).GetHashCode()
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.GetHashCode()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).GetHashCode()
+- uid: Rayark.Mast.Tuple`8.GetHashCode*
+  name: GetHashCode
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_GetHashCode_
+  commentId: Overload:Rayark.Mast.Tuple`8.GetHashCode
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.GetHashCode
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).GetHashCode
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.GetHashCode
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).GetHashCode
+- uid: Rayark.Mast.Tuple`8.Item1
+  name: Item1
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item1
+  commentId: P:Rayark.Mast.Tuple`8.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item1
+- uid: Rayark.Mast.Tuple`8.Item1*
+  name: Item1
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item1_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item1
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item1
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item1
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item1
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item1
+- uid: Rayark.Mast.Tuple`8.Item2
+  name: Item2
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item2
+  commentId: P:Rayark.Mast.Tuple`8.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item2
+- uid: Rayark.Mast.Tuple`8.Item2*
+  name: Item2
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item2_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item2
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item2
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item2
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item2
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item2
+- uid: Rayark.Mast.Tuple`8.Item3
+  name: Item3
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item3
+  commentId: P:Rayark.Mast.Tuple`8.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item3
+- uid: Rayark.Mast.Tuple`8.Item3*
+  name: Item3
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item3_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item3
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item3
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item3
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item3
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item3
+- uid: Rayark.Mast.Tuple`8.Item4
+  name: Item4
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item4
+  commentId: P:Rayark.Mast.Tuple`8.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item4
+- uid: Rayark.Mast.Tuple`8.Item4*
+  name: Item4
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item4_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item4
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item4
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item4
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item4
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item4
+- uid: Rayark.Mast.Tuple`8.Item5
+  name: Item5
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item5
+  commentId: P:Rayark.Mast.Tuple`8.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item5
+- uid: Rayark.Mast.Tuple`8.Item5*
+  name: Item5
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item5_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item5
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item5
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item5
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item5
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item5
+- uid: Rayark.Mast.Tuple`8.Item6
+  name: Item6
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item6
+  commentId: P:Rayark.Mast.Tuple`8.Item6
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item6
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item6
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item6
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item6
+- uid: Rayark.Mast.Tuple`8.Item6*
+  name: Item6
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item6_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item6
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item6
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item6
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item6
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item6
+- uid: Rayark.Mast.Tuple`8.Item7
+  name: Item7
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item7
+  commentId: P:Rayark.Mast.Tuple`8.Item7
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item7
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item7
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item7
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item7
+- uid: Rayark.Mast.Tuple`8.Item7*
+  name: Item7
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Item7_
+  commentId: Overload:Rayark.Mast.Tuple`8.Item7
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item7
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item7
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Item7
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Item7
+- uid: Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Item(System.Int32)
+  name: ITuple.Item[Int32]
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Rayark_Mast_ITuple_Item_System_Int32_
+  commentId: P:Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Item(System.Int32)
+  name.vb: Rayark.Mast.ITuple.Item(Int32)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rayark.Mast.ITuple.Item[System.Int32]
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Item(System.Int32)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ITuple.Item[Int32]
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Item(Int32)
+- uid: Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Item*
+  name: ITuple.Item
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Rayark_Mast_ITuple_Item_
+  commentId: Overload:Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Item
+  name.vb: Rayark.Mast.ITuple.Item
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rayark.Mast.ITuple.Item
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Item
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ITuple.Item
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Item
+- uid: Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Length
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Rayark_Mast_ITuple_Length
+  commentId: P:Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Length*
+  name: ITuple.Length
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Rayark_Mast_ITuple_Length_
+  commentId: Overload:Rayark.Mast.Tuple`8.Rayark#Mast#ITuple#Length
+  name.vb: Rayark.Mast.ITuple.Length
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rayark.Mast.ITuple.Length
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Length
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ITuple.Length
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rayark.Mast.ITuple.Length
+- uid: Rayark.Mast.Tuple`8.Rest
+  name: Rest
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Rest
+  commentId: P:Rayark.Mast.Tuple`8.Rest
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rest
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rest
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rest
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rest
+- uid: Rayark.Mast.Tuple`8.Rest*
+  name: Rest
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_Rest_
+  commentId: Overload:Rayark.Mast.Tuple`8.Rest
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rest
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rest
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.Rest
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).Rest
+- uid: Rayark.Mast.Tuple`8.System#IComparable#CompareTo(System.Object)
+  name: IComparable.CompareTo(Object)
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_System_IComparable_CompareTo_System_Object_
+  commentId: M:Rayark.Mast.Tuple`8.System#IComparable#CompareTo(System.Object)
+  name.vb: System.IComparable.CompareTo(Object)
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.System.IComparable.CompareTo(System.Object)
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).System.IComparable.CompareTo(System.Object)
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.IComparable.CompareTo(Object)
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).System.IComparable.CompareTo(Object)
+- uid: Rayark.Mast.Tuple`8.System#IComparable#CompareTo*
+  name: IComparable.CompareTo
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_System_IComparable_CompareTo_
+  commentId: Overload:Rayark.Mast.Tuple`8.System#IComparable#CompareTo
+  name.vb: System.IComparable.CompareTo
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.System.IComparable.CompareTo
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).System.IComparable.CompareTo
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.IComparable.CompareTo
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).System.IComparable.CompareTo
+- uid: Rayark.Mast.Tuple`8.ToString
+  name: ToString()
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_ToString
+  commentId: M:Rayark.Mast.Tuple`8.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ToString()
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).ToString()
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ToString()
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).ToString()
+- uid: Rayark.Mast.Tuple`8.ToString*
+  name: ToString
+  href: api/Rayark.Mast.Tuple-8.html#Rayark_Mast_Tuple_8_ToString_
+  commentId: Overload:Rayark.Mast.Tuple`8.ToString
+  fullName: Rayark.Mast.Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ToString
+  fullName.vb: Rayark.Mast.Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).ToString
+  nameWithType: Tuple<T1, T2, T3, T4, T5, T6, T7, TRest>.ToString
+  nameWithType.vb: Tuple(Of T1, T2, T3, T4, T5, T6, T7, TRest).ToString

@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Utilities </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Utilities ">
+    <meta name="generator" content="docfx 2.32.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="utilities">Utilities</h1>
+
+<h2 id="sleep">Sleep</h2>
+<p><a class="xref" href="../api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Sleep_System_Single_">Coroutine.Sleep(float)</a> is a helper function let you sleep a period time in a coroutine.</p>
+<pre><code class="lang-csharp">IEnumerator DoSomething(){
+    // Sleep for 3.0 seconds
+    yield return Coroutine.Sleep(3.0f);
+}
+</code></pre><p>The period of time during which <a class="xref" href="../api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Sleep_System_Single_">Coroutine.Sleep(float)</a> actually sleeps also is affected by the elapsed time passed to <a class="xref" href="../api/Rayark.Mast.Coroutine.html#Rayark_Mast_Coroutine_Resume_System_Single_">Coroutine.Resume(float)</a>.</p>
+<p>For example,</p>
+<pre><code class="lang-csharp">Coroutine co = new Coroutine();
+void Update(){
+    co.Resume( Time.deltaTime * 0.1f);
+}
+</code></pre><p>the sleep method executed with in the above coroutine will takes ten times time.</p>
+<h2 id="resources-management-with-defer">Resources Management with <code>Defer</code></h2>
+<p>The <code>using{}</code> clause can be used within iterator blocks to help manage resources with respect to the life time of the iterator blocks.</p>
+<p>Consider the following iterator block.</p>
+<pre><code class="lang-csharp">IEnumerator IAP(){
+
+    using( var transaction = iapMgr.CreateTransaction()){
+        // Do some operation
+        yield return Coroutine.Sleep();
+
+        if( isError ){
+            yield break;
+        }
+    }
+
+    yield return ShowTransactionSucceedAnimation();
+}
+</code></pre><p>The variable <code>transaction</code> holds a dispoable object. The <code>using{}</code> clause makes sure the related disposable object will be disposed when the iterator block finished. Even if <code>MoveNext</code> method of the <code>IEnumerator</code> instance of the iterator block is stopped being invoked for some unknown reason, we can easily dispose allocated resource via the following code snippet.</p>
+<pre><code class="lang-csharp">var etr = IAP();
+
+//call MoveNext() few times
+
+// The transaction object will be disposed if it has been created.
+(etr as IDisposable).Dispose();
+</code></pre><p>Actually, if you execute iterator blocks with <a class="xref" href="../api/Rayark.Mast.Coroutine.html">Coroutine</a>, all the generated iterator block instances in the stack will be disposed when the instance of <a class="xref" href="../api/Rayark.Mast.Coroutine.html">Coroutine</a> is disposed.</p>
+<p>To further utilize <code>using{}</code> clause to manage resources, we can use <a class="xref" href="../api/Rayark.Mast.Defer.html">Defer</a>. The following example demonstrate how to use <a class="xref" href="../api/Rayark.Mast.Defer.html">Defer</a> with <code>using{}</code> clause to manage resources, even states (<code>_running</code>).</p>
+<pre><code class="lang-csharp">
+IEnumerator IAP(){
+    using(var defer = new Defer()){
+
+        _running = true;
+        // _running will set to false after leaving using clause
+        defer.Add( () =&gt; { _running = false;});
+
+        var resource = AllocateResrouce();
+        // resource will be deallocated after leaving using clause
+        defer.Add( ()=&gt; DeallocateResource(resource));
+        // do something
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Rayark Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

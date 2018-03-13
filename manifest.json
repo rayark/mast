@@ -1,0 +1,549 @@
+{
+  "homepages": [],
+  "source_base_path": "/builds/engine/mast/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.BindMonad-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.BindMonad-3.html",
+          "hash": "Eb95KdYP4UyoGIMoVZjIlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.BlockMonad-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.BlockMonad-1.html",
+          "hash": "Nnfxk37QFXfzA09PHW0sjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.CatchMonad-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.CatchMonad-1.html",
+          "hash": "I8Err//OP2ZkhPDLpop6tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ConcurrentMonad-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ConcurrentMonad-1.html",
+          "hash": "RMuYVlMWdvHddoue7s58Rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ConcurrentMonad-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ConcurrentMonad-2.html",
+          "hash": "9zyxNii0pgK5DqsWB3n47w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ConcurrentMonad-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ConcurrentMonad-3.html",
+          "hash": "w+z2gDTQAy/p5Odxn5Zbag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Condition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Condition.html",
+          "hash": "eeOA5vLIKScCbcmHPd5ZXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Coroutine.IOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Coroutine.IOperation.html",
+          "hash": "PbYtb4oa5ud8WLD1TBKQDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Coroutine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Coroutine.html",
+          "hash": "TohuQDD6PL9u4W76pX/OKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Defer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Defer.html",
+          "hash": "LkjPICk8ilmPJuGGYJjqiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.EmptyBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.EmptyBlock.html",
+          "hash": "dVfPlOdcRv+zq5xTaSNHOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Executor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Executor.html",
+          "hash": "izVIvip7XTCOzYMtKHhdkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ExecutorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ExecutorExtensions.html",
+          "hash": "vzD+rzlTWJjT1FI/ON3rbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.IExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.IExecutor.html",
+          "hash": "w/mT6H/SIPf9oLLYCZqmIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.IMonad-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.IMonad-1.html",
+          "hash": "yNIZih4fH7+nISab6rTMMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.IResumable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.IResumable.html",
+          "hash": "EEMM8bfdpdkLnNnrwc2NeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.IReturn-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.IReturn-1.html",
+          "hash": "I4RctyfRt56I5RGM6rhsBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ITuple.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ITuple.html",
+          "hash": "m3moyJoPnqVd4T50GOz6bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Monad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Monad.html",
+          "hash": "ICoEVqlsilZkVxldOf6Cuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.MonadLinq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.MonadLinq.html",
+          "hash": "T7Us4eZP6x2uM2BC0g0E/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.None.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.None.html",
+          "hash": "HaUj9nQnmTRWi1gcELcM4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ResumableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ResumableExtensions.html",
+          "hash": "dw8mqWg//O3LUST+ezweSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.SimpleMonad-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.SimpleMonad-1.html",
+          "hash": "jcm+DPhn0vgfPniZrPNq/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.ThreadedMonad-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.ThreadedMonad-1.html",
+          "hash": "CFY7A6ST/5q9AGRElYMXgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-1.html",
+          "hash": "zYH8IrkngtDFpmdnVeIQmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-2.html",
+          "hash": "hkavZwNe8oBTvBNJjdJrWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-3.html",
+          "hash": "weJX8OxWbCyxwgAUIOuxNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-4.html",
+          "hash": "Td9TTYyy3hHoByW17QqP/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-5.html",
+          "hash": "xq6fBl+3LjrN57Qr/3mSNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-6.html",
+          "hash": "xOBKa8fslDLVNms3R55avw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-7.html",
+          "hash": "NoWfGN47zlObMljbdzkWWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple-8.html",
+          "hash": "LKFoxcpDLkoyquwClME2qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.Tuple.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.Tuple.html",
+          "hash": "ONsyxh3llXteXJAtHlmXsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rayark.Mast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rayark.Mast.html",
+          "hash": "s8/F083Vkumz3J7naNHz/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "d8MkdNSG1ERA7zfT8dAEnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guides/coroutine-and-executor.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/coroutine-and-executor.html",
+          "hash": "E61PYcISqe5ba6qQs2NfTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guides/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/install.html",
+          "hash": "u4IoPxRSFBmFRQGLl5IqAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guides/monad.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/monad.html",
+          "hash": "mYo96DZd9YRCffpmBEPeOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "guides/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "guides/toc.html",
+          "hash": "BXt40nH7O6HMuTcuku87YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guides/utilities.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/utilities.html",
+          "hash": "C7fIl2emIdc2yr54l13MSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "4UyE0FOyZSAsir66lGY2wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "xv4ZO09h7PYxBzr4NOVZZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
