@@ -449,7 +449,7 @@ namespace Rayark.Mast
             }
         }
 
-        public IEnumerator _Do( IMonad<T> m)
+        private IEnumerator _Do( IMonad<T> m)
         {
             yield return m.Do();
             if (m.Error != null)
