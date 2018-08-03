@@ -331,5 +331,137 @@ namespace Rayark.Mast
 
             Assert.AreEqual(6, m3.Result.Item1);
         }
+
+        [Test]
+        public void FirstCompletedTest()
+        {
+            var m = Monad.WhenAnyCompleted(
+                new BlockMonad<int>(_FirstCompletedTestTask1),
+                new BlockMonad<int>(_FirstCompletedTestTask2),
+                new BlockMonad<int>(_FirstCompletedTestTask3));
+            _Wait(m);
+            Assert.IsNull(m.Error);
+            Assert.AreEqual(1, m.Result);
+        }
+
+        [Test]
+        public void FirstCompletedOrFaultedTest()
+        {
+            var m = Monad.WhenAnyCompletedOrFaulted(
+                new BlockMonad<int>(_FirstCompletedTestTask1),
+                new BlockMonad<int>(_FirstCompletedTestTask2),
+                new BlockMonad<int>(_FirstCompletedTestTask3));
+            _Wait(m);
+            Assert.AreEqual("3", m.Error.Message);
+            Assert.AreEqual(0, m.Result);
+        }
+
+        IEnumerator _FirstCompletedTestTask1( IReturn<int> ret)
+        {
+            yield return null;
+            yield return null;
+            ret.Accept(1);
+        }
+
+        IEnumerator _FirstCompletedTestTask2(IReturn<int> ret)
+        {
+            yield return null;
+            yield return null;
+            yield return null;
+            Assert.Fail();
+            ret.Accept(2);
+        }
+
+        IEnumerator _FirstCompletedTestTask3(IReturn<int> ret)
+        {
+            yield return null;
+            ret.Fail(new System.Exception("3"));
+        }
+
+        [Test]
+        public void LoopTest()
+        {
+            var m = Monad.Loop(state =>
+               new BlockMonad<int>(r => _SleepAndIncrement(state, r)).Map(
+                   s => s < 3
+                       ? Loop.Continue(s)
+                       : Loop.Break(s)),
+               0);
+
+            _Wait(m);
+
+            Assert.IsNull(m.Error);
+            Assert.AreEqual(3, m.Result);
+        }
+
+        IEnumerator _SleepAndIncrement( int s, IReturn<int> ret)
+        {
+            yield return Coroutine.Sleep(0.1f);
+            ret.Accept(s + 1);
+        }
+
+
+        [Test]
+        public void WaitTest1()
+        {
+            int flag = 0;
+
+            // Wait 3 frame and the reducer is invoked four times
+            //
+            // reducer()
+            // yield return null
+            // reducer()
+            // yield return null
+            // reducer()
+            // yield return null
+            // reducer()
+            var m = new WaitMonad<int>(i =>
+            {
+                flag++;
+                return i < 3
+                    ? Loop.Continue(++i)
+                    : Loop.Break(i);
+            }, 0);
+
+            _Wait(m);
+
+            Assert.IsNull(m.Error);
+            Assert.AreEqual(3, m.Result);
+            Assert.AreEqual(4, flag);
+        }
+
+        [Test]
+        public void WaitTest2()
+        {
+            int flag = 0;
+            int i = 0;
+
+            // Wait 3 frame and the predicator is invoked four times
+            //
+            // predicator()
+            // yield return null
+            // predicator()
+            // yield return null
+            // predicator()
+            // yield return null
+            // predicator()
+            var m = Monad.Wait( ()=>
+            {
+                flag++;
+
+                if( i < 3)
+                {
+                    i++;
+                    return true;
+                }
+                return false;
+            });
+
+            _Wait(m);
+
+            Assert.IsNull(m.Error);
+            Assert.AreEqual(3, i);
+            Assert.AreEqual(4, flag);
+        }
     }
 }

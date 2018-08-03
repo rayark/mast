@@ -173,6 +173,78 @@ namespace Rayark.Mast
         {
             return new ConcurrentMonad<T1, T2, T3>(m1, m2, m3);
         }
+
+        /// <summary>
+        /// Create a <see cref="IMonad{T}"/> that concurrently executes multiple <see cref="IMonad{T}"/>s with the same type of return value. 
+        /// All monads will stop executing when any monad ran into the end and is completed.
+        /// </summary>
+        /// <typeparam name="T">The type of return value</typeparam>
+        /// <param name="ms">The <see cref="IMonad{T}"/>s that will be executed concurrently</param>
+        /// <returns></returns>
+        public static IMonad<T> WhenAnyCompleted<T>(params IMonad<T>[] ms)
+        {
+            return new FirstConcurrentMonad<T>(ms, true);
+        }
+
+        /// <summary>
+        /// Create a <see cref="IMonad{T}"/> that concurrently executes multiple <see cref="IMonad{T}"/>s with the same type of return value. 
+        /// All monads will stop executing when any monad is copmleted or faulted.
+        /// </summary>
+        /// <typeparam name="T">The type of return value</typeparam>
+        /// <param name="ms">The <see cref="IMonad{T}"/>s that will be executed concurrently</param>
+        /// <returns></returns>
+        public static IMonad<T> WhenAnyCompletedOrFaulted<T>(params IMonad<T>[] ms)
+        {
+            return new FirstConcurrentMonad<T>(ms, false);
+        }
+
+        /// <summary>
+        /// Creates a new monad implementing a tail-recursive loop. 
+        /// </summary>
+        /// <remarks>
+        /// The reducer delegate is immediately called with initialState and should return a Monad. On successful completion, this monad should output a <see cref="Loop{T}"/> to indicate the status of the loop.
+        /// <see cref="Loop.Break{T}(T)"/> halts the loop and completes the monad with output T.
+        /// <see cref="Loop.Continue{T}(T)"/> reinvokes the loop function with state T.The returned future will be subsequently polled for a new <see cref="Loop{T}"/> value.
+        /// </remarks>
+        /// <typeparam name="T">The type of the return value</typeparam>
+        /// <param name="reducer">The reducer delegate</param>
+        public static IMonad<T> Loop<T>(Func<T, IMonad<Loop<T>>> reducer, T initialState = default(T))
+        {
+            return new LoopMonad<T>(reducer, initialState);
+        }
+
+
+        /// <summary>
+        /// Creates a new monad skiping frames until the criterion is met. 
+        /// </summary>
+        /// <remarks>
+        /// The predicator delegate is immediately called should return  a bool to indicate whether to skip current frame.
+        /// </remarks>
+        /// <typeparam name="T">The type of the return value</typeparam>
+        /// <param name="predicator">The predicator delegate</param>
+        public static IMonad<None> Wait( Func<bool> predicator)
+        {
+            return new WaitMonad<None>(
+                _ => predicator() 
+                    ? Mast.Loop.Continue(default(None)) 
+                    : Mast.Loop.Break(default(None)),
+                default(None));
+        }
+
+        /// <summary>
+        /// Creates a new monad skiping frames until the criterion is met. 
+        /// </summary>
+        /// <remarks>
+        /// The reducer delegate is immediately called with initialState and should return  a <see cref="Loop{T}"/> to indicate whether to skip current frame.
+        /// <see cref="Loop.Break{T}(T)"/> halts the loop and completes the monad with output T.
+        /// <see cref="Loop.Continue{T}(T)"/> reinvokes the loop function with state T.The returned future will be subsequently polled for a new <see cref="Loop{T}"/> value.
+        /// </remarks>
+        /// <typeparam name="T">The type of the return value</typeparam>
+        /// <param name="reducer">The reducer delegate</param>
+        public static IMonad<T> Wait<T>( Func<T, Loop<T>> reducer, T initialState = default(T))
+        {
+            return new WaitMonad<T>(reducer, initialState);
+        }
     }
 
     /// <summary>
