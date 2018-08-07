@@ -58,6 +58,21 @@ namespace Rayark.Mast
         }
 
         [Test]
+        public void SimpleMonadTest2()
+        {
+            var m = Monad.With(10);
+            _Wait(m);
+
+            Assert.AreEqual(m.Result, 10);
+
+            m = Monad.WithError(new System.ArgumentException("invalid argument"), 0);
+            _Wait(m);
+
+            Assert.IsNotNull(m.Error);
+            Assert.AreEqual(m.Error.Message, "invalid argument");
+        }
+
+        [Test]
         public void BindMonadTest()
         {
             var m1 = new SimpleMonad<string>("12345"); // m1 will output 12345
