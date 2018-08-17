@@ -1,26 +1,30 @@
 # Mast - A Coroutine Extension for Unity
 
-[Documentation](https://rayark.github.io/mast/)
+[![pipeline status](https://gitlab.com/rayark/mast/badges/master/pipeline.svg)](https://gitlab.com/rayark/mast/commits/master)
+
+- [Official Repository (Gitlab)](https://gitlab.com/rayark/mast)
+- [Documentation](https://rayark.gitlab.io/mast/)
 
 ## What is Mast?
-Mast is a coroutine library extending **iterator block** feature of C# language. It provides a more convinient and functional way to adopt the concept of **Coroutine**. It is widely used and becomes a fundamental keystone of developing game projects with Unity3D in Rayark.
+Mast is a coroutine library extending **iterator block** feature of C# language. It provides a more convenient and functional way to adopt the concept of **Coroutine**. It is widely used and becomes a fundamental keystone of developing game projects with Unity3D in [Rayark Inc](https://www.rayark.com).
+
 ## Why Mast?
 
-Since game programming often involves managing states of the program across a period of time (multiple frames). It is important to have a good way to manage the side effect of various game logic. That's why **coroutine** comes into sight for Unity3D. However, the coroutine implementation of Unity has some limitations
+Since game programming often involves managing states of the program across a period (multiple frames). It is essential to have an excellent way to manage the side effect of different game logic. That's why **coroutine** comes into sight for Unity3D. However, the coroutine implementation of Unity has some limitations
 - Unity coroutine can't return value.
 - Unity coroutine lacks tools to help write codes for multiple concurrent tasks.
-- Unity coroutine is a black box and you can't control when it exactly runs.
+- Unity coroutine is a black box, and you can't control how it runs.
 
-To overcome above issues, we develop Mast. It mainly consists of three parts,
+To overcome the above issues, we develop Mast. It mainly consists of three parts,
 - `Executor` and `Coroutine` - provide basic infrastructure to execute coroutines with stacks
 - `IMonad` - is a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)-like wrapper for coroutines, which enables functional coding paradigm of coroutines
 - Utilities such as `Defer` and `Joinable` that helps write more simple code for coroutines
 
 
 
-For example, if your want to download and parse asyncronously a URL, the code you write with Mast will like this,
+For example, if you want to download and parse a URL asynchronously, the code you write with Mast is like this,
 
-```
+```csharp
 IEnumerator Download( string URL, IReturn<string> ret){
     ...
 }
@@ -54,10 +58,7 @@ void Start(){
 void Update(){
     if( _executor.Finished)
 }
-
-
 ``` 
-
 
 ## Quick Start
 
@@ -65,7 +66,7 @@ void Update(){
 
 Example,
 ```csharp
-using Rark.Mast;
+using Rayark.Mast;
 using Mast.Coroutine;
 
 IEnumerator A(){
@@ -150,7 +151,7 @@ void Update(){
 
 ### Monad
 
-Monad provides a way for coroutine to return value or error. Multiple monads can chain together to a single monads for better error handling and concise.
+Monad provides a way for a coroutine to return value or error. Multiple monads can chain together to a single monad for better error handling and concise.
 
 ```csharp
 
@@ -197,8 +198,5 @@ void Start(){
     executor.Add(A());
 }
 ```
-
-
-
 ## License
 Mast is licensed under the MIT license.
