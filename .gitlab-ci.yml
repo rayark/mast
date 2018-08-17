@@ -44,5 +44,4 @@ pages:
   tags:
     - docker
   only:
-    - develop
-    - ci-test
+    - master
