@@ -1,10 +1,17 @@
 # Mast - A Coroutine Extension for Unity
 
-[Official Repository (Gitlab)](https://gitlab.com/rayark/mast)   
-[Documentation](https://rayark.gitlab.io/mast/)
+- [Official Repository (Gitlab)](https://gitlab.com/rayark/mast)
+- [Documentation](https://rayark.gitlab.io/mast/)
 
 ## What is Mast?
-Mast is a coroutine library extending **iterator block** feature of C# language. It provides a more convenient and functional way to adopt the concept of **Coroutine**. It is widely used and becomes a fundamental keystone of developing game projects with Unity3D in Rayark.
+Mast is a coroutine library extending **iterator block** feature of C# language. It provides a more convenient and functional way to adopt the concept of **Coroutine**. It is widely used and becomes a fundamental keystone of developing game projects with Unity3D in [Rayark Inc](https://www.rayark.com).
+
+## Install
+
+1. Go to  [the release page](https://gitlab.com/rayark/mast/tags).
+2. Select a version, for example, **0.5.2-release**.
+3. Click its **download button** and select `mast-release`.
+4. Extract the downloaded zip file. There is a DLL file **Rayark.Mast.DLL** copy it into the **Assets** folder of your Unity3D project, or add it to **References** if you develop in a non-Unity3D environment.
 
 ## Why Mast?
 
