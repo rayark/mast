@@ -24,7 +24,7 @@ the sleep method executed with in the above coroutine will takes ten times time.
 
 ## Resources Management with `Defer`
 
-The `using{}` clause can be used within iterator blocks to help manage resources with respect to the life time of the iterator blocks.
+The `using{}` clause can be used within iterator blocks to help manage resources with respect to the lifetime of the iterator blocks.
 
 Consider the following iterator block.
 
@@ -44,18 +44,18 @@ IEnumerator IAP(){
 }
 ```
 
-The variable `transaction` holds a dispoable object. The `using{}` clause makes sure the related disposable object will be disposed when the iterator block finished. Even if `MoveNext` method of the `IEnumerator` instance of the iterator block is stopped being invoked for some unknown reason, we can easily dispose allocated resource via the following code snippet.
+The variable `transaction` holds a disposable object. The `using{}` clause makes sure the related disposable object is disposed of when the iterator block finished. Even if `MoveNext` method of the `IEnumerator` instance of the iterator block is stopped being invoked for some unknown reason, we can easily dispose of allocated resources via the following code snippet.
 
 ```csharp
-var etr = IAP();
+var etr = RunIAP();
 
 //call MoveNext() few times
 
-// The transaction object will be disposed if it has been created.
+// The transaction object is disposed of if it has been created.
 (etr as IDisposable).Dispose();
 ```
 
-Actually, if you execute iterator blocks with <xref:Rayark.Mast.Coroutine></xref>, all the generated iterator block instances in the stack will be disposed when the instance of <xref:Rayark.Mast.Coroutine></xref> is disposed.
+If you execute iterator blocks with <xref:Rayark.Mast.Coroutine></xref>, all the generated iterator block instances in the stack will be disposed of when the instance of <xref:Rayark.Mast.Coroutine></xref> is disposed.
 
 To further utilize `using{}` clause to manage resources, we can use <xref:Rayark.Mast.Defer></xref>. The following example demonstrate how to use <xref:Rayark.Mast.Defer></xref> with `using{}` clause to manage resources, even states (`_running`).
 
@@ -75,8 +75,3 @@ IEnumerator IAP(){
     }
 }
 ```
-
-
-
-
-
