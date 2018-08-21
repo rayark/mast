@@ -36,11 +36,11 @@ mast-release:
   stage: release
   image: bash
   script:
-    - cp build/Assets/Plugins/Rayark/Mast/Rayark.Mast.DLL .
+    - cp build/Assets/Plugins/Rayark/Mast/Rayark.Mast.dll .
   artifacts:
     expire_in: 5 yrs
     paths:
-      - Rayark.Mast.DLL
+      - Rayark.Mast.dll
   dependencies:
     - build_lib_release
   tags:
