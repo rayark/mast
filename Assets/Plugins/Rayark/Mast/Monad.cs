@@ -77,6 +77,35 @@ namespace Rayark.Mast
         public static readonly SimpleMonad<None> NoneMonad = new SimpleMonad<None>(default(None));
 
         /// <summary>
+        /// Creates a monad returns the given value of type T
+        /// </summary>
+        public static IMonad<T> With<T>( T value ){
+            return new SimpleMonad<T>( value );
+        }
+
+        /// <summary>
+        /// Creates a monad returns the given error
+        /// </summary>
+        public static IMonad<T> WithError<T>( Exception e ){
+            return new SimpleMonad<T>(e);
+        }
+
+        /// <summary>
+        /// Adapts <a href="http://csharpindepth.com/Articles/Chapter6/IteratorBlockImplementation.aspx">iterator block</a> to <see cref="IMonad{T}"/> interface.
+        /// </summary>
+        /// <typeparam name="T">ResultType</typeparam>
+        public static IMonad<T> Wrap<T>( Func<IReturn<T>, IEnumerator> f ){
+            return new BlockMonad<T>(f);
+        }
+
+        /// <summary>
+        /// Creates a monad returns the given error. This overloaded method accept a redundant parameter of type T for type inference.
+        /// </summary>
+        public static IMonad<T> WithError<T>( Exception e, T _){
+            return new SimpleMonad<T>(e);
+        }
+
+        /// <summary>
         /// Chains two <see cref="IMonad{T}"/> sequentially into a new monad. It is a helper function constructing <see cref="BindMonad{T, U, V}"/>.
         /// </summary>
         /// <typeparam name="T">The type of the return value of the first <see cref="IMonad{T}"/>.</typeparam>
