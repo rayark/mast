@@ -1,7 +1,20 @@
 variables:
   DOCFX_SOURCE_BRANCH_NAME: $CI_BUILD_REF_NAME  
 
-build_lib:
+stages:
+  - build
+  - release
+
+
+build_lib_test:
+  stage: build
+  image: mono:5.8
+  script:
+    - ./build.sh
+  except:
+    - tags
+
+build_lib_release:
   stage: build
   image: mono:5.8
   script:
@@ -10,30 +23,49 @@ build_lib:
     - sed -i -e "s/0.5.1.0/$BUILD_VERSION.0/g" Assets/Plugins/Rayark/Mast/Properties/AssemblyInfo.cs
     - ./build.sh
   artifacts:
+    expire_in: 5 yrs
+    name: mast-unity-project
     paths:
       - build
   tags:
-    - docker-runner
+    - docker
   only:
     - /^.*-release$/
 
-build_doc:
+mast-release:
+  stage: release
+  image: bash
+  script:
+    - cp build/Assets/Plugins/Rayark/Mast/Rayark.Mast.dll .
+  artifacts:
+    expire_in: 5 yrs
+    paths:
+      - Rayark.Mast.dll
+  dependencies:
+    - build_lib_release
+  tags:
+    - docker
+  only:
+    - /^.*-release$/
+
+document:
   stage: build
   image: alvinsay/docfx:2.32.1
   script:
     - docfx doc/docfx.json
     - mv doc/_site public
   artifacts:
+    expire_in: 5 yrs
     paths:
       - public                       # Upload the directory
   tags:
-    - docker-runner
+    - docker
   only:
     - /^.*-release$/
 
 
 pages:
-  stage: deploy
+  stage: release
   image: alvinsay/docfx:2.32.1
   script:
     - docfx doc/docfx.json
@@ -42,6 +74,6 @@ pages:
     paths:
       - public                       # Upload the directory
   tags:
-    - docker-runner
+    - docker
   only:
-    - develop
+    - master

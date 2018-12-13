@@ -1,12 +1,12 @@
 # Monad
 
-Monad is an abstract data type newly added to the Mast library, and is used to encapsulate asynchronized operations. This name comes from the common design pattern in functional programming.
+Monad is an abstract data type newly added to the Mast library and is used to encapsulate asynchronous operations. This name comes from [a typical design pattern with the same name](https://en.wikipedia.org/wiki/Monad_(functional_programming)) in the world of functional programming.
 
-Most people view functional programming as **treating functions as data**, where functions can be stored as variables or passed into other functions. However, functional languages **treat everything as data**, including computation and side effects. You can store many side effects in monad variables, and concatenate them into a new monad to produce a sequencial side effect, just like string concatenation.
+Most people view functional programming as **treating functions as data**, where functions can be stored as variables or passed into other functions. However, functional languages **treat everything as data**, including computation and side effects. You can store many side effects in monad variables, and concatenate them into a new monad to produce a sequential side effect, just like string concatenation.
 
 ## Why Monad?
 
-Yes, we already have a coroutine library, and we can implement asynchronized operations with coroutines. However, there are some drawbacks when using coroutines:
+Yes, we already have a coroutine library, and we can implement asynchronous operations with coroutines. However, there are some drawbacks when using coroutines:
 
 1. In C#, coroutines cannot have return values. You are forced to pass a "return object wrapper" as a parameter so that you can obtain the return value of a coroutine.
     ```csharp
@@ -64,7 +64,7 @@ public interface IMonad<T>
 }
 ```
 
-`IMonad<T>` is a abstract interface which encapsulate some computation or side effect which gives `T` as its result. The `Do()` function will returns a enumerator block so that this computation can be executed as a coroutine.In case of any failure, the `Error` field will be set to the exception object.
+`IMonad<T>` is an abstract interface which encapsulates some computation or side effect which gives `T` as its result. The `Do()` function returns an iterator block so that this computation can run as a coroutine. In case of any failure, the `Error` field is set to an exception object.
 
 The typical usage of `IMonad<T>` inside a coroutine is like the following sample:
 
@@ -93,7 +93,7 @@ var req2 = req1.Then(
 yield return req2.Do();
 ```
 
-The lambda function passed into `Then()` will be called only if `req1` is completed successfully, and the result will be passed as the argument. The return value, which is also a monad, is then executed. That is to say, `Then()` combines two monads and produces a new monad.
+The lambda function passed into `Then()` is called only when `req1` finished successfully, and the result is passed as the argument. The return value, which is also a monad, is then executed. That is to say, `Then()` combines two monads and produces a new monad.
 
 This is as same as:
 
@@ -115,7 +115,7 @@ var req = FirstOperation()
             .Then(r3 => FourthOperation(r4));
 ```
 
-If there is any exception raised, it will be set to `req.Error`. Otherwise, `req.Result` will be the result of `FourthOperation(r4)`.
+If there is an exception raised, it is set to `req.Error`. Otherwise, `req.Result` is the result of `FourthOperation(r4)`.
 
 ## Chaining Monads with LINQ
 
@@ -134,7 +134,7 @@ yield return req.Do();
 
 ## Exception Handling
 
-When chaining multiple monads, we may need to add some extra operation when error occurs. We can use the `Catch()` function handle errors. For example, we want to provide a default one when loading an asset:
+When chaining multiple monads, we may need to add some extra operation when an error occurs. We can use the `Catch()` function handle errors. For example, we want to provide a default one when loading an asset:
 
 ``` csharp
 var req = LoadAsset(assetId)
@@ -181,8 +181,7 @@ if(cm.Error == null){
 }
 ```
 
-Or, you can use the shortcut function
-
+Alternatively, you can use the shortcut function:
 ``` csharp
 var cm = Moand.WhenAll(SendHttpRequest(), DoOperation());
 yield return cm.Do();
