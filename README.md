@@ -4,6 +4,7 @@
 
 - [Official Repository (Gitlab)](https://gitlab.com/rayark/mast)
 - [Documentation](https://rayark.gitlab.io/mast/)
+- [Download Releases](https://gitlab.com/rayark/mast/tags)
 
 ## What is Mast?
 
