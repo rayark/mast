@@ -10,3 +10,8 @@ ProjectSettings/
 Assets/UnityTestTools*
 obj/
 .vscode
+.idea
+Assets/Plugins/Editor.meta
+Assets/Plugins/Editor
+*.DotSettings.user
+

@@ -77,11 +77,20 @@ namespace Rayark.Mast
         public static readonly SimpleMonad<None> NoneMonad = new SimpleMonad<None>(default(None));
 
         /// <summary>
-        /// Creates a monad returns the given value of type T
+        /// Creates a monad which returns the given value of type T
         /// </summary>
         public static IMonad<T> With<T>( T value ){
             return new SimpleMonad<T>( value );
         }
+        
+        /// <summary>
+        /// Creates a monad which invokes and returns the result of a <see cref="System.Func{T}"/> while being executed.
+        /// </summary>
+        public static IMonad<T> WithFunc<T>( Func<T> f )
+        {
+            return new FuncMonad<T>(f);
+        }
+
 
         /// <summary>
         /// Creates a monad returns the given error

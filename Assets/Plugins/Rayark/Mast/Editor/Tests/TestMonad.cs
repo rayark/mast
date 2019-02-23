@@ -478,5 +478,31 @@ namespace Rayark.Mast
             Assert.AreEqual(3, i);
             Assert.AreEqual(4, flag);
         }
+
+        [Test]
+        public void FuncMonadTest1()
+        {
+            int data = 0;
+            var m = new FuncMonad<int>(() => { return ++data; });
+
+            Assert.AreEqual(0, data);
+            _Wait(m);
+            Assert.AreEqual(1, data);
+            Assert.AreEqual(1, m.Result);
+        }
+
+        [Test]
+        public void FuncMonadTest2()
+        {
+            var m = new FuncMonad<int>(() => { 
+                throw new System.Exception("ex");
+                return 0;
+            });
+
+            Assert.IsNull(m.Error);
+            _Wait(m);
+            Assert.IsNotNull(m.Error);
+            Assert.AreEqual("ex", m.Error.Message);
+        }
     }
 }
