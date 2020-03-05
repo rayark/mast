@@ -198,7 +198,7 @@ namespace Rayark.Mast
 
 
         /// <summary>
-        /// Create a monad that concurrently executes three monad with different or the same type of return value.
+        /// Create a monad that concurrently executes three monads with different or the same type of return value.
         /// </summary>
         /// <typeparam name="T1">The type of return value of first monad</typeparam>
         /// <typeparam name="T2">The type of return value of second monad</typeparam>
@@ -234,6 +234,48 @@ namespace Rayark.Mast
         public static IMonad<T> WhenAnyCompletedOrFaulted<T>(params IMonad<T>[] ms)
         {
             return new FirstConcurrentMonad<T>(ms, false);
+        }
+        
+        /// <summary>
+        /// Create a <see cref="IMonad{T}"/> that concurrently executes multiple <see cref="IMonad{T}"/>s with the same type of return value.
+        /// It will complete when all of the monads are completed.
+        /// </summary>
+        /// <typeparam name="T">The type of return value</typeparam>
+        /// <param name="ms">The <see cref="IMonad{T}"/>s that will be executed concurrently</param>
+        /// <returns></returns>
+        public static IMonad<CompletionStatus<T>[]> WaitAll<T>(params IMonad<T>[] ms)
+        {
+            return new WaitAllConcurrentMonad<T>(ms);
+        }
+        
+        /// <summary>
+        /// Create a monad that concurrently executes two monads with different or the same type of return value.
+        /// It will complete when all of the two monads are completed.
+        /// </summary>
+        /// <typeparam name="T1">The type of return value of first monad</typeparam>
+        /// <typeparam name="T2">The type of return value of second monad</typeparam>
+        /// <param name="m1">The first monad</param>
+        /// <param name="m2">The second monad</param>
+        /// <returns></returns>
+        public static IMonad<Tuple<CompletionStatus<T1>, CompletionStatus<T2>>> WaitAll<T1, T2>(IMonad<T1> m1, IMonad<T2> m2)
+        {
+            return new WaitAllConcurrentMonad<T1, T2>(m1, m2);
+        }
+        
+        /// <summary>
+        /// Create a monad that concurrently executes three monads with different or the same type of return value.
+        /// It will complete when all of the three monads are completed.
+        /// </summary>
+        /// <typeparam name="T1">The type of return value of first monad</typeparam>
+        /// <typeparam name="T2">The type of return value of second monad</typeparam>
+        /// <typeparam name="T3">The type of return value of third monad</typeparam>
+        /// <param name="m1">The first monad</param>
+        /// <param name="m2">The second monad</param>
+        /// <param name="m3">The third monad</param>
+        /// <returns></returns>
+        public static IMonad<Tuple<CompletionStatus<T1>, CompletionStatus<T2>, CompletionStatus<T3>>> WaitAll<T1, T2, T3>(IMonad<T1> m1, IMonad<T2> m2, IMonad<T3> m3)
+        {
+            return new WaitAllConcurrentMonad<T1, T2, T3>(m1, m2, m3);
         }
 
         /// <summary>
