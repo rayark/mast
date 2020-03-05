@@ -11,6 +11,8 @@ build_lib_test:
   image: mono:5.8
   script:
     - ./build.sh
+  tags:
+    - docker
   except:
     - tags
 

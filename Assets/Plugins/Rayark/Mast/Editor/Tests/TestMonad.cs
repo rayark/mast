@@ -323,6 +323,128 @@ namespace Rayark.Mast
 
             ret.Fail(new System.Exception(failMsg));
         }
+        
+        [Test]
+        public void WaitAllConcurrentMonad2Test()
+        {
+            var m1 = new BlockMonad<int>(TestTask1);
+            var m3 = new BlockMonad<string>(TestTask3);
+
+            var mc = new WaitAllConcurrentMonad<int, string>(m1, m3);
+            _Wait(mc);
+
+            Assert.AreEqual(mc.Result.Item1.Result, 10);
+            Assert.AreEqual(mc.Result.Item2.Result, "ok 3");
+            Assert.IsNull(mc.Error);
+        }
+        
+        [Test]
+        public void WaitAllConcurrentMonad2ErrorTest()
+        {
+            var m1 = new BlockMonad<int>(TestTask1);
+            var m2 = new BlockMonad<string>(TestTask2);
+
+            var mc = new WaitAllConcurrentMonad<int, string>(m1, m2);
+            _Wait(mc);
+
+            Assert.IsNull(mc.Error);
+            
+            Assert.AreEqual(10, mc.Result.Item1.Result);
+            Assert.IsNull(mc.Result.Item1.Error);
+            
+            Assert.IsNull(mc.Result.Item2.Result);
+            Assert.AreEqual(mc.Result.Item2.Error.Message, "error 2");
+        }
+        
+        [Test]
+        public void WaitAllConcurrentMonad3Test()
+        {
+            var m1 = new BlockMonad<int>(TestTask1);
+            var m3 = new BlockMonad<string>(TestTask3);
+            var m4 = new BlockMonad<bool>(TestTask4);
+
+            var mc = new WaitAllConcurrentMonad<int, string, bool>(m1, m3, m4);
+            _Wait(mc);
+
+            Assert.AreEqual(mc.Result.Item1.Result, 10);
+            Assert.AreEqual(mc.Result.Item2.Result, "ok 3");
+            Assert.AreEqual(mc.Result.Item3.Result, true);
+            Assert.IsNull(mc.Error);
+        }
+        
+        [Test]
+        public void WaitAllConcurrentMonad3ErrorTest()
+        {
+            var m1 = new BlockMonad<int>(TestTask1);
+            var m2 = new BlockMonad<string>(TestTask2);
+            var m4 = new BlockMonad<bool>(TestTask4);
+
+            var mc = new WaitAllConcurrentMonad<int, string, bool>(m1, m2, m4);
+            _Wait(mc);
+            
+            Assert.IsNull(mc.Error);
+            
+            Assert.AreEqual(10, mc.Result.Item1.Result);
+            Assert.IsNull(mc.Result.Item1.Error);
+            
+            Assert.IsNull(mc.Result.Item2.Result);
+            Assert.AreEqual(mc.Result.Item2.Error.Message, "error 2");
+            
+            Assert.AreEqual(true, mc.Result.Item3.Result);
+            Assert.IsNull(mc.Result.Item3.Error);
+        }
+        
+        [Test]
+        public void WaitAllConcurrentMonadArrayTest()
+        {
+            var mc = Monad.WaitAll(
+                new BlockMonad<int>(r => TestTask5( 3, 3, r )),
+                new BlockMonad<int>(r => TestTask5(4, 5, r)),
+                new BlockMonad<int>(r => TestTask5(2, 1, r)),
+                new BlockMonad<int>(r => TestTask5(1, 3, r))
+            );
+
+            _Wait(mc);
+
+            Assert.AreEqual(mc.Result[0].Result, 3);
+            Assert.AreEqual(mc.Result[1].Result, 4);
+            Assert.AreEqual(mc.Result[2].Result, 2);
+            Assert.AreEqual(mc.Result[3].Result, 1);
+
+            foreach (var r in mc.Result)
+            {
+                Assert.IsNull(r.Error);
+            }
+            Assert.IsNull(mc.Error);
+        }
+        
+        [Test]
+        public void WaitAllConcurrentMonadArrayErrorTest()
+        {
+            var mc = Monad.WaitAll(
+                new BlockMonad<int>(r => TestTask5(3, 3, r)),
+                new BlockMonad<int>(r => TestTask5(4, 5, r)),
+                new BlockMonad<int>(r => TestTask5(2, 1, r)),
+                new BlockMonad<int>(r => TestTask5(1, 3, r)),
+                new BlockMonad<int>(r => TestTask6("error", 3, r))
+            );
+            
+            _Wait(mc);
+            
+            Assert.AreEqual(mc.Result[0].Result, 3);
+            Assert.AreEqual(mc.Result[1].Result, 4);
+            Assert.AreEqual(mc.Result[2].Result, 2);
+            Assert.AreEqual(mc.Result[3].Result, 1);
+
+            for( int i = 0; i < 4; i++)
+            {
+                var r = mc.Result[i];
+                Assert.IsNull(r.Error);
+            }
+
+            Assert.IsNull(mc.Error);
+            Assert.AreEqual(mc.Result[4].Error.Message, "error");
+        }
 
         [Test]
         public void ThreadedMonadTest()
