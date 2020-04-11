@@ -468,6 +468,29 @@ namespace Rayark.Mast
 
             Assert.AreEqual(6, m3.Result.Item1);
         }
+        
+        [Test]
+        public void PoolThreadedMonadTest()
+        {
+            int t = 0;
+
+            var m1 = new PoolThreadedMonad<int>(() =>
+            {
+                System.Threading.Thread.Sleep(500);
+                return 3*t;
+            });
+
+            var m2 = new BlockMonad<int>( r =>
+            {
+                r.Accept(2);
+                return Coroutine.Sleep(0.1f);
+            }).Then( res => t = res );
+
+            var m3 = Monad.WhenAll(m1, m2);
+            _Wait(m3);
+
+            Assert.AreEqual(6, m3.Result.Item1);
+        }
 
         [Test]
         public void FirstCompletedTest()
