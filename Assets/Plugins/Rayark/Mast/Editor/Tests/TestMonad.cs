@@ -236,7 +236,7 @@ namespace Rayark.Mast
             var mc = new ConcurrentMonad<int, string>(m1, m2);
             _Wait(mc);
 
-            Assert.IsNull(mc.Result);
+            Assert.AreEqual(default((int,string)), mc.Result);
             Assert.AreEqual(mc.Error.Message, "error 2");
         }
 
@@ -276,7 +276,7 @@ namespace Rayark.Mast
             var mc = new ConcurrentMonad<int, string, bool>(m1, m2, m4);
             _Wait(mc);
 
-            Assert.IsNull(mc.Result);
+            Assert.AreEqual(default((int,string,bool)), mc.Result);
             Assert.AreEqual(mc.Error.Message, "error 2");
         }
 

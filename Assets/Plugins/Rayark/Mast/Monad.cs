@@ -191,7 +191,7 @@ namespace Rayark.Mast
         /// <param name="m1">The first monad</param>
         /// <param name="m2">The second monad</param>
         /// <returns></returns>
-        public static IMonad<Tuple<T1, T2>> WhenAll<T1, T2>(IMonad<T1> m1, IMonad<T2> m2)
+        public static IMonad<(T1, T2)> WhenAll<T1, T2>(IMonad<T1> m1, IMonad<T2> m2)
         {
             return new ConcurrentMonad<T1, T2>(m1, m2);
         }
@@ -207,7 +207,7 @@ namespace Rayark.Mast
         /// <param name="m2">The second monad</param>
         /// <param name="m3">The third monad</param>
         /// <returns></returns>
-        public static IMonad<Tuple<T1, T2, T3>> WhenAll<T1, T2, T3>(IMonad<T1> m1, IMonad<T2> m2, IMonad<T3> m3)
+        public static IMonad<(T1, T2, T3)> WhenAll<T1, T2, T3>(IMonad<T1> m1, IMonad<T2> m2, IMonad<T3> m3)
         {
             return new ConcurrentMonad<T1, T2, T3>(m1, m2, m3);
         }
@@ -632,7 +632,7 @@ namespace Rayark.Mast
     /// When any monad finished with error, the <see cref="ConcurrentMonad{T1, T2}"/> will stop immediately.
     /// This class is rarely used directly. Use the extension method <see cref="Monad.WhenAll{T1, T2}(IMonad{T1}, IMonad{T2})"/> or LINQ syntax instead if it is possible.
     /// </remarks>
-    public class ConcurrentMonad<T1, T2> : IMonad<Tuple<T1, T2>>
+    public class ConcurrentMonad<T1, T2> : IMonad<(T1, T2)>
     {
         private readonly IMonad<T1> _m1;
         private readonly IMonad<T2> _m2;
@@ -649,7 +649,7 @@ namespace Rayark.Mast
         /// <remarks>
         /// The <c>Item1</c> and <c>Item2</c> field of the result will be the return value of the first and second monad respectively.
         /// </remarks>
-        public Tuple<T1, T2> Result
+        public (T1, T2) Result
         {
             get;
             private set;
@@ -696,7 +696,7 @@ namespace Rayark.Mast
                 }
                 if (Error != null)
                     yield break;
-                Result = new Tuple<T1, T2>(_m1.Result, _m2.Result);
+                Result = (_m1.Result, _m2.Result);
             }
         }
 
@@ -718,7 +718,7 @@ namespace Rayark.Mast
     /// When any monad finished with error, the <see cref="ConcurrentMonad{T1, T2, T3}"/> will stop immediately.
     /// This class is rarely used directly. Use the extension method <see cref="Monad.WhenAll{T1, T2, T3}(IMonad{T1}, IMonad{T2}, IMonad{T3})"/> or LINQ syntax instead if it is possible.
     /// </remarks>
-    public class ConcurrentMonad<T1, T2, T3> : IMonad<Tuple<T1, T2, T3>>
+    public class ConcurrentMonad<T1, T2, T3> : IMonad<(T1, T2, T3)>
     {
         private readonly IMonad<T1> _m1;
         private readonly IMonad<T2> _m2;
@@ -737,7 +737,7 @@ namespace Rayark.Mast
         /// <remarks>
         /// The <c>Item1</c>, <c>Item2</c>, and <c>Item3</c> fields of the result will be the return value of the first, second and third monads respectively.
         /// </remarks>
-        public Tuple<T1, T2, T3> Result
+        public (T1, T2, T3) Result
         {
             get;
             private set;
@@ -785,7 +785,7 @@ namespace Rayark.Mast
                 }
                 if (Error != null)
                     yield break;
-                Result = new Tuple<T1, T2, T3>(_m1.Result, _m2.Result, _m3.Result);
+                Result = (_m1.Result, _m2.Result, _m3.Result);
             }
         }
 
@@ -821,7 +821,7 @@ namespace Rayark.Mast
             private set;
         }
 
-        Func<T> _func;
+        private readonly Func<T> _func;
 
         /// <summary>
         /// Initialize a new instance of the <see cref="ThreadedMonad{T}"/>.

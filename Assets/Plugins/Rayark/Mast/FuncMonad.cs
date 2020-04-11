@@ -11,7 +11,7 @@ namespace Rayark.Mast
     /// makes it possible to add some extra operation right before a complex monad.</remarks>
     public class FuncMonad<T> : IMonad<T>, IEnumerator
     {
-        public readonly Func<T> _func;
+        private readonly Func<T> _func;
 
         public FuncMonad(Func<T> func)
         {
