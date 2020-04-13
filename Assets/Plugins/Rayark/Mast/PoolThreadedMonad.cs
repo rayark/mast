@@ -50,28 +50,25 @@ namespace Rayark.Mast
         /// </summary>
         public IEnumerator Do()
         {
-            using (var defer = new Defer())
+            bool done = false;
+            ThreadPool.QueueUserWorkItem(state =>
             {
-                bool done = false;
-                ThreadPool.QueueUserWorkItem(state =>
+                try
                 {
-                    try
-                    {
-                        Result = _func();
-                    }
-                    catch (Exception e)
-                    {
-                        Error = e;
-                    }
-                    finally
-                    {
-                        done = true;
-                    }
-                });
-                
-                while (!done)
-                    yield return null;
-            } 
+                    Result = _func();
+                }
+                catch (Exception e)
+                {
+                    Error = e;
+                }
+                finally
+                {
+                    done = true;
+                }
+            });
+            
+            while (!done)
+                yield return null;
         }
     }
 }
