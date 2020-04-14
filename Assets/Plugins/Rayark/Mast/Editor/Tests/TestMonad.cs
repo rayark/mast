@@ -110,7 +110,17 @@ namespace Rayark.Mast
         }
 
         [Test]
-        public void BindMonadWithLinqSyntax()
+        public void BindMonadWithSingleLinqSyntax()
+        {
+            var mc = from str in new SimpleMonad<string>("12345")
+                     select str;
+            _Wait(mc);
+
+            Assert.AreEqual("12345", mc.Result);
+        }
+
+        [Test]
+        public void BindMonadWithMultipleLinqSyntax()
         {
             var mc = from str in new SimpleMonad<string>("12345")
                      from integer in new ParseStringMonad(str)
@@ -118,7 +128,7 @@ namespace Rayark.Mast
                      select integer2 + 1;
             _Wait(mc);
 
-            Assert.AreEqual(mc.Result, 12347);
+            Assert.AreEqual(12347, mc.Result);
         }
 
         [Test]

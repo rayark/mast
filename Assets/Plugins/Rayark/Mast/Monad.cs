@@ -333,6 +333,19 @@ namespace Rayark.Mast
     public static class MonadLinq
     {
         /// <summary>
+        /// Wraps <see cref="IMonad{T}"/> mapping so that the LINQ expression <c>from ... select ...</c> is supported.
+        /// </summary>
+        /// <typeparam name="T">The type contained in monad</typeparam>
+        /// <typeparam name="R">The type of mapped value</typeparam>
+        /// <param name="monad">The monad to map</param>
+        /// <param name="selector">The mapping function</param>
+        /// <remarks>This extension methods is intended to be used via LINQ syntax.</remarks>
+        public static IMonad<R> Select<T, R>(this IMonad<T> monad, Func<T, R> selector)
+        {
+            return monad.Map(selector);
+        }
+
+        /// <summary>
         /// Wraps the creation of <see cref="BindMonad{T, U, V}"/> so that the LINQ expression <c>from ... select ...</c> is supported.
         /// </summary>
         /// <typeparam name="T">The type of the return value of the first monad</typeparam>
@@ -341,7 +354,7 @@ namespace Rayark.Mast
         /// <param name="monad">The first monad</param>
         /// <param name="binder">A delegate takes the result of first monad and returns an instance of <see cref="IMonad{T}"/> as the second monad.</param>
         /// <param name="selector">A delegate takes the result of the first and the second monad and returns a value</param>
-        /// <remarks>This extension methods is intented to be used via LINQ syntax.</remarks>
+        /// <remarks>This extension methods is intended to be used via LINQ syntax.</remarks>
         /// <example>
         /// <code>
         /// var m = from v1 in new SimpleMonad&lt;int&gt;(3)
@@ -351,7 +364,8 @@ namespace Rayark.Mast
         /// Assert.That( m.Result == 9 );
         /// </code>
         /// </example>
-        public static IMonad<V> SelectMany<T, U, V>(this IMonad<T> monad, Func<T, IMonad<U>> binder, Func<T, U, V> selector)
+        public static IMonad<V> SelectMany<T, U, V>(this IMonad<T> monad, Func<T, IMonad<U>> binder,
+            Func<T, U, V> selector)
         {
             return new BindMonad<T, U, V>(monad, binder, selector);
         }
