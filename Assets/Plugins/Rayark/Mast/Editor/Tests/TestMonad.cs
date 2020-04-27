@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Threading;
 using NUnit.Framework;
 
 namespace Rayark.Mast
@@ -658,6 +659,46 @@ namespace Rayark.Mast
             _Wait(m);
             Assert.IsNotNull(m.Error);
             Assert.AreEqual("ex", m.Error.Message);
+        }
+
+        [Test]
+        public void MonadCompletionSourceTest()
+        {
+            var mcs = new MonadCompletionSource<int>();
+            var m = mcs.Monad;
+
+            _MonadCompletionSourceTestTask1(mcs);
+            _Wait(m);
+            Assert.AreEqual(3, m.Result);
+        }
+
+        void _MonadCompletionSourceTestTask1(IReturn<int> r)
+        {
+            ThreadPool.QueueUserWorkItem( state =>
+            {
+                Thread.Sleep(500);
+                r.Accept(3);              
+            });
+        }
+        
+        [Test]
+        public void MonadCompletionSourceErrorTest()
+        {
+            var mcs = new MonadCompletionSource<int>();
+            var m = mcs.Monad;
+
+            _MonadCompletionSourceTestTask2(mcs);
+            _Wait(m);
+            Assert.AreEqual(typeof(ArgumentException), m.Error.GetType());
+        }
+        
+        void _MonadCompletionSourceTestTask2(IReturn<int> r)
+        {
+            ThreadPool.QueueUserWorkItem( state =>
+            {
+                Thread.Sleep(500);
+                r.Fail(new ArgumentException());              
+            });
         }
     }
 }
