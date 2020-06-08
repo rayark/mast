@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>Rayark Inc.</Company>
+    <AssemblyTitle>Rayark Mast</AssemblyTitle>
+    <AssemblyName>Rayark.Mast</AssemblyName>
+    <Copyright>2011 - 2020 Rayark Inc.</Copyright>
+    <Version>0.5.1.0</Version>
+    <Description>Mast - A Coroutine Extension for Unity</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../Assets/Plugins/Rayark/Mast/*.cs"/>
+  </ItemGroup>
+
+</Project>

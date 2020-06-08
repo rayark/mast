@@ -8,7 +8,7 @@ stages:
 
 build_lib_test:
   stage: build
-  image: mono:6.8
+  image: mcr.microsoft.com/dotnet/core/sdk:3.1-buster
   script:
     - ./build.sh
   tags:
@@ -22,13 +22,13 @@ build_lib_release:
   script:
     - export BUILD_VERSION=$(echo $CI_COMMIT_REF_NAME | sed  's/\([0-9]\+\.[0-9]\+\.[0-9]\+\)\-release$/\1/g')
     - echo $BUILD_VERSION
-    - sed -i -e "s/0.5.1.0/$BUILD_VERSION.0/g" Assets/Plugins/Rayark/Mast/Properties/AssemblyInfo.cs
+    - sed -i -e "s/0.5.1.0/$BUILD_VERSION.0/g" build/Rayark.Mast.csproj
     - ./build.sh
   artifacts:
     expire_in: 5 yrs
     name: mast-unity-project
     paths:
-      - build
+      - pack
   tags:
     - docker
   only:
@@ -38,7 +38,7 @@ mast-release:
   stage: release
   image: bash
   script:
-    - cp build/Assets/Plugins/Rayark/Mast/Rayark.Mast.dll .
+    - cp pack/Assets/Plugins/Rayark/Mast/Rayark.Mast.dll .
   artifacts:
     expire_in: 5 yrs
     paths:
