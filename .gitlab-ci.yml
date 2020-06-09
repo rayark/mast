@@ -18,7 +18,7 @@ build_lib_test:
 
 build_lib_release:
   stage: build
-  image: mono:5.8
+  image: mcr.microsoft.com/dotnet/core/sdk:3.1-buster
   script:
     - export BUILD_VERSION=$(echo $CI_COMMIT_REF_NAME | sed  's/\([0-9]\+\.[0-9]\+\.[0-9]\+\)\-release$/\1/g')
     - echo $BUILD_VERSION
