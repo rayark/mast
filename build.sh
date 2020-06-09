@@ -1,4 +1,7 @@
 #!/bin/bash
 set -e
 
-mcs -langversion:4 -sdk:2 -target:library -out:build/Assets/Plugins/Rayark/Mast/Rayark.Mast.dll $(find Assets/Plugins/Rayark/Mast -path Assets/Plugins/Rayark/Mast/Editor -prune -o -name "*.cs" -print)
+dotnet build -f netstandard2.0 -c Release build/Rayark.Mast.csproj
+cp build/bin/Release/netstandard2.0/Rayark.Mast.dll pack/Assets/Plugins/Rayark/Mast
+
+
